@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<script src="/assets/application-9c9b45e437653e4c388a76aec3dc16059fffdb3c0959ca5678939a4402931b0a.js"></script>
+<title>expressjs/body-parser | Coveralls - Test Coverage History &amp; Statistics</title>
+<meta content='Test code coverage history for expressjs/body-parser' name='description'>
+<meta content='jjkWjPM43FYXwRd2QigTVe8W27xMk-cXGJxUD6mQDCY' name='google-site-verification'>
+<meta content='uVH7jwgRaeBZzSydDg2B7A3k8Xaw4axxRcaGLMd3Rc' name='globalsign-domain-verification'>
+<meta charset='utf-8'>
+<meta content='IE=Edge,chrome=1' http-equiv='X-UA-Compatible'>
+<meta content='Coveralls, coveralls gem, automated testing, integration testing, test coverage, TDD, CI, continuous integration testing, continuous integration, test code coverage, test coverage history, ruby gem, python extension, test driven development, github badge, code coverage, code coverage history, code coverage statistics' name='keywords'>
+<meta content='Coveralls.io - Test Coverage History and Statistics' property='og:title'>
+<meta content='The leading provider of test coverage analytics. Ensure that all your new code is fully covered, and see coverage trends emerge. Works with most CI services. Always free for open source.' property='og:description'>
+<meta content='Coveralls.io' property='og:site_name'>
+<meta content='/social.png' property='og:image'>
+<meta content='image/png' property='og:image:type'>
+<meta content='500' property='og:image:width'>
+<meta content='500' property='og:image:height'>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="NBSsDBrWKcC/j+ttS8MQ/F54Pwe2ugJE6jDpgYWJyr00L8n5MbN5Fjjt+03QbNTaNISi4dHaVahSLW02WfAeYw==" />
+<link href='/favicon.png' rel='shortcut icon'>
+<link href='/apple-touch-icon-precomposed.png' rel='apple-touch-icon-precomposed'>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.payment/1.2.4/jquery.payment.min.js"></script>
+<script src="https://js.stripe.com/v2/"></script>
+<script src='//cdn.optimizely.com/js/2456360022.js'></script>
+<script src="//use.typekit.net/php4ecs.js"></script>
+<script type='text/javascript'>try{Typekit.load();}catch(e){}</script>
+<meta name="stripe-key" content="pk_live_D0ehNEidbTjN3ZqW00IrjpM3" />
+<link href='//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css' rel='stylesheet'>
+<script src='https://d3dy5gmtp8yhk7.cloudfront.net/2.1/pusher.min.js' type='text/javascript'></script>
+<script src="//js.pusher.com/3.1/pusher.min.js"></script>
+<script>
+//<![CDATA[
+var AUTH_TOKEN = '4goznj5mDbQK8MARBWZIEnumF1KqQiV58ggMU+uu2D7iMVZrFQNdYo2S0DGeyYw0EVqKtM0icpVKFYjkN9cM4A==';
+//]]>
+</script>
+<script>
+  window.Config = {
+    PusherKey: "4228d2afb0b831a6fec4"
+  }
+</script>
+
+<link rel="stylesheet" media="screen" href="/assets/application-223c00a9b6a784f7d1795d2aa0119d965463ce1d1e8340e18a03a7cfb72658ea.css" />
+</head>
+<body class='  '>
+<div class='container'>
+<div class='app-outer container_footer page-full'>
+<div class='header'>
+<div class='logo-fixed'>
+<img data-svg-fallback="/assets/coveralls_logo-1a40cd0265e114bdc40cc5caa6fc10786c80a9d1d37b2f30b30b7c5c3b4a8d71.png" src="/assets/coveralls_logob-27da862c7a24252e50f769869074fa2e8dff5c0a997ab880698836a1f7d4016d.svg" alt="Coveralls logob" />
+</div>
+<a class="logo" href="/"><img data-svg-fallback="/assets/coveralls_logo-1a40cd0265e114bdc40cc5caa6fc10786c80a9d1d37b2f30b30b7c5c3b4a8d71.png" src="/assets/coveralls_logo-bbcdaf48b4b89e4f878f9d12d52733d2e878e44e656bbd59a5e29800ba4ba393.svg" alt="Coveralls logo" />
+</a><nav class='siteNav'>
+<ul>
+<li>
+<a href="https://coveralls.io/"><i class="fa fa-home"></i>
+<span>Home</span>
+</a></li>
+<li>
+<a href="/features"><i class="fa fa-asterisk"></i>
+<span>Features</span>
+</a></li>
+<li class=''>
+<a href="/pricing"><i class="fa fa-star"></i>
+<span>Pricing</span>
+</a></li>
+<li>
+<a href="http://docs.coveralls.io"><i class="fa fa-question-circle"></i>
+<span>Docs</span>
+</a></li>
+<li>
+<a data-no-turbolink="true" href="/sign-in"><i class="fa fa-sign-in"></i>
+<span>Sign In</span>
+</a></li>
+</ul>
+</nav>
+</div>
+
+<div class='appWrapper'>
+<div class='show-page'>
+<h1>
+<i class="fa fa-github"></i>
+<a class="user" href="/github/expressjs">expressjs</a>
+<b>/</b>
+<a class="repo" href="https://coveralls.io/github/expressjs/body-parser">body-parser</a>
+
+<div class='coverage-high coverageText repo-coverage-outline' id='repoShowPercentage'>
+100%
+<div class='coverage-high coverageText repo-default-percent'>
+master: 100%
+</div>
+</div>
+</h1>
+<div class='show-trend repoOverview'><div class='coverage-high trend trend-default'>
+<em>
+DEFAULT BRANCH:
+<span>master</span>
+</em>
+<div class='repo-sparkline sparkline-no-circles' data-branch='master' data-graph-data='[[0,100.0,808668],[1,100.0,808761],[2,100.0,808778],[3,100.0,821946],[4,100.0,821961],[5,100.0,821962],[6,100.0,822225],[7,100.0,822229],[8,100.0,831361],[9,100.0,859369],[10,100.0,859372],[11,100.0,859374],[12,100.0,859375],[13,100.0,859376],[14,100.0,878668],[15,100.0,878672],[16,100.0,878723],[17,100.0,881281],[18,100.0,881622],[19,100.0,881715],[20,100.0,884798],[21,100.0,884832],[22,100.0,884934],[23,100.0,885115],[24,100.0,885131],[25,100.0,885196],[26,100.0,885259],[27,100.0,885358],[28,100.0,885363],[29,100.0,885370],[30,100.0,885415],[31,100.0,885534],[32,100.0,885589],[33,100.0,885805],[34,100.0,885838],[35,100.0,885957],[36,100.0,886380],[37,100.0,886382],[38,100.0,886473],[39,100.0,886476],[40,100.0,886477],[41,100.0,887807],[42,100.0,900809],[43,100.0,940005],[44,100.0,987052],[45,100.0,987057],[46,100.0,987061],[47,100.0,987179],[48,100.0,987183],[49,100.0,987967],[50,100.0,987994],[51,100.0,1010619],[52,100.0,1010625],[53,100.0,1012491],[54,100.0,1012492],[55,100.0,1048556],[56,100.0,1048561],[57,100.0,1048563],[58,100.0,1051518],[59,100.0,1052739],[60,100.0,1052740],[61,100.0,1055541],[62,100.0,1055545],[63,100.0,1066652],[64,100.0,1066654],[65,100.0,1066655],[66,100.0,1086699],[67,100.0,1086756],[68,100.0,1091763],[69,100.0,1093973],[70,100.0,1093997],[71,100.0,1128306],[72,100.0,1128307],[73,100.0,1128541],[74,100.0,1136816],[75,100.0,1136848],[76,100.0,1138513],[77,100.0,1142984],[78,100.0,1147539],[79,100.0,1148041],[80,100.0,1156411],[81,100.0,1156432],[82,100.0,1156443],[83,100.0,1175573],[84,100.0,1175603],[85,100.0,1176461],[86,100.0,1176464],[87,100.0,1176501],[88,100.0,1181408],[89,100.0,1181412],[90,100.0,1181416],[91,100.0,1214228],[92,100.0,1214238],[93,100.0,1214420],[94,100.0,1214422],[95,100.0,1219265],[96,100.0,1219267],[97,100.0,1234361],[98,100.0,1234374],[99,100.0,1249016],[100,100.0,1249091],[101,100.0,1249114],[102,100.0,1249119],[103,100.0,1249130],[104,100.0,1251979],[105,100.0,1263248],[106,100.0,1263253],[107,100.0,1282915],[108,100.0,1282951],[109,100.0,1287972],[110,100.0,1321009],[111,100.0,1372556],[112,100.0,1372557],[113,100.0,1372560],[114,100.0,1372561],[115,100.0,1372566],[116,100.0,1391984],[117,100.0,1392101],[118,100.0,1402982],[119,100.0,1403038],[120,100.0,1511944],[121,100.0,1511948],[122,100.0,1511949],[123,100.0,1511951],[124,100.0,1511960],[125,100.0,1511965],[126,100.0,1511969],[127,100.0,1511989],[128,100.0,1512123],[129,100.0,1555373],[130,100.0,1558554],[131,100.0,1561199],[132,100.0,1594937],[133,100.0,1594938],[134,100.0,1681646],[135,100.0,1681648],[136,100.0,1681657],[137,100.0,1681660],[138,100.0,1681725],[139,100.0,1778349],[140,100.0,1778352],[141,100.0,1778357],[142,100.0,1838538],[143,100.0,1838566],[144,100.0,1838588],[145,100.0,1919570],[146,100.0,1919574],[147,100.0,1919577],[148,0,1919580],[149,100.0,1919582],[150,100.0,1919602],[151,100.0,1919644],[152,100.0,1919660],[153,100.0,1926350],[154,100.0,1926891],[155,100.0,1927012],[156,100.0,1927013],[157,99.3630573248408,1927047],[158,99.3630573248408,1927048],[159,99.3630573248408,2120102],[160,100.0,2120157],[161,100.0,2120164],[162,100.0,2120169],[163,100.0,2120173],[164,100.0,2120185],[165,100.0,2120192],[166,100.0,2120384],[167,100.0,2128673],[168,100.0,2128683],[169,100.0,2219423],[170,100.0,2219427],[171,100.0,2349379],[172,100.0,2349383],[173,100.0,2349395],[174,100.0,2349472],[175,100.0,2349475],[176,100.0,2349479],[177,100.0,2349542],[178,100.0,2349545],[179,100.0,2531819],[180,100.0,2531822],[181,100.0,2531880],[182,100.0,2532052],[183,100.0,2532065],[184,100.0,2532067],[185,100.0,2532069],[186,100.0,2532094],[187,100.0,2532405],[188,100.0,2532419],[189,100.0,2532449],[190,100.0,2593607],[191,100.0,2593612],[192,100.0,2593622],[193,100.0,2815347],[194,100.0,2815352],[195,100.0,2815394],[196,100.0,2815399],[197,100.0,2815444],[198,100.0,2815473],[199,100.0,2815477],[200,100.0,2815512],[201,100.0,2815517],[202,100.0,2815520],[203,100.0,2815591],[204,100.0,2815644],[205,100.0,2815791],[206,100.0,2815875],[207,100.0,2815891],[208,100.0,2831825],[209,100.0,2831897],[210,100.0,2981665],[211,100.0,2981673],[212,100.0,2981679],[213,100.0,2981683],[214,100.0,2981696],[215,100.0,2981718],[216,100.0,2981729],[217,100.0,3082282],[218,100.0,3082285],[219,100.0,3193667],[220,100.0,3193671],[221,100.0,3193686],[222,100.0,3485610],[223,100.0,3485637],[224,100.0,3485667],[225,100.0,3485704],[226,100.0,3485805],[227,100.0,3485860],[228,100.0,3500203],[229,100.0,3500229],[230,100.0,3500234],[231,100.0,3507344],[232,100.0,3507395],[233,100.0,3564532],[234,100.0,3564695],[235,100.0,3564920],[236,100.0,3576749],[237,100.0,3589580],[238,100.0,3684613],[239,100.0,3684616],[240,100.0,3684653],[241,100.0,3684656],[242,100.0,3684659],[243,100.0,3684691],[244,100.0,3684734],[245,100.0,3684743],[246,100.0,3684751],[247,100.0,4484246],[248,100.0,4484271],[249,100.0,4484335],[250,100.0,4484345],[251,100.0,4484356],[252,100.0,4484374],[253,100.0,4484408],[254,100.0,4484427],[255,100.0,4484547],[256,100.0,4484566],[257,100.0,4485028],[258,100.0,4485039],[259,100.0,4485051],[260,100.0,4485064],[261,100.0,4910267],[262,100.0,4910268],[263,100.0,4910273],[264,100.0,4910333],[265,100.0,5042437],[266,100.0,5042461],[267,100.0,5042674],[268,100.0,5042682],[269,100.0,5042693],[270,100.0,5042732],[271,100.0,5042743],[272,100.0,5042764],[273,100.0,5043088],[274,100.0,5880675],[275,100.0,5880718],[276,100.0,6070879],[277,100.0,6070895],[278,100.0,6070904],[279,100.0,6070914],[280,100.0,6071139],[281,100.0,6071338],[282,100.0,6071349],[283,100.0,6071397],[284,100.0,6071422],[285,100.0,6071750],[286,100.0,6071758],[287,100.0,6071801],[288,100.0,6659789],[289,100.0,6659821],[290,100.0,6659837],[291,100.0,6659850],[292,100.0,6659869],[293,100.0,6659946],[294,100.0,6659952],[295,100.0,6660697],[296,100.0,6661326],[297,100.0,6662071],[298,100.0,6662099],[299,100.0,6662333],[300,100.0,6662421],[301,100.0,6662466],[302,100.0,6662550],[303,100.0,6662874],[304,100.0,6810698],[305,100.0,6810718],[306,100.0,6810798],[307,100.0,8900539],[308,100.0,8900562],[309,100.0,9682933],[310,100.0,9682946],[311,100.0,9682950],[312,100.0,9682958],[313,100.0,9682964],[314,100.0,9682972],[315,100.0,9682982],[316,100.0,9683188],[317,100.0,9683202],[318,100.0,9683207],[319,100.0,9683397],[320,100.0,9683410],[321,100.0,9683420],[322,100.0,9683436],[323,100.0,9719172],[324,100.0,9719227],[325,100.0,9719258],[326,100.0,10104056],[327,100.0,10104091],[328,100.0,10104106],[329,100.0,10104117],[330,100.0,10104133],[331,100.0,10288102],[332,100.0,10288120],[333,100.0,10288172],[334,100.0,10288189],[335,100.0,10288213],[336,100.0,10288228],[337,100.0,10288242],[338,100.0,10387143],[339,100.0,10387179],[340,99.2714025500911,10450085],[341,99.2714025500911,10450123],[342,99.2714025500911,10450150],[343,99.4505494505494,10450451],[344,99.8154981549816,10450529],[345,99.8154981549816,10450558],[346,99.8154981549816,10465294],[347,99.8154981549816,10465303],[348,100.0,11576780],[349,99.8154981549816,11576795],[350,99.8154981549816,11576821],[351,99.8154981549816,11576838],[352,99.8154981549816,11577506],[353,99.8154981549816,11577542],[354,99.8154981549816,11577557],[355,99.8154981549816,11577584],[356,99.8154981549816,11577603],[357,99.8154981549816,11577630],[358,99.8154981549816,11577654],[359,99.8154981549816,12703949],[360,99.8154981549816,12703972],[361,99.8154981549816,12703997],[362,99.8154981549816,12704021],[363,99.8154981549816,12704042],[364,99.8154981549816,12704064],[365,99.8154981549816,12704113],[366,99.8154981549816,12704128],[367,99.8154981549816,12704150],[368,99.8154981549816,12704171],[369,99.8154981549816,12704986],[370,99.8154981549816,12704996],[371,99.8154981549816,12705064],[372,99.8154981549816,12705075],[373,99.8175182481752,12705091],[374,99.8175182481752,13179253],[375,99.8175182481752,13179280],[376,99.8175182481752,13179295],[377,99.8175182481752,13179314],[378,99.8175182481752,13179334],[379,99.8175182481752,13179354],[380,99.8175182481752,13179597],[381,99.8198198198198,13179671],[382,99.8198198198198,13179687],[383,99.8161764705882,13179769],[384,99.8161764705882,13185716],[385,99.8161764705882,13187620],[386,99.8161764705882,13189660],[387,99.8161764705882,13189863],[388,99.8161764705882,13189913],[389,100.0,13189983],[390,100.0,13191220],[391,100.0,13192654],[392,100.0,13195121],[393,99.8175182481752,13195207],[394,99.8175182481752,13195228],[395,99.8175182481752,13195239],[396,99.8175182481752,13195249],[397,99.8175182481752,13195262],[398,99.8175182481752,13195272],[399,99.8175182481752,13195288],[400,99.8198198198198,13195311],[401,99.8198198198198,13195324],[402,99.8161764705882,13195340],[403,99.8161764705882,13195352],[404,99.8161764705882,13195364],[405,99.8161764705882,13195390],[406,99.8161764705882,13195418],[407,99.8161764705882,13195432],[408,100.0,13195446],[409,100.0,13195456],[410,100.0,13196007],[411,100.0,13205415],[412,100.0,13205445],[413,100.0,13205463],[414,100.0,13209333],[415,100.0,13235992],[416,100.0,13236054],[417,100.0,13236120],[418,100.0,13392308],[419,100.0,13392432],[420,100.0,13392459],[421,100.0,13446853],[422,100.0,14972360],[423,100.0,14972427],[424,100.0,14972458],[425,100.0,14972783],[426,100.0,14972854],[427,100.0,14972909],[428,100.0,14972949],[429,100.0,14973014],[430,100.0,16368058],[431,100.0,16519348],[432,100.0,16519366],[433,100.0,16519385],[434,100.0,16519402],[435,100.0,16519415],[436,100.0,16519435],[437,100.0,16519448],[438,100.0,16519471],[439,100.0,16519490],[440,100.0,16850007],[441,100.0,16850028],[442,100.0,16886463],[443,100.0,16886533],[444,100.0,16886621],[445,100.0,16887287],[446,100.0,16887330],[447,100.0,16888465],[448,100.0,16888526],[449,100.0,16889032],[450,100.0,16889084],[451,100.0,16890453],[452,100.0,16890743],[453,100.0,16890813],[454,100.0,16973946],[455,100.0,18406942],[456,100.0,18407067],[457,100.0,18407176],[458,100.0,18407257],[459,100.0,18407539],[460,100.0,18407831],[461,100.0,22875864],[462,100.0,22875980],[463,100.0,22876075],[464,100.0,22876162],[465,100.0,22876260],[466,100.0,22876376],[467,100.0,22876577],[468,100.0,22882311],[469,100.0,22882360],[470,100.0,22883484],[471,100.0,22883525],[472,100.0,22883565],[473,100.0,22883600],[474,100.0,22883623],[475,100.0,22883645],[476,100.0,22883697],[477,100.0,22883727],[478,100.0,22883764],[479,100.0,22883788],[480,100.0,22883824],[481,100.0,22883845],[482,100.0,22883897],[483,100.0,22883929],[484,100.0,22884032],[485,100.0,22884064],[486,100.0,22884104],[487,100.0,22884145],[488,100.0,22885152],[489,100.0,22885185],[490,100.0,22885244],[491,100.0,22885284],[492,100.0,22885316],[493,100.0,22885347],[494,100.0,22885377],[495,100.0,22885413],[496,100.0,22924673],[497,100.0,22924685],[498,100.0,22924708],[499,100.0,22985664],[500,100.0,23036299],[501,100.0,23036331],[502,100.0,24209401],[503,100.0,24209448],[504,100.0,24209485],[505,100.0,24209533],[506,100.0,24209570],[507,100.0,24209855],[508,100.0,24209885],[509,100.0,24209926],[510,100.0,24209967],[511,100.0,24210008],[512,100.0,24210035],[513,100.0,28754781],[514,100.0,28754818],[515,100.0,28754837]]'></div>
+<a class='infobox' href='/builds/' onmouseout='$(&#39;.infobox&#39;).hide();' style='display:none;'>
+<span>
+Build:
+<i class='fa fa-arrow-circle-right'></i>
+</span>
+</a>
+</div>
+<div class='coverage-high trend trend-line'>
+<em>
+LAST BUILD BRANCH:
+<span>feature/iso-8859-1/take2</span>
+</em>
+<div class='repo-sparkline repo-default-line' data-branch='check-charset' data-graph-data='[[0,100.0,869526]]'></div>
+</div>
+</div>
+<div class='repo-details'>
+<table>
+<tr>
+<td>
+<div class='show-detail-item'>
+<span>Repo Added</span>
+27 May 2014 06:40PM UTC
+</div>
+</td>
+<td>
+<div class='show-detail-item'>
+<span>Total Files</span>
+1
+</div>
+</td>
+<td>
+<div class='show-detail-item'>
+<span># Builds</span>
+729
+<a class="btn btn-nano" href="/builds/28754837">Last
+<i class="fa fa-arrow-circle-right"></i>
+</a></div>
+</td>
+<td>
+<div class='show-detail-item'>
+<span>Badge</span>
+<div class='repoBadgeBtn'>
+<img src="https://coveralls.io/repos/github/expressjs/body-parser/badge.svg?branch=check-charset" alt="Badge" />
+<a class="btn btn-micro j_popoverButton btn-nano" href="javascript://">Embed ▾</a>
+<div class='popover j_shieldLinks_wr'>
+<h5>
+README BADGES
+<div class='j_popoverClose'>x</div>
+</h5>
+<p>If you need to use a raster PNG badge, change the '.svg' to '.png' in the link</p>
+<div class='j_shieldLinks'>
+<div class='markdown'>
+<h4>Markdown</h4>
+<textarea onclick='this.focus();this.select()' readonly='readonly'>[![Coverage Status](https://coveralls.io/repos/github/expressjs/body-parser/badge.svg?branch=check-charset)](https://coveralls.io/github/expressjs/body-parser?branch=check-charset)</textarea>
+</div>
+<div class='textile'>
+<h4>Textile</h4>
+<textarea onclick='this.focus();this.select()' readonly='readonly'>https://coveralls.io/repos/github/expressjs/body-parser/badge.svg?branch=check-charset(Coverage Status)!:https://coveralls.io/github/expressjs/body-parser?branch=check-charset</textarea>
+</div>
+<div class='rdoc'>
+<h4>RDoc</h4>
+<textarea onclick='this.focus();this.select()' readonly='readonly'>{&lt;img src=&quot;https://coveralls.io/repos/github/expressjs/body-parser/badge.svg?branch=check-charset&quot; alt=&quot;Coverage Status&quot; /&gt;}[https://coveralls.io/github/expressjs/body-parser?branch=check-charset]
+</textarea>
+</div>
+<div class='html'>
+<h4>HTML</h4>
+<textarea onclick='this.focus();this.select()' readonly='readonly'>&lt;a href=&#39;https://coveralls.io/github/expressjs/body-parser?branch=check-charset&#39;&gt;&lt;img src=&#39;https://coveralls.io/repos/github/expressjs/body-parser/badge.svg?branch=check-charset&#39; alt=&#39;Coverage Status&#39; /&gt;&lt;/a&gt;
+</textarea>
+</div>
+<div class='rst'>
+<h4>Rst</h4>
+<textarea onclick='this.focus();this.select()' readonly='readonly'>.. image:: https://coveralls.io/repos/github/expressjs/body-parser/badge.svg?branch=check-charset
+:target: https://coveralls.io/github/expressjs/body-parser?branch=check-charset
+</textarea>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+<div class='show-item repo-build-details'>
+<h3>
+LAST BUILD ON BRANCH
+check-charset
+<div class='repo-build-branch pull-right pop-wr'>
+<a class="btn popover-btn j_popoverButton" href="javascript://"><i class="fa fa-code-fork"></i>
+branch: check-charset
+</a><div class='popover popover-branches'>
+<h5>
+CHANGE BRANCH
+<div class='j_popoverClose'>x</div>
+</h5>
+<div class='branch-search'>
+<input id='branchSearch' placeholder='Search branches' type='text'>
+</div>
+<div class='branch-reset'>
+<div>
+<a href="/github/expressjs/body-parser"><i class="fa fa-check-circle"></i>
+Reset
+</a></div>
+</div>
+<ul class='popover-link-list' id='branchSearch-results'>
+<li>
+<div class='popover-link-list-current'>
+<i class="fa fa-check-circle-o"></i>
+check-charset
+</div>
+</li>
+<li class='opt' data-name='master'>
+<a href="/github/expressjs/body-parser?branch=master"><i class="fa fa-circle-o"></i>
+master
+</a></li>
+<li class='opt' data-name='1.3.0'>
+<a href="/github/expressjs/body-parser?branch=1.3.0"><i class="fa fa-circle-o"></i>
+1.3.0
+</a></li>
+<li class='opt' data-name='1.3.1'>
+<a href="/github/expressjs/body-parser?branch=1.3.1"><i class="fa fa-circle-o"></i>
+1.3.1
+</a></li>
+<li class='opt' data-name='1.4.0'>
+<a href="/github/expressjs/body-parser?branch=1.4.0"><i class="fa fa-circle-o"></i>
+1.4.0
+</a></li>
+<li class='opt' data-name='1.4.1'>
+<a href="/github/expressjs/body-parser?branch=1.4.1"><i class="fa fa-circle-o"></i>
+1.4.1
+</a></li>
+<li class='opt' data-name='1.4.2'>
+<a href="/github/expressjs/body-parser?branch=1.4.2"><i class="fa fa-circle-o"></i>
+1.4.2
+</a></li>
+<li class='opt' data-name='1.4.3'>
+<a href="/github/expressjs/body-parser?branch=1.4.3"><i class="fa fa-circle-o"></i>
+1.4.3
+</a></li>
+<li class='opt' data-name='1.5.0'>
+<a href="/github/expressjs/body-parser?branch=1.5.0"><i class="fa fa-circle-o"></i>
+1.5.0
+</a></li>
+<li class='opt' data-name='1.5.1'>
+<a href="/github/expressjs/body-parser?branch=1.5.1"><i class="fa fa-circle-o"></i>
+1.5.1
+</a></li>
+<li class='opt' data-name='1.5.2'>
+<a href="/github/expressjs/body-parser?branch=1.5.2"><i class="fa fa-circle-o"></i>
+1.5.2
+</a></li>
+<li class='opt' data-name='1.6.0'>
+<a href="/github/expressjs/body-parser?branch=1.6.0"><i class="fa fa-circle-o"></i>
+1.6.0
+</a></li>
+<li class='opt' data-name='1.6.1'>
+<a href="/github/expressjs/body-parser?branch=1.6.1"><i class="fa fa-circle-o"></i>
+1.6.1
+</a></li>
+<li class='opt' data-name='1.6.2'>
+<a href="/github/expressjs/body-parser?branch=1.6.2"><i class="fa fa-circle-o"></i>
+1.6.2
+</a></li>
+<li class='opt' data-name='1.6.3'>
+<a href="/github/expressjs/body-parser?branch=1.6.3"><i class="fa fa-circle-o"></i>
+1.6.3
+</a></li>
+<li class='opt' data-name='1.6.4'>
+<a href="/github/expressjs/body-parser?branch=1.6.4"><i class="fa fa-circle-o"></i>
+1.6.4
+</a></li>
+<li class='opt' data-name='1.6.5'>
+<a href="/github/expressjs/body-parser?branch=1.6.5"><i class="fa fa-circle-o"></i>
+1.6.5
+</a></li>
+<li class='opt' data-name='1.6.6'>
+<a href="/github/expressjs/body-parser?branch=1.6.6"><i class="fa fa-circle-o"></i>
+1.6.6
+</a></li>
+<li class='opt' data-name='1.6.7'>
+<a href="/github/expressjs/body-parser?branch=1.6.7"><i class="fa fa-circle-o"></i>
+1.6.7
+</a></li>
+<li class='opt' data-name='1.7.0'>
+<a href="/github/expressjs/body-parser?branch=1.7.0"><i class="fa fa-circle-o"></i>
+1.7.0
+</a></li>
+<li class='opt' data-name='1.8.0'>
+<a href="/github/expressjs/body-parser?branch=1.8.0"><i class="fa fa-circle-o"></i>
+1.8.0
+</a></li>
+<li class='opt' data-name='1.8.1'>
+<a href="/github/expressjs/body-parser?branch=1.8.1"><i class="fa fa-circle-o"></i>
+1.8.1
+</a></li>
+<li class='opt' data-name='1.8.2'>
+<a href="/github/expressjs/body-parser?branch=1.8.2"><i class="fa fa-circle-o"></i>
+1.8.2
+</a></li>
+<li class='opt' data-name='2.x'>
+<a href="/github/expressjs/body-parser?branch=2.x"><i class="fa fa-circle-o"></i>
+2.x
+</a></li>
+<li class='opt' data-name='1.8.3'>
+<a href="/github/expressjs/body-parser?branch=1.8.3"><i class="fa fa-circle-o"></i>
+1.8.3
+</a></li>
+<li class='opt' data-name='1.8.4'>
+<a href="/github/expressjs/body-parser?branch=1.8.4"><i class="fa fa-circle-o"></i>
+1.8.4
+</a></li>
+<li class='opt' data-name='1.9.0'>
+<a href="/github/expressjs/body-parser?branch=1.9.0"><i class="fa fa-circle-o"></i>
+1.9.0
+</a></li>
+<li class='opt' data-name='1.9.1'>
+<a href="/github/expressjs/body-parser?branch=1.9.1"><i class="fa fa-circle-o"></i>
+1.9.1
+</a></li>
+<li class='opt' data-name='1.9.2'>
+<a href="/github/expressjs/body-parser?branch=1.9.2"><i class="fa fa-circle-o"></i>
+1.9.2
+</a></li>
+<li class='opt' data-name='1.9.3'>
+<a href="/github/expressjs/body-parser?branch=1.9.3"><i class="fa fa-circle-o"></i>
+1.9.3
+</a></li>
+<li class='opt' data-name='1.10.0'>
+<a href="/github/expressjs/body-parser?branch=1.10.0"><i class="fa fa-circle-o"></i>
+1.10.0
+</a></li>
+<li class='opt' data-name='1.10.1'>
+<a href="/github/expressjs/body-parser?branch=1.10.1"><i class="fa fa-circle-o"></i>
+1.10.1
+</a></li>
+<li class='opt' data-name='1.10.2'>
+<a href="/github/expressjs/body-parser?branch=1.10.2"><i class="fa fa-circle-o"></i>
+1.10.2
+</a></li>
+<li class='opt' data-name='1.11.0'>
+<a href="/github/expressjs/body-parser?branch=1.11.0"><i class="fa fa-circle-o"></i>
+1.11.0
+</a></li>
+<li class='opt' data-name='1.12.0'>
+<a href="/github/expressjs/body-parser?branch=1.12.0"><i class="fa fa-circle-o"></i>
+1.12.0
+</a></li>
+<li class='opt' data-name='1.12.1'>
+<a href="/github/expressjs/body-parser?branch=1.12.1"><i class="fa fa-circle-o"></i>
+1.12.1
+</a></li>
+<li class='opt' data-name='1.12.2'>
+<a href="/github/expressjs/body-parser?branch=1.12.2"><i class="fa fa-circle-o"></i>
+1.12.2
+</a></li>
+<li class='opt' data-name='1.12.3'>
+<a href="/github/expressjs/body-parser?branch=1.12.3"><i class="fa fa-circle-o"></i>
+1.12.3
+</a></li>
+<li class='opt' data-name='1.12.4'>
+<a href="/github/expressjs/body-parser?branch=1.12.4"><i class="fa fa-circle-o"></i>
+1.12.4
+</a></li>
+<li class='opt' data-name='1.13.0'>
+<a href="/github/expressjs/body-parser?branch=1.13.0"><i class="fa fa-circle-o"></i>
+1.13.0
+</a></li>
+<li class='opt' data-name='1.13.1'>
+<a href="/github/expressjs/body-parser?branch=1.13.1"><i class="fa fa-circle-o"></i>
+1.13.1
+</a></li>
+<li class='opt' data-name='1.13.2'>
+<a href="/github/expressjs/body-parser?branch=1.13.2"><i class="fa fa-circle-o"></i>
+1.13.2
+</a></li>
+<li class='opt' data-name='1.13.3'>
+<a href="/github/expressjs/body-parser?branch=1.13.3"><i class="fa fa-circle-o"></i>
+1.13.3
+</a></li>
+<li class='opt' data-name='mocha_test'>
+<a href="/github/expressjs/body-parser?branch=mocha_test"><i class="fa fa-circle-o"></i>
+mocha_test
+</a></li>
+<li class='opt' data-name='1.14.0'>
+<a href="/github/expressjs/body-parser?branch=1.14.0"><i class="fa fa-circle-o"></i>
+1.14.0
+</a></li>
+<li class='opt' data-name='1.14.1'>
+<a href="/github/expressjs/body-parser?branch=1.14.1"><i class="fa fa-circle-o"></i>
+1.14.1
+</a></li>
+<li class='opt' data-name='1.14.2'>
+<a href="/github/expressjs/body-parser?branch=1.14.2"><i class="fa fa-circle-o"></i>
+1.14.2
+</a></li>
+<li class='opt' data-name='2.x-refactor'>
+<a href="/github/expressjs/body-parser?branch=2.x-refactor"><i class="fa fa-circle-o"></i>
+2.x-refactor
+</a></li>
+<li class='opt' data-name='1.15.0'>
+<a href="/github/expressjs/body-parser?branch=1.15.0"><i class="fa fa-circle-o"></i>
+1.15.0
+</a></li>
+<li class='opt' data-name='1.15.1'>
+<a href="/github/expressjs/body-parser?branch=1.15.1"><i class="fa fa-circle-o"></i>
+1.15.1
+</a></li>
+<li class='opt' data-name='1.15.2'>
+<a href="/github/expressjs/body-parser?branch=1.15.2"><i class="fa fa-circle-o"></i>
+1.15.2
+</a></li>
+<li class='opt' data-name='1.16.0'>
+<a href="/github/expressjs/body-parser?branch=1.16.0"><i class="fa fa-circle-o"></i>
+1.16.0
+</a></li>
+<li class='opt' data-name='1.16.1'>
+<a href="/github/expressjs/body-parser?branch=1.16.1"><i class="fa fa-circle-o"></i>
+1.16.1
+</a></li>
+<li class='opt' data-name=''>
+<a href="/github/expressjs/body-parser?branch="><i class="fa fa-circle-o"></i>
+
+</a></li>
+<li class='opt' data-name='1.17.1'>
+<a href="/github/expressjs/body-parser?branch=1.17.1"><i class="fa fa-circle-o"></i>
+1.17.1
+</a></li>
+<li class='opt' data-name='1.17.2'>
+<a href="/github/expressjs/body-parser?branch=1.17.2"><i class="fa fa-circle-o"></i>
+1.17.2
+</a></li>
+<li class='opt' data-name='type'>
+<a href="/github/expressjs/body-parser?branch=type"><i class="fa fa-circle-o"></i>
+type
+</a></li>
+<li class='opt' data-name='1.18.0'>
+<a href="/github/expressjs/body-parser?branch=1.18.0"><i class="fa fa-circle-o"></i>
+1.18.0
+</a></li>
+<li class='opt' data-name='1.18.1'>
+<a href="/github/expressjs/body-parser?branch=1.18.1"><i class="fa fa-circle-o"></i>
+1.18.1
+</a></li>
+<li class='opt' data-name='1.18.2'>
+<a href="/github/expressjs/body-parser?branch=1.18.2"><i class="fa fa-circle-o"></i>
+1.18.2
+</a></li>
+<li class='opt' data-name='1.18.3'>
+<a href="/github/expressjs/body-parser?branch=1.18.3"><i class="fa fa-circle-o"></i>
+1.18.3
+</a></li>
+<li class='opt' data-name='1.19.0'>
+<a href="/github/expressjs/body-parser?branch=1.19.0"><i class="fa fa-circle-o"></i>
+1.19.0
+</a></li>
+<li class='opt' data-name='urlencoded-qs-simple'>
+<a href="/github/expressjs/body-parser?branch=urlencoded-qs-simple"><i class="fa fa-circle-o"></i>
+urlencoded-qs-simple
+</a></li>
+</ul>
+</div>
+</div>
+</h3>
+<div class='coverage-unknown' id='runInfo'>
+<label>Committed</label>
+15 Jun 2014 - 17:09
+<span class="">First build on check-charset at 100.0%</span>
+</div>
+<div class='coverage-unknown table' id='runCommit'>
+<div class='tr'>
+<div class='td runCommit-build-number'>
+<label>Build #</label>
+<a class="btn btn-micro" href="/builds/869526">102
+</a></div>
+<div class='td'>
+<label>Build Type</label>
+<p>push</p>
+<p>travis-ci</p>
+</div>
+<div class='td'>
+<label>Committed by</label>
+<a class="committer" href="https://github.com/dougwilson"><img src="https://secure.gravatar.com/avatar/c4b64c6e47d970bb0d07a2b9d559be9b?size=18&amp;default=identicon" alt="C4b64c6e47d970bb0d07a2b9d559be9b?size=18&amp;default=identicon" />dougwilson</a>
+</div>
+<div class='td'>
+<label>Commit Message</label>
+<pre><a href="https://github.com/expressjs/body-parser/commit/ce8d6b3a9b8cdaafc00de0879e80d71630f13574">WIP: check charset in content-type</a></pre>
+</div>
+<div class='td'>
+<label>Run Details</label>
+<p>
+<strong>123</strong>
+of
+<strong>123</strong>
+relevant lines covered
+<strong>(100.0%)</strong>
+</p>
+<p>
+<strong>59.59</strong>
+hits per line
+</p>
+</div>
+</div>
+</div>
+
+</div>
+<div class='show-item show-last-build-detail'>
+<h5>Relevant lines Covered</h5>
+<div class='show-trend repoOverview'><div class='trend relevant-total'>
+<div class='relevant-trend-count'>
+<em class='count-relevant'>
+<span>123</span>
+RELEVANT LINES
+</em>
+<em class='count-covered'>
+<span>123</span>
+COVERED LINES
+</em>
+</div>
+<div class='repo-sparkline sparkline-relevent sparkline-no-circles' data-branch='check-charset' data-graph-data='[[0,123,123]]'></div>
+<a class='infobox' href='/builds/' onmouseout='$(&#39;.infobox&#39;).hide();' style='display:none;'>
+<span>
+Build:
+<i class='fa fa-arrow-circle-right'></i>
+</span>
+</a>
+</div>
+<div class='trend relevant-covered'>
+<em>
+<span>59.59</span>
+HITS PER LINE
+</em>
+<div class='repo-sparkline sparkline-relevent' data-branch='check-charset' data-graph-data='[[0,59.59,869526]]'></div>
+</div>
+</div>
+</div>
+<div class='show-item show-last-build-detail'>
+<h5>
+Source Files on
+check-charset
+</h5>
+<div class='groupable'>
+<ul class='nav nav-tabs groupable-controls'>
+<li>
+<a data-sort-class="all" name="filesAll" class="sortableTh sortAll active" href="/github/expressjs/body-parser">List
+<strong>1</strong>
+</a></li>
+<li>
+<a data-sort-class="changed" class="sortableTh sortChanged" href="/github/expressjs/body-parser">Changed
+<strong>0</strong>
+</a></li>
+<li>
+<a data-sort-class="source-changed" class="sortableTh sortSourceChanged" href="/github/expressjs/body-parser">Source Changed
+<strong>0</strong>
+</a></li>
+<li>
+<a data-sort-class="coverage-changed" class="sortableTh sortCovChanged" href="/github/expressjs/body-parser">Coverage Changed
+<strong>0</strong>
+</a></li>
+</ul>
+<div id='source-files-datatable' style='display:'>
+<table class='datatable groupable-table' data-ajax-source-filter='filter=all' data-ajax-source='/builds/869526/source_files.js'>
+<thead>
+<tr>
+<th>Coverage</th>
+<th>∆</th>
+<th>File</th>
+<th>Lines</th>
+<th>Relevant</th>
+<th>Covered</th>
+<th>Missed</th>
+<th>Hits/Line</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+<div class='clear'></div>
+</div>
+
+</div>
+<div class='show-item'>
+<h3>Recent Builds</h3>
+<table>
+<thead>
+<tr>
+<th>Builds</th>
+<th>Branch</th>
+<th>Coverage</th>
+<th>Commit</th>
+<th>Committer</th>
+<th>Type</th>
+<th>Time</th>
+<th>Via</th>
+</tr>
+</thead>
+<tr>
+<td>
+<a class="btn btn-micro" href="/builds/869526">102
+</a></td>
+<td>
+<strong><a href="https://github.com/expressjs/body-parser/tree/check-charset">check-charset</a></strong>
+</td>
+<td>
+<div class='changeBadge'><i class="fa fa-plus-circle"></i><div class='changed coverage-high'>
+100.0</div></div>
+
+</td>
+<td class='break-column'><span><a href="/builds/869526">WIP: check charset in content-type</a></span></td>
+<td><a class="committer" href="https://github.com/dougwilson"><img src="https://secure.gravatar.com/avatar/c4b64c6e47d970bb0d07a2b9d559be9b?size=18&amp;default=identicon" alt="C4b64c6e47d970bb0d07a2b9d559be9b?size=18&amp;default=identicon" />dougwilson</a></td>
+<td>
+push
+</td>
+<td>15 Jun 2014 05:11PM UTC</td>
+<td>travis-ci</td>
+</tr>
+</table>
+<div class='repo-show-all-builds'>
+<a class="btn" href="/repos/23191/builds">See All Builds (729)
+</a></div>
+</div>
+
+
+</div>
+
+<div class='clear'></div>
+</div>
+<div class='sidebar'>
+<div class='sidebar-item'>
+<ul>
+<li>
+<a target="_blank" href="https://github.com/expressjs/body-parser/tree/check-charset"><i class="fa fa-external-link-square"></i>
+Repo on GitHub
+</a></li>
+</ul>
+</div>
+
+</div>
+
+</div>
+</div>
+<footer class='' id='footer'>
+<div class='wrapper'>
+<a href="http://docs.coveralls.io/troubleshooting">Troubleshooting</a>
+&middot;
+<a href="https://github.com/lemurheavy/coveralls-public/issues">Open an Issue</a>
+&middot;
+<a rel="nofollow" href="mailto:sales@coveralls.io">Sales</a>
+&middot;
+<a rel="nofollow" href="mailto:support@coveralls.io">Support</a>
+&middot;
+<a href="https://enterprise.coveralls.io">ENTERPRISE</a>
+&middot;
+<a href="/careers">CAREERS</a>
+&middot;
+<a target="_blank" href="http://status.coveralls.io">STATUS</a>
+<br>
+<span>
+<a target="_blank" href="http://blog.coveralls.io/">BLOG</a>
+&middot;
+<a target="_blank" href="https://twitter.com/CoverallsApp">TWITTER</a>
+&middot;
+<a href="/legal">Legal &amp; Privacy</a>
+&middot;
+<a href="/supported-continuous-integration">Supported CI Services</a>
+&middot;
+<a href="/continuous-integration">What&#39;s a CI service?</a>
+&middot;
+<a href="/code-coverage">Automated Testing</a>
+</span>
+<p>
+&copy; 2020 Coveralls, LLC
+</p>
+</div>
+</footer>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-36781555-1', 'auto');
+  ga('send', 'pageview');
+  
+  ga('require', 'ecommerce');
+</script>
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0062/3179.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+
+</body>
+</html>
