@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="hasSidebar hasPageActions hasBreadcrumb conceptual has-default-focus theme-light" lang="en-us" dir="ltr" data-css-variable-support="true" data-authenticated="false" data-auth-status-determined="false" data-target="docs" x-ms-format-detection="none">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta property="og:title" content="HockeySDK for iOS Migration - Visual Studio App Center" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.microsoft.com/en-us/appcenter/transition/ios-sdk-migration" />
+			<meta property="og:description" content="Migrate from the HockeySDK to App Center SDK for iOS" />
+		<meta property="og:image" content="https://docs.microsoft.com/en-us/media/logos/logo-ms-social.png" />
+		<meta property="og:image:alt" content="Microsoft Logo" />
+
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@docsmsft" />
+
+
+	<meta name="audience" content="developer" />
+<meta name="manager" content="amburns" />
+<meta name="breadcrumb_path" content="../_breadcrumb/toc.json" />
+<meta name="ms.topic" content="article" />
+<meta name="ms.service" content="vs-appcenter" />
+<meta name="ms.subservice" content="app-center-transition" />
+<meta name="uhfHeaderId" content="MSDocsHeader-AppCenter" />
+<meta name="ms.tgt_pltfrm" content="ios" />
+<meta name="ms.assetid" content="7c93b0de-5900-432c-9f15-5f9d2a51187d" />
+<meta name="author" content="elamalani" />
+<meta name="description" content="Migrate from the HockeySDK to App Center SDK for iOS" />
+<meta name="ms.author" content="emalani" />
+<meta name="ms.date" content="01/27/2020" />
+<meta name="search.ms_sitename" content="Docs" />
+<meta name="search.ms_docsetname" content="vs-appcenter" />
+<meta name="locale" content="en-us" />
+<meta name="site_name" content="Docs" />
+<meta name="search.ms_product" content="MSDN" />
+<meta name="depot_name" content="MSDN.vs-appcenter" />
+<meta name="updated_at" content="2020-02-20 10:31 PM" />
+<meta name="gitcommit" content="https://github.com/MicrosoftDocs/appcenter-docs-pr/blob/23cbab98d0acd770b6ea09ef3c71e3ef3c00bb9b/docs/transition/ios-sdk-migration.md" />
+<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/appcenter-docs-pr/blob/live/docs/transition/ios-sdk-migration.md" />
+<meta name="document_id" content="6362c446-67f5-9ea3-d78d-082c5457b043" />
+<meta name="document_version_independent_id" content="1f6189e7-d06b-c41b-6c4f-1a16aa9f1097" />
+<meta name="page_type" content="conceptual" />
+<meta name="toc_rel" content="../TOC.json" />
+<meta name="pdf_url_template" content="https://docs.microsoft.com/pdfstore/en-us/MSDN.vs-appcenter/{branchName}{pdfName}" />
+<meta name="search.mshattr.devlang" content="swift objc" />
+<meta name="word_count" content="1068" />
+
+
+	<meta name="scope" content="App Center" />
+<link href="https://docs.microsoft.com/en-us/appcenter/transition/ios-sdk-migration" rel="canonical">
+	<title>HockeySDK for iOS Migration - Visual Studio App Center | Microsoft Docs</title>
+
+		<link rel="stylesheet" href="/_themes/docs.theme/master/sv-se/_themes/styles/7472df92.site-ltr.css ">
+
+	<link rel="stylesheet" href="/_themes/docs.theme/master/sv-se/_themes/styles/672b4bb0.conceptual.css ">
+
+
+	<script>
+	var msDocs = {
+		data: {
+			timeOrigin: Date.now(),
+			azureHeaderLocale: 'sv-se',
+			contentLocale: 'en-us',
+			contentDir: 'ltr',
+			userLocale: 'sv-se',
+			userDir: 'ltr',
+			pageTemplate: 'Conceptual',
+			brand: '',
+			context: {
+
+			
+				moniker_type: 'none',
+			},
+			hasBinaryRating: true,
+			hasGithubIssues: true,
+			showFeedbackReport: false,
+			enableTutorialFeedback: false,
+			feedbackSystem: 'GitHub',
+			feedbackGitHubRepo: 'MicrosoftDocs/appcenter-docs',
+			feedbackProductUrl: 'https://intercom.help/appcenter/getting-started/getting-help-with-app-center',
+			contentGitUrl: 'https://github.com/MicrosoftDocs/appcenter-docs/blob/live/docs/transition/ios-sdk-migration.md',
+			extendBreadcrumb: true,
+		},
+		functions:{}
+	};
+	if (!('Promise' in window && 'resolve' in window.Promise && 'reject' in window.Promise && 'all' in window.Promise && 'race' in window.Promise)) {
+		document.write('<script src="https://static.docs.com/ui/third-party/bluebird/3.5.0/bluebird.min.js" integrity="sha384-aD4BDeDGeLXLpPK4yKeqtZQa9dv4a/7mQ+4L5vwshIYH1Mc2BrXvHd32iHzYCQy5" crossorigin="anonymous"><\/script>');
+	}
+	if (typeof fetch !== 'function') {
+		document.write('<script src="https://static.docs.com/ui/third-party/fetch/3.0.0/fetch.umd.min.js" integrity="sha384-EQIXrC5K2+7X8nGgLkB995I0/6jfAvvyG1ieZ+WYGxgJHFMD/alsG9fSDWvzb5Y1" crossorigin="anonymous"><\/script>');
+	}
+	if (typeof HTMLTemplateElement === 'undefined') {
+		document.write('<script src="https://static.docs.com/ui/third-party/template/1.4.0/template.min.js" integrity="sha384-1zKzI6ldTVHMU7n0W2HpE/lhHI+UG4D9IIaxbj3kT2UhCWicdTuJkTtnKuu0CQzN" crossorigin="anonymous"><\/script>');
+	}
+	if (typeof URL !== 'function') {
+		document.write('<script src="https://static.docs.com/ui/third-party/url/0.5.7/url.min.js" integrity="sha384-vn7xBMtpSTfzaTRWxj0kVq0UcsbBrTOgZ/M1ISHqe1V358elYva+lfiEC+T8jLPc" crossorigin="anonymous"><\/script>');
+	}
+	</script>
+
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+		<script src="/_themes/docs.theme/master/sv-se/_themes/scripts/f1cbca6e.index-docs.js"></script>
+
+</head>
+
+<body lang="sv-se" dir="ltr">
+<div class="header-holder has-default-focus">
+	<a href="#main" class="skip-to-main-link visually-hidden-until-focused is-fixed has-inner-focus focus-visible has-top-zero has-left-zero has-right-zero has-padding-medium has-text-centered has-body-background-medium" tabindex="1">Hoppa till huvudinnehåll</a>
+		<div id="headerAreaHolder" data-bi-name="header">
+<header role="banner" itemscope="itemscope" itemtype="http://schema.org/Organization">
+	<div class="nav-bar">
+		<button class="nav-bar-burger" aria-label="Global navigering" aria-controls="nav-bar-mobile-nav" aria-expanded="false">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<nav class="nav-bar-mobile-nav" role="navigation" id="nav-bar-mobile-nav" aria-label="Global" hidden="">
+		</nav>
+		<a class="nav-bar-button" itemprop="url" href="https://www.microsoft.com" aria-label="Microsoft">
+			<div class="nav-bar-logo has-background-image theme-display is-light" role="presentation" aria-hidden="true" itemprop="logo" itemscope="itemscope"></div>
+			<div class="nav-bar-logo has-background-image theme-display is-dark is-high-contrast" role="presentation" aria-hidden="true" itemprop="logo" itemscope="itemscope"></div>
+		</a>
+		<nav class="nav-bar-nav" role="navigation" aria-label="Global">
+		</nav>
+		<span class="nav-bar-spacer"></span>
+		<div class="nav-bar-item is-invisible"> <!-- For Forums mobile layout rendering -->
+			<button id="form-expander" class="nav-bar-button has-hover-underline has-margin-left-extra-small"></button>
+		</div>
+	</div>
+</header>		</div>
+		<div class="content-header uhf-container has-padding has-default-focus" data-bi-name="content-header">
+			<nav class="has-padding-none-mobile has-flex-grow" data-bi-name="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList" role="navigation" aria-label="Adressfält">
+				<ul id="page-breadcrumbs" class="breadcrumbs">
+				</ul>
+			</nav>
+		<div class="content-header-controls">
+			<button type="button" class="contents-button button" data-bi-name="contents-expand" aria-haspopup="true">
+				<span class="icon"><span class="docon docon-menu" aria-hidden="true"></span></span>
+				<span>Innehåll</span>
+			</button>
+		</div>
+		<div class="content-header-controls exit-focus">
+			<button type="button" class="ap-collapse-behavior ap-expanded button" data-bi-name="ap-collapse" aria-controls="action-panel">
+				<span class="icon"><span class="docon docon-exit-mode" aria-hidden="true"></span></span>
+				<span>Avsluta fokusläge</span>
+			</button>
+		</div>
+		<div class="is-size-7 is-flex-touch has-flex-justify-content-space-between-touch has-flex-grow has-padding-none has-padding-none-mobile">
+			<ul class="action-list has-flex-justify-content-start has-flex-justify-content-end-tablet is-flex is-flex-row has-flex-wrap has-flex-grow is-unstyled">
+				<li>
+<div class="language dropdown has-caret">
+	<button class="dropdown-trigger button is-text is-small" aria-controls="language-menu" aria-expanded="false" title="Språk" data-bi-name="language">
+		<span class="icon is-hidden-desktop has-margin-none">
+			<span class="docon docon-code-lang" aria-hidden="true"></span>
+		</span>
+		<span id="lang-title" class="is-visually-hidden-touch has-flex-align-self-start is-hidden-portrait" dir="ltr">Språk</span>
+		<span class="icon is-hidden-mobile is-hidden-tablet-only" aria-hidden="true">
+			<span class="docon docon-chevron-down-light expanded-indicator"></span>
+		</span>
+	</button>
+	<div class="dropdown-menu has-padding-small" name="language-selector" id="language-selector" role="menu">
+		<ul data-bi-name="language-links" dir="ltr">
+			<li>
+				<a class="button is-text is-small is-fullwidth" data-bi-name="lang-swift" tabindex="0" aria-selected="false"></a>
+			</li>
+			<li>
+				<a class="button is-text is-small is-fullwidth" data-bi-name="lang-objc" tabindex="0" aria-selected="false"></a>
+			</li>
+		</ul>
+	</div>
+</div>				</li>
+				<li>
+					<button type="button" class="bookmark button is-text has-inner-focus is-small is-icon-only-touch" data-list-type="bookmarks" data-bi-name="bookmark" title="Bokmärk den här sidan">
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-single-bookmark"></span>
+						</span>
+						<span class="bookmark-status is-visually-hidden-touch is-hidden-portrait">Bokmärke</span>
+					</button>
+				</li>
+					<li>
+						<a href="#feedback" class="button is-text has-inner-focus is-small is-icon-only-touch" data-bi-name="comments" title="Skicka feedback om den här sidan">
+							<span class="icon">
+								<span class="docon docon-comment-lines" aria-hidden="true"></span>
+							</span>
+							<span class="is-visually-hidden-touch is-hidden-portrait">Feedback</span>
+						</a>
+					</li>
+							<li id="contenteditbtn">
+									<a href="https://github.com/MicrosoftDocs/appcenter-docs/blob/live/docs/transition/ios-sdk-migration.md" class="button is-text has-inner-focus is-icon-only-touch is-small" title="Redigera det här dokumentet" data-bi-name="edit" data-original_content_git_url="https://github.com/MicrosoftDocs/appcenter-docs-pr/blob/live/docs/transition/ios-sdk-migration.md" data-original_content_git_url_template="" data-pr_repo="" data-pr_branch="">
+									<span class="icon">
+										<span class="docon docon-edit-outline" aria-hidden="true"></span>
+									</span>
+									<span class="is-visually-hidden-touch is-hidden-portrait">Redigera</span>
+								</a>
+							</li>
+				<li>
+<div class="sharing dropdown has-caret">
+	<button class="dropdown-trigger button is-text is-fullwidth has-flex-justify-content-start has-inner-focus is-small is-icon-only-touch" aria-controls="sharing-menu" aria-expanded="false" title="Dela det här dokumentet" data-bi-name="share">
+		<span class="icon" aria-hidden="true">
+			<span class="docon docon-sharing"></span>
+		</span>
+		<span class="is-visually-hidden-touch is-hidden-portrait">Dela</span>
+	</button>
+	<div class="dropdown-menu has-padding-small" id="sharing-menu">
+		<ul data-bi-name="share-links">
+			<li>
+				<a class="button is-text is-fullwidth has-flex-justify-content-start has-inner-focus is-small share-twitter" data-bi-name="twitter">
+					<span class="icon">
+						<span class="docon docon-brand-twitter has-text-primary" aria-hidden="true"></span>
+					</span>
+					<span>Twitter</span>
+				</a>
+			</li>
+			<li>
+				<a class="button is-text is-fullwidth has-flex-justify-content-start has-inner-focus is-small share-linkedin" data-bi-name="linkedin">
+					<span class="icon">
+						<span class="docon docon-brand-linkedin has-text-primary" aria-hidden="true"></span>
+					</span>
+					<span>LinkedIn</span>
+				</a>
+			</li>
+			<li>
+				<a class="button is-text is-fullwidth has-flex-justify-content-start has-inner-focus is-small share-facebook" data-bi-name="facebook">
+					<span class="icon">
+						<span class="docon docon-brand-facebook has-text-primary" aria-hidden="true"></span>
+					</span>
+					<span>Facebook</span>
+				</a>
+			</li>
+			<li>
+				<a class="button is-text is-fullwidth has-flex-justify-content-start has-inner-focus is-small share-email" data-bi-name="email">
+					<span class="icon">
+						<span class="docon docon-mail-message-fill has-text-primary" aria-hidden="true"></span>
+					</span>
+					<span>E-post</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>				</li>
+				<li>
+<div class="dropdown has-caret">
+	<button class="dropdown-trigger button is-text is-small is-icon-only-touch has-inner-focus"
+		aria-controls="theme-menu" aria-expanded="false" title="Tema" data-bi-name="theme">
+		<span class="icon">
+			<span class="docon docon-sun" aria-hidden="true"></span>
+		</span>
+		<span class="is-visually-hidden-touch is-hidden-portrait">Tema</span>
+	</button>
+	<div class="dropdown-menu" id="theme-menu" role="menu">
+		<ul class="theme-selector has-padding-small">
+			<li class="theme is-block">
+				<button class="button is-text is-small theme-control is-fullwidth has-flex-justify-content-start"
+					data-theme-to="light">
+					<span class="theme-light has-margin-right-small">
+						<span
+							class="theme-selector-icon css-variable-support has-border is-inline-block has-body-background"
+							aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background" />
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+							</svg>
+						</span>
+					</span>
+					<span role="menuitem">
+Ljus					</span>
+				</button>
+			</li>
+			<li class="theme is-block">
+				<button class="button is-text is-small theme-control is-fullwidth has-flex-justify-content-start"
+					data-theme-to="dark">
+					<span class="theme-dark has-margin-right-small">
+						<span
+							class="has-border theme-selector-icon css-variable-support is-inline-block has-body-background"
+							aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background" />
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+							</svg>
+						</span>
+					</span>
+					<span role="menuitem">
+Mörk					</span>
+				</button>
+			</li>
+			<li class="theme is-block">
+				<button class="button is-text is-small theme-control is-fullwidth has-flex-justify-content-start"
+					data-theme-to="high-contrast">
+					<span class="theme-high-contrast has-margin-right-small">
+						<span
+							class="has-border theme-selector-icon css-variable-support is-inline-block has-body-background"
+							aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background" />
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+							</svg>
+						</span>
+					</span>
+					<span role="menuitem">
+Högkontrast					</span>
+				</button>
+			</li>
+		</ul>
+	</div>
+</div>				</li>
+				<li id="docs-sign-in-container-item">
+					<a class="docs-sign-in auth-status-determined not-authenticated button is-text has-inner-focus has-text-primary is-small" href="#">Logga in</a>
+					<div class="dropdown has-caret auth-status-determined authenticated">
+						<button class="dropdown-trigger button is-text has-inner-focus is-small is-icon-only-touch has-inner-focus" aria-label="Ditt konto" aria-controls="user-menu" aria-expanded="false">
+							<span class="icon" aria-hidden="true">
+								<span class="image">
+									<img class="has-body-background-medium is-rounded" data-profile-property="avatarThumbnailUrl">
+								</span>
+							</span>
+							<span class="is-inline-truncated has-margin-left-small" data-profile-property="userName"></span>
+						</button>
+						<div class="dropdown-menu box" id="user-menu" role="menu">
+							<div class="media is-user-dir">
+								<div class="media-left">
+									<span class="image is-64x64" aria-hidden="true">
+										<img class="has-body-background-medium is-rounded" data-profile-property="avatarUrl">
+									</span>
+								</div>
+								<div class="media-content">
+									<p class="title">
+										<span class="is-inline-truncated has-max-width-200" data-profile-property="userName"></span>
+									</p>
+									<p class="subtitle has-margin-bottom-none">
+										<span class="is-inline-truncated has-max-width-200" data-profile-property="upn"></span>
+									</p>
+									<ul class="is-unstyled has-margin-none has-margin-top-small">
+										<li><a href="/profile" data-profile-property="profileUrl">Profil</a></li>
+										<li><a href="/profile" data-profile-property="bookmarksUrl">Bokmärken</a></li>
+										<li><a href="/profile" data-profile-property="collectionsUrl">Samlingar</a></li>
+										<li><a class="docs-sign-out" href="#">Logga ut</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<button type="button" class="contents-button button is-small is-text is-hidden-tablet has-inner-focus is-hidden-tablet" aria-label="Innehåll" data-bi-name="contents-expand-">
+				<span class="icon">
+					<span class="docon docon-editor-list-bullet" aria-hidden="true"></span>
+				</span>
+				<span>Contents</span>
+			</button>
+		</div>
+	</div>
+
+	<div id="banner-holder" class="has-default-focus has-overflow-hidden">
+	</div>
+
+	<div id="disclaimer-holder" class="has-overflow-hidden has-default-focus"></div>
+	</div>
+
+	<div class="mainContainer  uhf-container has-top-padding  has-default-focus" data-bi-name="body">
+
+		<div class="columns has-large-gaps is-gapless-mobile ">
+
+			<div id="left-container" class="left-container is-hidden-mobile column is-one-third-tablet is-one-quarter-desktop">
+				<nav id="affixed-left-container" class="is-fixed is-flex is-flex-column" role="navigation" aria-label="Primär"></nav>
+			</div>
+
+			<section class="primary-holder column is-two-thirds-tablet is-three-quarters-desktop">
+				<div class="columns is-gapless-mobile has-large-gaps ">
+
+
+				<div id="main-column" class="column  is-full is-four-fifths-desktop ">
+
+					<main id="main" role="main" class="content " data-bi-name="content" lang="en-us" dir="ltr">
+
+
+
+						<h1 id="migrate-from-the-hockeysdk-to-app-center-sdk-for-ios" sourcefile="transition/ios-sdk-migration.md" sourcestartlinenumber="16">Migrate from the HockeySDK to App Center SDK for iOS</h1>
+
+						<ul class="metadata page-metadata" data-bi-name="page info" lang="sv-se" dir="ltr">
+							<li class="displayDate loading">
+								<time role="presentation" datetime="2020-01-27T00:00:00.000Z" data-article-date-source="ms.date">01/27/2020</time>
+							</li>
+								<li class="readingTime">5 minuter för att läsa</li>
+							<li class="contributors-holder">
+								<a class="has-inner-focus" href="https://github.com/MicrosoftDocs/appcenter-docs/blob/live/docs/transition/ios-sdk-migration.md" title="6 Deltagare" aria-label="6 Deltagare">
+									<ul class="contributors" data-bi-name="contributors" aria-hidden="true">
+												<li><img src="https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/images/contributor.svg" data-src="https://github.com/elamalani.png?size=32" role="presentation"/></li>
+												<li><img src="https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/images/contributor.svg" data-src="https://github.com/annakocheshkova.png?size=32" role="presentation"/></li>
+												<li><img src="https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/images/contributor.svg" data-src="https://github.com/asb3993.png?size=32" role="presentation"/></li>
+												<li><img src="https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/images/contributor.svg" data-src="https://github.com/michaelsmitha.png?size=32" role="presentation"/></li>
+												<li><img src="https://docs.microsoft.com/_themes/docs.theme/master/en-us/_themes/images/contributor.svg" data-src="https://github.com/jerietve.png?size=32" role="presentation"/></li>
+										<li><span class="is-size-8 has-text-subtle">+1</span></li>
+									</ul>
+								</a>
+							</li>
+
+						</ul>
+
+						<nav id="center-doc-outline" class="doc-outline is-hidden-desktop" data-bi-name="intopic toc" role="navigation" aria-label="Artikeldisposition">
+							<h3>I den här artikeln</h3>
+						</nav>
+
+						<!-- <content> -->
+							
+<div class="op_single_selector">
+<ul>
+<li><a href="android-sdk-migration" data-linktype="relative-path">Android</a></li>
+<li><a href="ios-sdk-migration" data-linktype="relative-path">iOS</a></li>
+<li><a href="uwp-sdk-migration" data-linktype="relative-path">UWP</a></li>
+<li><a href="macos-sdk-migration" data-linktype="relative-path">macOS</a></li>
+<li><a href="tvos-sdk-migration" data-linktype="relative-path">tvOS</a></li>
+<li><a href="xamarin-sdk-migration" data-linktype="relative-path">Xamarin</a></li>
+<li><a href="unity-sdk-migration" data-linktype="relative-path">Unity</a></li>
+<li><a href="cordova-sdk-migration" data-linktype="relative-path">Cordova</a></li>
+<li><a href="wpf-winforms-sdk-migration" data-linktype="relative-path">WPF/Winforms</a></li>
+</ul>
+</div>
+<p>Please follow this documentation if you are looking to update your application to use App Center SDK instead of HockeySDK.</p>
+<h2 id="1-update-the-libraries">1. Update the libraries</h2>
+<h3 id="11-remove-old-hockeysdk">1.1 Remove old HockeySDK</h3>
+<h4 id="manual">Manual</h4>
+<p>If you have added the SDK manually, follow these steps:</p>
+<ol>
+<li><p>Remove <code>HockeySDK.embeddedframework</code> reference from the XCode project. Do not click <em>Move to Trash</em> button, just click the <em>Remove reference</em> button.</p>
+</li>
+<li><p>Open your project settings and under <strong>Build Settings</strong> tab in the <strong>Header Search Paths</strong> / <strong>Framework Search Paths</strong> sections, remove the locations for header files related to HockeySDK.</p>
+</li>
+<li><p>Open your project settings and under <strong>Build Phases</strong> tab in the <strong>Link Binary with Libraries</strong> section, remove the dependency entries related to HockeySDK.</p>
+</li>
+<li><p>Delete <code>HockeySDK.embeddedframework</code> from the file system.</p>
+</li>
+</ol>
+<h4 id="podfile">Podfile</h4>
+<p>If you have added the SDK using <strong>CocoaPods</strong>, remove the <code>pod &quot;HockeySDK&quot;</code> line from the Podfile, then run <code>pod install</code>.</p>
+<h4 id="carthage">Carthage</h4>
+<ol>
+<li><p>Remove HockeySDK references from the <code>Cartfile</code>. Delete <code>Cartfile.Resolved</code> from the file system.</p>
+</li>
+<li><p>Delete <code>HockeySDK.framework</code> and <code>HockeySDK.framework.dSYM</code> from the XCode project and click the <strong>Move to Trash</strong> button.</p>
+</li>
+<li><p>Open the <strong>Build Phases</strong> tab and locate the <strong>Run Script</strong> section. Remove HockeyApp from the <code>input.xcfilelist</code> and <code>output.xcfilelist</code>.</p>
+</li>
+</ol>
+<h3 id="12-add-the-new-app-center-sdk">1.2 Add the new App Center SDK</h3>
+<p>The App Center SDK supports integration via Cocoapods, Carthage, and by using the Frameworks in your Xcode project. Read detailed instructions how to how to integrate the App Center SDK in the <a href="../sdk/getting-started/ios#3-add-the-app-center-sdk-modules" data-linktype="relative-path">App Center SDK documentation</a>.</p>
+<div class="NOTE">
+<p>Note</p>
+<p>The App Center SDK is designed with a modular approach so you can use any or all of the services. See the equivalences in the next table:</p>
+<table>
+<thead>
+<tr>
+<th>HockeyApp class</th>
+<th>App Center module</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MetricsManager</code></td>
+<td><code>Analytics</code></td>
+</tr>
+<tr>
+<td><code>CrashManager</code></td>
+<td><code>Crashes</code></td>
+</tr>
+<tr>
+<td><code>UpdateManager</code></td>
+<td><code>Distribute</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="2-update-the-sdk-setup-code">2. Update the SDK setup code</h2>
+<h3 id="21-convert-the-application-identifier">2.1 Convert the application identifier</h3>
+<p>The App Center SDK uses application identifiers in the globally unique identifier (GUID) format. Your HockeyApp App ID can be used by App Center but you need to convert it to a different format. To convert the identifier you must add four hyphens to get an 8-4-4-4-12 representation.</p>
+<p>Before (HockeyApp):
+<code>00112233445566778899aabbccddeeff</code></p>
+<p>After (App Center):
+<code>00112233-4455-6677-8899-aabbccddeeff</code></p>
+<h3 id="22-replace-sdk-initialization-in-the-application-code">2.2 Replace SDK initialization in the application code</h3>
+<ol>
+<li><p>Replace the following imports in your <strong>AppDelegate</strong> class.</p>
+<p>Before:</p>
+<pre><code class="lang-objc">@import HockeySDK;
+</code></pre>
+<pre><code class="lang-swift">import HockeySDK
+</code></pre>
+<p>After:</p>
+<pre><code class="lang-objc">@import AppCenter;
+@import AppCenterAnalytics;
+@import AppCenterCrashes;
+@import AppCenterDistribute;
+</code></pre>
+<pre><code class="lang-swift">import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
+import AppCenterDistribute
+</code></pre>
+</li>
+<li><p>Replace registration code</p>
+<p>Find the <code>didFinishLaunchingWithOptions</code> method and replace HockeyApp code occurrences.</p>
+<p>Before:</p>
+<pre><code class="lang-objc">[[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@&quot;APP_IDENTIFIER&quot;];
+[[BITHockeyManager sharedHockeyManager] startManager];
+[[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
+</code></pre>
+<pre><code class="lang-swift">BITHockeyManager.shared().configure(withIdentifier: &quot;APP_IDENTIFIER&quot;)
+BITHockeyManager.shared().start()
+BITHockeyManager.shared().authenticator.authenticateInstallation()
+</code></pre>
+<p>After:</p>
+<pre><code class="lang-objc">[MSAppCenter start:@&quot;{Your app secret}&quot; withServices:@[[MSAnalytics class], [MSCrashes class], [MSDistribute class]]];
+</code></pre>
+<pre><code class="lang-swift">MSAppCenter.start(&quot;{Your app secret}&quot;, withServices: [MSAnalytics.self, MSCrashes.self, MSDistribute.self])
+</code></pre>
+<div class="NOTE">
+<p>Note</p>
+<p>App Center SDK does not have equivalents for <code>[[BITHockeyManager sharedHockeyManager] configureWithBetaIdentifier:liveIdentifier:delegate]</code>.</p>
+</div>
+</li>
+<li><p>[Optional] Modify the project's <strong>Info.plist</strong></p>
+<p>If you intend to use <strong>Distribute</strong>, follow the steps above:</p>
+<ul>
+<li>Add a new key for <code>URL types</code> or <code>CFBundleURLTypes</code> in your <strong>Info.plist</strong> file (in case XCode displays your Info.plist as source code).</li>
+<li>Change the key of the first child item to <code>URL Schemes</code> or <code>CFBundleURLSchemes</code>.</li>
+<li>Enter <code>appcenter-${APP_SECRET}</code> as the URL scheme and replace <code>${APP_SECRET}</code> with the App Secret of your app.</li>
+</ul>
+<p>For more information on this, refer to <a href="../sdk/distribute/ios#23-modify-the-projects-infoplist" data-linktype="relative-path">App Center Distribute documentation</a>.</p>
+</li>
+<li><p>Replace HockeyApp API calls throughout the application. The detailed API mapping tables are given below.</p>
+</li>
+</ol>
+<h2 id="3-services-and-feature-comparison">3. Services and feature comparison</h2>
+<h3 id="core">Core</h3>
+<div class="tabGroup" id="tabgroup_CeZOj-G++Q">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_CeZOj-G++Q_objc" role="tab" aria-controls="tabpanel_CeZOj-G++Q_objc" data-tab="objc" tabindex="0" aria-selected="true" data-linktype="self-bookmark">Objective C</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_CeZOj-G++Q_swift" role="tab" aria-controls="tabpanel_CeZOj-G++Q_swift" data-tab="swift" tabindex="-1" data-linktype="self-bookmark">Swift</a>
+</li>
+</ul>
+<section id="tabpanel_CeZOj-G++Q_objc" role="tabpanel" data-tab="objc">
+
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>HockeyApp</th>
+<th>App Center</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adjust log level</td>
+<td><a href="https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/hockeyapp-for-ios#3-12-debug-information" data-linktype="external">[BITHockeyManager sharedHockeyManager].logLevel = BITLogLevelVerbose</a></td>
+<td><a href="../sdk/other-apis/ios#adjust-the-log-level" data-linktype="relative-path">[MSAppCenter setLogLevel:MSLogLevelVerbose]</a></td>
+</tr>
+<tr>
+<td>Identify installations</td>
+<td><code>[BITHockeyManager sharedHockeyManager].installString</code></td>
+<td><a href="../sdk/other-apis/ios#identify-installations" data-linktype="relative-path">[MSAppCenter installId]</a></td>
+</tr>
+<tr>
+<td>Identify users</td>
+<td><code>[BITHockeyManager sharedHockeyManager].userID</code></td>
+<td><a href="../sdk/other-apis/ios#identify-users" data-linktype="relative-path">[MSAppCenter setUserId:@&quot;your-user-id&quot;]</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="tabpanel_CeZOj-G++Q_swift" role="tabpanel" data-tab="swift" aria-hidden="true" hidden="hidden">
+
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>HockeyApp</th>
+<th>App Center</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adjust log level</td>
+<td><a href="https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/hockeyapp-for-ios#3-12-debug-information" data-linktype="external">BITHockeyManager.shared().logLevel = BITLogLevel.verbose</a></td>
+<td><a href="../sdk/other-apis/ios#adjust-the-log-level" data-linktype="relative-path">MSAppCenter.setLogLevel(MSLogLevel.Verbose)</a></td>
+</tr>
+<tr>
+<td>Identify installations</td>
+<td><code>BITHockeyManager.shared().installString</code></td>
+<td><a href="../sdk/other-apis/ios#identify-installations" data-linktype="relative-path">MSAppCenter.installId()</a></td>
+</tr>
+<tr>
+<td>Identify users</td>
+<td><code>BITHockeyManager.shared().userID</code></td>
+<td><a href="../sdk/other-apis/ios#identify-users" data-linktype="relative-path">MSAppCenter.setUserId(&quot;your-user-id&quot;)</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+</div>
+<h3 id="analytics">Analytics</h3>
+<p>The HockeySDK enables metrics collecting per default.
+App Center SDK registers Analytics service only if you pass <code>MSAnalytics</code> class to the <code>start:</code> method.</p>
+<div class="tabGroup" id="tabgroup_CeZOj-G++Q-1">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_CeZOj-G++Q-1_objc" role="tab" aria-controls="tabpanel_CeZOj-G++Q-1_objc" data-tab="objc" tabindex="0" aria-selected="true" data-linktype="self-bookmark">Objective C</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_CeZOj-G++Q-1_swift" role="tab" aria-controls="tabpanel_CeZOj-G++Q-1_swift" data-tab="swift" tabindex="-1" data-linktype="self-bookmark">Swift</a>
+</li>
+</ul>
+<section id="tabpanel_CeZOj-G++Q-1_objc" role="tabpanel" data-tab="objc">
+
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>HockeyApp</th>
+<th>App Center</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Automatically track sessions</td>
+<td><a href="https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/hockeyapp-for-ios#3-7-user-metrics" data-linktype="external">Documentation (can't be disabled)</a></td>
+<td><a href="../sdk/analytics/ios#session-and-device-information" data-linktype="relative-path">Documentation (can't be disabled)</a></td>
+</tr>
+<tr>
+<td>Custom events with properties</td>
+<td><a href="https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/hockeyapp-for-ios#3-7-2-attaching-custom-properties-and-measurements-to-a-custom-event" data-linktype="external">Documentation</a></td>
+<td><a href="../sdk/analytics/ios#custom-events" data-linktype="relative-path">[MSAnalytics trackEvent:withProperties:]</a></td>
+</tr>
+<tr>
+<td>Disable service at runtime</td>
+<td><a href="https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/hockeyapp-for-ios#3-7-user-metrics" data-linktype="external">[BITHockeyManager sharedHockeyManager].disableMetricsManager = YES</a></td>
+<td><a href="../sdk/analytics/ios#enable-or-disable-app-center-analytics-at-runtime" data-linktype="relative-path">[MSAnalytics setEnabled:NO]</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="tabpanel_CeZOj-G++Q-1_swift" role="tabpanel" data-tab="swift" aria-hidden="true" hidden="hidden">
+
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>HockeyApp</th>
+<th>App Center</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Automatically track sessions</td>
+<td><a href="https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/hockeyapp-for-ios#3-7-user-metrics" data-linktype="external">Documentation (enabled by default)</a></td>
+<td><a href="../sdk/analytics/ios#session-and-device-information" data-linktype="relative-path">Documentation (enabled by default)</a></td>
+</tr>
+<tr>
+<td>Custom events with properties</td>
+<td><a href="https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/hockeyapp-for-ios#3-7-2-attaching-custom-properties-and-measurements-to-a-custom-event" data-linktype="external">Documentation</a></td>
+<td><a href="../sdk/analytics/ios#custom-events" data-linktype="relative-path">MSAnalytics.trackEvent(eventName, withProperties: properties)</a></td>
+</tr>
+<tr>
+<td>Disable service at runtime</td>
+<td><a href="https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/hockeyapp-for-ios#3-7-user-metrics" data-linktype="external">BITHockeyManager.shared().isMetricsManagerDisabled = true</a></td>
+<td><a href="../sdk/analytics/ios#enable-or-disable-app-center-analytics-at-runtime" data-linktype="relative-path">MSAnalytics.setEnabled(false)</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+</div>
+<h3 id="crashes">Crashes</h3>
+<p>The HockeySDK enables crash reporting per default. Crashes will be immediately sent to the server the next time the app is launched.
+App Center SDK registers Crashes service only if you pass <code>MSCrashes</code> class to the <code>start:</code> method.</p>
+<div class="tabGroup" id="tabgroup_CeZOj-G++Q-2">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_CeZOj-G++Q-2_objc" role="tab" aria-controls="tabpanel_CeZOj-G++Q-2_objc" data-tab="objc" tabindex="0" aria-selected="true" data-linktype="self-bookmark">Objective C</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_CeZOj-G++Q-2_swift" role="tab" aria-controls="tabpanel_CeZOj-G++Q-2_swift" data-tab="swift" tabindex="-1" data-linktype="self-bookmark">Swift</a>
+</li>
+</ul>
+<section id="tabpanel_CeZOj-G++Q-2_objc" role="tabpanel" data-tab="objc">
+
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>HockeyApp</th>
+<th>App Center</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Automatically send crashes</td>
+<td><a href="https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/hockeyapp-for-ios#3-6-2-autosend-crash-reports" data-linktype="external">[[BITHockeyManager sharedHockeyManager].crashManager setCrashManagerStatus: BITCrashManagerStatusAutoSend]</a></td>
+<td><a href="../sdk/crashes/ios#should-the-crash-be-processed" data-linktype="relative-path">Documentation (enabled by default)</a></td>
+</tr>
+<tr>
+<td>Generate a test crash</td>
+<td><code>[[BITHockeyManager sharedHockeyManager].crashManager generateTestCrash]</code></td>
+<td><a href="../sdk/crashes/ios#generate-a-test-crash" data-linktype="relative-path">[MSCrashes generateTestCrash]</a></td>
+</tr>
+<tr>
+<td>Info about the previous crash</td>
+<td><code>[[BITHockeyManager sharedHockeyManager].crashManager lastSessionCrashDetails]</code></td>
+<td><a href="../sdk/crashes/ios#get-more-information-about-a-previous-crash" data-linktype="relative-path">[MSCrashes lastSessionCrashReport]</a></td>
+</tr>
+<tr>
+<td>Mach exception handling</td>
+<td><a href="https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/hockeyapp-for-ios#3-6-3-mach-exception-handling" data-linktype="external">Documentation (disabled by default)</a></td>
+<td><a href="../sdk/crashes/ios#disabling-mach-exception-handling" data-linktype="relative-path">Documentation (enabled by default)</a></td>
+</tr>
+<tr>
+<td>Attach additional meta data</td>
+<td><a href="https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/hockeyapp-for-ios#3-6-4-attach-additional-data" data-linktype="external">Documentation</a></td>
+<td><a href="../sdk/crashes/ios#add-attachments-to-a-crash-report" data-linktype="relative-path">Documentation (can be attached from delegate)</a></td>
+</tr>
+<tr>
+<td>Customize user dialog</td>
+<td><a href="https://github.com/bitstadium/HockeySDK-iOS/blob/5.1.4/Classes/BITCrashManager.h#L341-L361setCrashReportUIHandler" data-linktype="external">setAlertViewHandler</a></td>
+<td><a href="../sdk/crashes/ios#ask-for-the-users-consent-to-send-a-crash-log" data-linktype="relative-path">Documentation (not provided by default)</a></td>
+</tr>
+<tr>
+<td>Disable service at runtime</td>
+<td><a href="https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/hockeyapp-for-ios#3-6-1-disable-crash-reporting" data-linktype="external">[[BITHockeyManager sharedHockeyManager] setDisableCrashManager: YES]</a></td>
+<td><a href="../sdk/crashes/ios#enable-or-disable-app-center-crashes-at-runtime" data-linktype="relative-path">[MSCrashes setEnabled:NO]</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="tabpanel_CeZOj-G++Q-2_swift" role="tabpanel" data-tab="swift" aria-hidden="true" hidden="hidden">
+
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>HockeyApp</th>
+<th>App Center</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Automatically send Crashes</td>
+<td><a href="https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/hockeyapp-for-ios#3-6-2-autosend-crash-reports" data-linktype="external">BITHockeyManager.shared().crashManager.crashManagerStatus = BITCrashManagerStatus.autoSend</a></td>
+<td><a href="../sdk/crashes/ios#should-the-crash-be-processed" data-linktype="relative-path">Documentation (enabled by default)</a></td>
+</tr>
+<tr>
+<td>Generate a test crash</td>
+<td><code>BITHockeyManager.shared().crashManager.generateTestCrash()</code></td>
+<td><a href="../sdk/crashes/ios#generate-a-test-crash" data-linktype="relative-path">MSCrashes.generateTestCrash()</a></td>
+</tr>
+<tr>
+<td>Info about the previous crash</td>
+<td><code>BITHockeyManager.shared().crashManager.lastSessionCrashDetails</code></td>
+<td><a href="../sdk/crashes/ios#get-more-information-about-a-previous-crash" data-linktype="relative-path">MSCrashes.lastSessionCrashReport()</a></td>
+</tr>
+<tr>
+<td>Mach exception handling</td>
+<td><a href="https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/hockeyapp-for-ios#3-6-3-mach-exception-handling" data-linktype="external">Documentation (disabled by default)</a></td>
+<td><a href="../sdk/crashes/ios#disabling-mach-exception-handling" data-linktype="relative-path">Documentation (enabled by default)</a></td>
+</tr>
+<tr>
+<td>Attach additional meta data</td>
+<td><a href="https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/hockeyapp-for-ios#3-6-4-attach-additional-data" data-linktype="external">Documentation</a></td>
+<td><a href="../sdk/crashes/ios#add-attachments-to-a-crash-report" data-linktype="relative-path">Documentation (can be attached from delegate)</a></td>
+</tr>
+<tr>
+<td>Customize user dialog</td>
+<td><a href="https://github.com/bitstadium/HockeySDK-iOS/blob/5.1.4/Classes/BITCrashManager.h#L341-L361setCrashReportUIHandler" data-linktype="external">setAlertViewHandler</a></td>
+<td><a href="../sdk/crashes/ios#ask-for-the-users-consent-to-send-a-crash-log" data-linktype="relative-path">Documentation (not provided by default)</a></td>
+</tr>
+<tr>
+<td>Disable service at runtime</td>
+<td><a href="https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/hockeyapp-for-ios#3-6-1-disable-crash-reporting" data-linktype="external">BITHockeyManager.shared().isCrashManagerDisabled = true</a></td>
+<td><a href="../sdk/crashes/ios#enable-or-disable-app-center-crashes-at-runtime" data-linktype="relative-path">MSCrashes.setEnabled(false)</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+</div>
+<h3 id="distribute">Distribute</h3>
+<div class="NOTE">
+<p>Note</p>
+<p>Unlike in HockeyApp, App Center in-app updates feature will ONLY work with builds that are distributed using the App Center Distribute service. Distribute won't work when the debugger is attached.
+If the app is using a private distribution group, once the app is installed and opened for the first time after the App Center Distribute SDK has been added, a browser will open to authenticate the user and enable in-app updates. This browser will also open if you set the private in-app update track at runtime. This is a one-time step that will not occur for subsequent releases of your app. Please refer to the <a href="../sdk/distribute/ios#how-do-in-app-updates-work" data-linktype="relative-path">App Center Distribute Documentation</a> for more details.</p>
+</div>
+<p>The HockeySDK does not enable in-app updates by default.
+App Center SDK registers in-app updates service only if you pass <code>MSDistribute</code> class to the <code>start:</code> method. This module is enabled by default, unlike in the HockeySDK.</p>
+<div class="tabGroup" id="tabgroup_CeZOj-G++Q-3">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_CeZOj-G++Q-3_objc" role="tab" aria-controls="tabpanel_CeZOj-G++Q-3_objc" data-tab="objc" tabindex="0" aria-selected="true" data-linktype="self-bookmark">Objective C</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_CeZOj-G++Q-3_swift" role="tab" aria-controls="tabpanel_CeZOj-G++Q-3_swift" data-tab="swift" tabindex="-1" data-linktype="self-bookmark">Swift</a>
+</li>
+</ul>
+<section id="tabpanel_CeZOj-G++Q-3_objc" role="tabpanel" data-tab="objc">
+
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>HockeyApp</th>
+<th>App Center</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Restricted in-app updates</td>
+<td><a href="https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/authenticating-users-on-ios" data-linktype="external">[[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation]</a></td>
+<td><a href="../sdk/distribute/ios#use-private-distribution-group" data-linktype="relative-path">MSDistribute.updateTrack</a></td>
+</tr>
+<tr>
+<td>Disable service at runtime</td>
+<td><a href="https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/hockeyapp-for-ios#3-10-in-app-updates-beta-amp-enterprise-only-" data-linktype="external">[[BITHockeyManager sharedHockeyManager] setDisableUpdateManager: YES]</a></td>
+<td><a href="../sdk/distribute/ios#enable-or-disable-app-center-distribute-at-runtime" data-linktype="relative-path">[MSDistribute setEnabled:NO]</a></td>
+</tr>
+<tr>
+<td>Customize the update dialog</td>
+<td><a href="https://github.com/bitstadium/HockeySDK-iOS/blob/5.1.4/Classes/BITUpdateManagerDelegate.h#L49-L64" data-linktype="external">shouldDisplayUpdateAlertForUpdateManager</a></td>
+<td><a href="../sdk/distribute/ios#2-customize-the-update-dialog" data-linktype="relative-path">Documentation</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="tabpanel_CeZOj-G++Q-3_swift" role="tabpanel" data-tab="swift" aria-hidden="true" hidden="hidden">
+
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>HockeyApp</th>
+<th>App Center</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Restricted in-app updates</td>
+<td><a href="https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/authenticating-users-on-ios" data-linktype="external">BITHockeyManager.shared().authenticator.authenticateInstallation()</a></td>
+<td><a href="../sdk/distribute/ios#use-private-distribution-group" data-linktype="relative-path">MSDistribute.updateTrack</a></td>
+</tr>
+<tr>
+<td>Disable service at runtime</td>
+<td><a href="https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/hockeyapp-for-ios#3-10-in-app-updates-beta-amp-enterprise-only-" data-linktype="external">BITHockeyManager.shared().isUpdateManagerDisabled = true</a></td>
+<td><a href="../sdk/distribute/ios#enable-or-disable-app-center-distribute-at-runtime" data-linktype="relative-path">MSDistribute.setEnabled(false)</a></td>
+</tr>
+<tr>
+<td>Customize the update dialog</td>
+<td><a href="https://github.com/bitstadium/HockeySDK-iOS/blob/5.1.4/Classes/BITUpdateManagerDelegate.h#L49-L64" data-linktype="external">shouldDisplayUpdateAlertForUpdateManager</a></td>
+<td><a href="../sdk/distribute/ios#2-customize-the-update-dialog" data-linktype="relative-path">Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="feedback">Feedback</h3>
+<p>The feedback service won't be supported in App Center. See <a href="feedback" data-linktype="relative-path">HockeyApp feedback</a>.</p>
+</section>
+</div>
+
+						<!-- </content> -->
+
+						</main>
+
+						<!-- recommended content page section -->
+
+							<nav data-bi-name="recommendation-bottom" hidden id="recommended-content-center" class="is-hidden-desktop" aria-labelledby="recommended-content-center-title">
+								<h3 id="recommended-content-center-title" class="is-size-2 has-margin-top-large has-margin-bottom-small">Relaterade artiklar</h3>
+							</nav>
+
+						<!-- end recommended content page section -->
+
+						<!-- page rating section -->
+								<div class="is-hidden-desktop has-border-top has-margin-top-large has-padding-top-small">
+									
+<div class="feedback-verbatim has-border-bottom has-padding-bottom-small has-margin-bottom-small" data-bi-name="rating">
+    <div class="binary-rating">
+        <div class="binary-rating-buttons">
+            <h3 class="has-text-weight-semibold has-margin-top-none has-margin-bottom-small">Var den här sidan till hjälp?</h3>
+            <div>
+                <button class="thumb-rating like has-inner-focus has-padding-left-extra-small has-padding-right-extra-small" title="Yes" data-bi-name="rating-yes" aria-expanded="false" data-bi-sat="1" aria-controls="feedbackVerbatimForm">
+                    <span aria-hidden="true" class="icon docon docon-like"></span>
+                    <span>Yes</span>
+                </button>
+                <button class="thumb-rating dislike has-inner-focus has-padding-none has-padding-right-extra-small" title="No" data-bi-name="rating-no" data-bi-sat="0" aria-expanded="false" aria-controls="feedbackVerbatimForm">
+                    <span aria-hidden="true" class="icon docon docon-dislike"></span>
+                    <span>No</span>
+                </button>
+            </div>
+        </div>
+        <form class="feedback-verbatim-form is-hidden" id="feedbackVerbatimForm">
+            <div class="verbatim-textarea box is-relative has-box-shadow-none has-border has-margin-top-small has-padding-extra-small is-size-8">
+                <label for="rating-textarea-mobile" class="visually-hidden">Har du någon ytterligare feedback?</label>
+                <textarea id="rating-textarea-mobile" rows="4" maxlength="999" placeholder="Har du någon ytterligare feedback?" required class="textarea has-border-none has-box-shadow-none has-inner-focus"></textarea>
+            </div>
+            <div class="buttons is-right has-margin-top-medium has-margin-right-extra-small">
+                <button class="skip-rating button is-text is-link is-small" type="button">Hoppa över</button>
+                <button class="submit-rating button is-primary is-small" data-bi-name="rating-verbatim" disabled type="submit">Skicka</button>
+            </div>
+        </form>
+    </div>
+    <div class="thankyou-rating is-hidden" tabindex="-1">
+        <p>Tack!</p>
+    </div>
+</div>								</div>
+						<!-- end page rating section -->
+
+
+						<!-- feedback section -->
+<section class="feedback-section" data-bi-name="feedback-section">
+
+	<h2 id="feedback">Feedback</h2>
+
+	<div class="alert choose-feedback-type">
+		<p id="send-feedback-about" aria-hidden="true">Skicka feedback om</p>
+
+		<div class="choose-feedback-buttons">
+			<a class="button feedback-type-product has-margin-bottom-small" aria-label="Skicka feedback om den här produkten" href="https://intercom.help/appcenter/getting-started/getting-help-with-app-center" data-bi-name="product-feedback">
+				<span>Den här produkten</span>
+				<span class="icon docon docon-navigate-external" aria-hidden="true"></span>
+			</a>
+
+			<div class="field has-addons is-inline-flex has-margin-bottom-small">
+				<div class="control has-margin-top-none has-margin-bottom-none">
+					<button class="button feedback-sign-in-button has-text-wrap" aria-label="Skicka feedback om den här sidan" data-bi-name="feedback-sign-in">
+						<span class="icon docon docon-brand-github" aria-hidden="true"></span>
+						<span>Den här sidan</span>
+					</button>
+				</div>
+				<div class="control dropdown has-caret has-margin-top-none has-margin-bottom-none">
+					<button class="button dropdown-trigger is-full-height" aria-describedby="send-feedback-about" aria-expanded="false" aria-controls="fbm0" aria-label="Ytterligare alternativ för feedback" data-bi-name="documentation-feedback-menu">
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-chevron-down-light expanded-indicator"></span>
+						</span>
+					</button>
+					<div id="fbm0" class="dropdown-menu documentation-feedback-menu">
+						Du kan även lämna feedback direkt på <a data-bi-name="create-issue-on-github">GitHub <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.					</div>
+				</div>
+			</div>
+
+			<div class="field has-addons is-inline-flex has-margin-bottom-small" hidden>
+				<div class="control has-margin-top-none has-margin-bottom-none">
+					<button class="button feedback-form-toggle" aria-describedby="send-feedback-about" aria-expanded="false" aria-controls="feedback-form"
+						data-bi-name="documentation-feedback">
+Den här sidan					</button>
+				</div>
+				<div class="control dropdown has-caret has-margin-top-none has-margin-bottom-none">
+					<button class="button dropdown-trigger" aria-describedby="send-feedback-about" aria-expanded="false" aria-controls="fbm1" aria-label="Ytterligare alternativ för feedback" data-bi-name="documentation-feedback-menu">
+						<span class="icon" aria-hidden="true">
+							<span class="docon docon-chevron-down-light expanded-indicator"></span>
+						</span>
+					</button>
+					<div id="fbm1" class="dropdown-menu documentation-feedback-menu">
+						Du kan även lämna feedback direkt på <a data-bi-name="create-issue-on-github">GitHub <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<form class="feedback-form" id="feedback-form" accept-charset="UTF-8" autocomplete="off" action="javascript:" hidden>
+		<h3 class="feedback-form-heading current-user">
+			<img class="avatar" alt="Avatar" width="36" height="36" aria-hidden="true">
+			<span class="username" aria-hidden="true"></span>
+			<span class="visually-hidden">Skicka feedback om den här sidan</span>
+		</h3>
+
+		<label>
+			<span class="visually-hidden">Rubrik</span>
+			<input class="input is-radiusless has-margin-bottom-small" name="title" type="text" placeholder="Rubrik" required pattern=".*[^\s]+.*">
+		</label>
+		<label>
+			<span class="visually-hidden">Lämna en kommentar</span>
+			<textarea name="body" placeholder="Lämna en kommentar" class="textarea is-radiusless" required></textarea>
+		</label>
+
+		<div class="action-container">
+			<button class="button is-primary" type="submit" name="submit">Skicka feedback</button>
+		</div>
+	</form>
+
+	<div class="feedback-status alert is-loading">
+		<p>Läser in feedback...</p>
+	</div>
+
+	<div class="feedback-tab-group tabGroup" data-tab-group-independent hidden>
+		<ul role="tablist">
+			<li role="presentation">
+				<a href="#tabpanel-issues-open" role="tab" aria-controls="tabpanel-issues-open" data-tab="issues-open"></a>
+			</li>
+			<li role="presentation">
+				<a href="#tabpanel-issues-closed" role="tab" aria-controls="tabpanel-issues-closed" data-tab="issues-closed"></a>
+			</li>
+		</ul>
+		<section id="tabpanel-issues-open" role="tabpanel" data-tab="issues-open">
+			<div class="no-issues-placeholder">Det finns inga öppna ärenden</div>
+			<ul class="github-issues-list" aria-label="Öppna ärenden"></ul>
+		</section>
+		<section id="tabpanel-issues-closed" role="tabpanel" data-tab="issues-closed">
+			<div class="no-issues-placeholder">Det finns inga stängda ärenden</div>
+			<ul class="github-issues-list" aria-label="Stängda ärenden"></ul>
+		</section>
+	</div>
+	<div class="action-container">
+		<a class="view-on-github" href="https://github.com/MicrosoftDocs/appcenter-docs/issues" data-bi-name="view-on-github"
+		 hidden>
+			<span class="docon docon-brand-github" aria-hidden="true"></span>
+			<span>Visa på GitHub</span>
+			<span class="docon docon-navigate-external" aria-hidden="true"></span>
+		</a>
+	</div>
+</section>
+
+						<!-- end feedback section -->
+
+						<!-- feedback report section -->
+						<!-- end feedback report section -->
+
+						<div class="footerContainer is-visible-interactive has-default-focus ">
+<footer id="footer-interactive" data-bi-name="footer" class="footer-layout">
+
+    <a data-mscc-ic="false" class="locale-selector-link" href="#" data-bi-name="select-locale"><span class="icon docon docon-world is-size-4 has-margin-right-small" aria-hidden="true"></span><span class="local-selector-link-text has-inner-focus"></span></a>
+
+    <ul class="links" data-bi-name="footerlinks">
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/previous-versions/" data-bi-name="archivelink">Dokument om tidigare version</a></li>
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/teamblog" data-bi-name="bloglink">Blogg</a></li>
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/contribute" data-bi-name="contributorGuide">Bidra</a></li>
+			<li><a data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-bi-name="privacy">Sekretess &amp; Cookies</a></li>
+		<li><a data-mscc-ic="false" href="/sv-se/legal/termsofuse" data-bi-name="termsofuse">Användningsvillkor</a></li>
+		<li><a data-mscc-ic="false" href="https://aka.ms/sitefeedback" data-bi-name="feedback">Feedback för webbplatsen</a></li>
+		<li><a data-mscc-ic="false" href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" data-bi-name="trademarks">Varumärken</a></li>
+		<li>&copy; Microsoft 2020</li>
+    </ul>
+</footer>
+						</div>
+					</div>
+
+					<div class="is-size-7 right-container column is-one-quarter is-one-fifth-desktop is-hidden-mobile is-hidden-tablet-only" data-bi-name="pageactions" role="complementary" aria-label="Sidåtgärder">
+						<div id="affixed-right-container" class="doc-outline is-fixed is-vertically-scrollable">
+								
+<div class="feedback-verbatim has-border-bottom has-padding-bottom-small has-margin-bottom-small" data-bi-name="rating">
+    <div class="binary-rating">
+        <div class="binary-rating-buttons">
+            <h3 class="has-text-weight-semibold has-margin-top-none has-margin-bottom-small">Var den här sidan till hjälp?</h3>
+            <div>
+                <button class="thumb-rating like has-inner-focus has-padding-left-extra-small has-padding-right-extra-small" title="Yes" data-bi-name="rating-yes" aria-expanded="false" data-bi-sat="1" aria-controls="feedbackVerbatimForm">
+                    <span aria-hidden="true" class="icon docon docon-like"></span>
+                    <span>Yes</span>
+                </button>
+                <button class="thumb-rating dislike has-inner-focus has-padding-none has-padding-right-extra-small" title="No" data-bi-name="rating-no" data-bi-sat="0" aria-expanded="false" aria-controls="feedbackVerbatimForm">
+                    <span aria-hidden="true" class="icon docon docon-dislike"></span>
+                    <span>No</span>
+                </button>
+            </div>
+        </div>
+        <form class="feedback-verbatim-form is-hidden" id="feedbackVerbatimForm">
+            <div class="verbatim-textarea box is-relative has-box-shadow-none has-border has-margin-top-small has-padding-extra-small is-size-8">
+                <label for="rating-textarea-desktop" class="visually-hidden">Har du någon ytterligare feedback?</label>
+                <textarea id="rating-textarea-desktop" rows="4" maxlength="999" placeholder="Har du någon ytterligare feedback?" required class="textarea has-border-none has-box-shadow-none has-inner-focus"></textarea>
+            </div>
+            <div class="buttons is-right has-margin-top-medium has-margin-right-extra-small">
+                <button class="skip-rating button is-text is-link is-small" type="button">Hoppa över</button>
+                <button class="submit-rating button is-primary is-small" data-bi-name="rating-verbatim" disabled type="submit">Skicka</button>
+            </div>
+        </form>
+    </div>
+    <div class="thankyou-rating is-hidden" tabindex="-1">
+        <p>Tack!</p>
+    </div>
+</div>								<nav data-bi-name="recommendation-sidebar" hidden id="recommended-content-nav" role="navigation" aria-labelledby="recommended-content-nav-title">
+									<h3 id="recommended-content-nav-title">Relaterade artiklar</h3>
+								</nav>
+							<nav id="side-doc-outline" data-bi-name="intopic toc" role="navigation" aria-label="Artikeldisposition">
+								<h3>I den här artikeln</h3>
+							</nav>
+						</div>
+					</div>
+
+					<!--end of div.columns -->
+				</div>
+
+			<!--end of .primary-holder -->
+			</section>
+
+			<aside id="interactive-container" class="interactive-container is-visible-interactive column has-body-background-dark ">
+			</aside>
+		</div>
+
+		<!--end of .mainContainer -->
+	</div>
+
+	<div id="openFeedbackContainer" class="openfeedback-container"></div>
+
+	<div class="footerContainer has-default-focus is-hidden-interactive ">
+<footer id="footer" data-bi-name="footer" class="footer-layout uhf-container has-padding" role="contentinfo">
+
+    <a data-mscc-ic="false" class="locale-selector-link" href="#" data-bi-name="select-locale"><span class="icon docon docon-world is-size-4 has-margin-right-small" aria-hidden="true"></span><span class="local-selector-link-text"></span></a>
+
+    <ul class="links" data-bi-name="footerlinks">
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/previous-versions/" data-bi-name="archivelink">Dokument om tidigare version</a></li>
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/teamblog" data-bi-name="bloglink">Blogg</a></li>
+		<li><a data-mscc-ic="false" href="https://docs.microsoft.com/contribute" data-bi-name="contributorGuide">Bidra</a></li>
+			<li><a data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-bi-name="privacy">Sekretess &amp; Cookies</a></li>
+		<li><a data-mscc-ic="false" href="/sv-se/legal/termsofuse" data-bi-name="termsofuse">Användningsvillkor</a></li>
+		<li><a data-mscc-ic="false" href="https://aka.ms/sitefeedback" data-bi-name="feedback">Feedback för webbplatsen</a></li>
+		<li><a data-mscc-ic="false" href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" data-bi-name="trademarks">Varumärken</a></li>
+		<li>&copy; Microsoft 2020</li>
+    </ul>
+</footer>
+	</div>
+
+	<div id="action-panel" role="region" aria-label="Åtgärdspanelen" class="action-panel has-default-focus" tabindex="-1"></div>
+</body>
+</html>
