@@ -1,697 +1,291 @@
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-<script src="/assets/application-9c9b45e437653e4c388a76aec3dc16059fffdb3c0959ca5678939a4402931b0a.js"></script>
-<title>expressjs/body-parser | Coveralls - Test Coverage History &amp; Statistics</title>
-<meta content='Test code coverage history for expressjs/body-parser' name='description'>
-<meta content='jjkWjPM43FYXwRd2QigTVe8W27xMk-cXGJxUD6mQDCY' name='google-site-verification'>
-<meta content='uVH7jwgRaeBZzSydDg2B7A3k8Xaw4axxRcaGLMd3Rc' name='globalsign-domain-verification'>
-<meta charset='utf-8'>
-<meta content='IE=Edge,chrome=1' http-equiv='X-UA-Compatible'>
-<meta content='Coveralls, coveralls gem, automated testing, integration testing, test coverage, TDD, CI, continuous integration testing, continuous integration, test code coverage, test coverage history, ruby gem, python extension, test driven development, github badge, code coverage, code coverage history, code coverage statistics' name='keywords'>
-<meta content='Coveralls.io - Test Coverage History and Statistics' property='og:title'>
-<meta content='The leading provider of test coverage analytics. Ensure that all your new code is fully covered, and see coverage trends emerge. Works with most CI services. Always free for open source.' property='og:description'>
-<meta content='Coveralls.io' property='og:site_name'>
-<meta content='/social.png' property='og:image'>
-<meta content='image/png' property='og:image:type'>
-<meta content='500' property='og:image:width'>
-<meta content='500' property='og:image:height'>
-<meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="NBSsDBrWKcC/j+ttS8MQ/F54Pwe2ugJE6jDpgYWJyr00L8n5MbN5Fjjt+03QbNTaNISi4dHaVahSLW02WfAeYw==" />
-<link href='/favicon.png' rel='shortcut icon'>
-<link href='/apple-touch-icon-precomposed.png' rel='apple-touch-icon-precomposed'>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.payment/1.2.4/jquery.payment.min.js"></script>
-<script src="https://js.stripe.com/v2/"></script>
-<script src='//cdn.optimizely.com/js/2456360022.js'></script>
-<script src="//use.typekit.net/php4ecs.js"></script>
-<script type='text/javascript'>try{Typekit.load();}catch(e){}</script>
-<meta name="stripe-key" content="pk_live_D0ehNEidbTjN3ZqW00IrjpM3" />
-<link href='//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css' rel='stylesheet'>
-<script src='https://d3dy5gmtp8yhk7.cloudfront.net/2.1/pusher.min.js' type='text/javascript'></script>
-<script src="//js.pusher.com/3.1/pusher.min.js"></script>
-<script>
-//<![CDATA[
-var AUTH_TOKEN = '4goznj5mDbQK8MARBWZIEnumF1KqQiV58ggMU+uu2D7iMVZrFQNdYo2S0DGeyYw0EVqKtM0icpVKFYjkN9cM4A==';
-//]]>
-</script>
-<script>
-  window.Config = {
-    PusherKey: "4228d2afb0b831a6fec4"
-  }
-</script>
 
-<link rel="stylesheet" media="screen" href="/assets/application-223c00a9b6a784f7d1795d2aa0119d965463ce1d1e8340e18a03a7cfb72658ea.css" />
-</head>
-<body class='  '>
-<div class='container'>
-<div class='app-outer container_footer page-full'>
-<div class='header'>
-<div class='logo-fixed'>
-<img data-svg-fallback="/assets/coveralls_logo-1a40cd0265e114bdc40cc5caa6fc10786c80a9d1d37b2f30b30b7c5c3b4a8d71.png" src="/assets/coveralls_logob-27da862c7a24252e50f769869074fa2e8dff5c0a997ab880698836a1f7d4016d.svg" alt="Coveralls logob" />
-</div>
-<a class="logo" href="/"><img data-svg-fallback="/assets/coveralls_logo-1a40cd0265e114bdc40cc5caa6fc10786c80a9d1d37b2f30b30b7c5c3b4a8d71.png" src="/assets/coveralls_logo-bbcdaf48b4b89e4f878f9d12d52733d2e878e44e656bbd59a5e29800ba4ba393.svg" alt="Coveralls logo" />
-</a><nav class='siteNav'>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://static.npmjs.com/styles.af85b3775a7c46e7c21d.css" />
+      <title data-react-helmet="true">body-parser  -  npm</title>
+      <meta data-react-helmet="true" http-equiv="cleartype" content="on"/><meta data-react-helmet="true" name="apple-mobile-web-app-capable" content="yes"/><meta data-react-helmet="true" name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1,user-scalable=yes"/><meta data-react-helmet="true" property="og:image" content="https://static.npmjs.com/338e4905a2684ca96e08c7780fc68412.png"/><meta data-react-helmet="true" name="msapplication-TileColor" content="#cb3837"/><meta data-react-helmet="true" name="msapplication-TileImage" content="https://static.npmjs.com/7a7ffabbd910fc60161bc04f2cee4160.png"/><meta data-react-helmet="true" name="msapplication-config" content="https://static.npmjs.com/668aac888e52ae13cac9cfd71fabd31f.xml"/><meta data-react-helmet="true" name="theme-color" content="#cb3837"/><meta data-react-helmet="true" name="description" content="Node.js body parsing middleware"/><meta data-react-helmet="true" property="og:description" content="Node.js body parsing middleware"/><meta data-react-helmet="true" property="og:title" content="body-parser"/><meta data-react-helmet="true" property="og:url" content="https://www.npmjs.com/package/body-parser"/><meta data-react-helmet="true" property="og:site_name" content="npm"/><meta data-react-helmet="true" name="keywords" content=""/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:url" content="https://www.npmjs.com/package/body-parser"/><meta data-react-helmet="true" name="twitter:title" content="npm: body-parser"/><meta data-react-helmet="true" name="twitter:description" content="Node.js body parsing middleware"/>
+      <link data-react-helmet="true" rel="apple-touch-icon" sizes="120x120" href="https://static.npmjs.com/58a19602036db1daee0d7863c94673a4.png"/><link data-react-helmet="true" rel="apple-touch-icon" sizes="144x144" href="https://static.npmjs.com/7a7ffabbd910fc60161bc04f2cee4160.png"/><link data-react-helmet="true" rel="apple-touch-icon" sizes="152x152" href="https://static.npmjs.com/34110fd7686e2c90a487ca98e7336e99.png"/><link data-react-helmet="true" rel="apple-touch-icon" sizes="180x180" href="https://static.npmjs.com/3dc95981de4241b35cd55fe126ab6b2c.png"/><link data-react-helmet="true" rel="icon" type="image/png" href="https://static.npmjs.com/b0f1a8318363185cc2ea6a40ac23eeb2.png" sizes="32x32"/><link data-react-helmet="true" rel="icon" type="image/png" href="https://static.npmjs.com/1996fcfdf7ca81ea795f67f093d7f449.png" sizes="230x230"/><link data-react-helmet="true" rel="icon" type="image/png" href="https://static.npmjs.com/f1786e9b7cba9753ca7b9c40e8b98f67.png" sizes="96x96"/><link data-react-helmet="true" rel="icon" type="image/png" href="https://static.npmjs.com/5f6e93af5bf0f5dcdd1eecdac99f51ee.png" sizes="192x192"/><link data-react-helmet="true" rel="icon" type="image/png" href="https://static.npmjs.com/c426a1116301d1fd178c51522484127a.png" sizes="228x228"/><link data-react-helmet="true" rel="icon" type="image/png" href="https://static.npmjs.com/da3ab40fb0861d15c83854c29f5f2962.png" sizes="16x16"/><link data-react-helmet="true" rel="stylesheet" href="https://static.npmjs.com/6f0fec69a6599ac07cbe906fef441123.css"/>
+      
+      <script data-react-helmet="true" type="text/javascript" id="hs-script-loader" onload async="true" defer="true" src="https://js.hs-scripts.com/5326678.js"></script>
+    
+  </head>
+  <body>
+    <div id="app"><div class="_452c3ec4 d68c66a8"><ul class="cf325dbd list ma0 pa0 tr z-999" aria-live="polite"></ul><div class="flex flex-column vh-100"><header class="_755f5b0f bg-white z-2 bb b--black-20"><div class="a6ff2de1"><a class="_1c6d86d1" href="https://blog.npmjs.org/post/612764866888007680/next-phase-montage"><svg class="_93bbf0b4" viewBox="0 0 780 250"><path fill="white" d="M240,250h100v-50h100V0H240V250z M340,50h50v100h-50V50z M480,0v200h100V50h50v150h50V50h50v150h50V0H480z M0,200h100V50h50v150h50V0H0V200z"></path></svg><span><strong>npm</strong> is joining <strong>GitHub</strong></span><svg class="_5532dff2" width="33px" height="33px" viewBox="0 0 33 33" version="1.1" role="img" xmlns="http://www.w3.org/2000/svg"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-136.000000, -331.000000)"><path fill="white" d="M152.608,331.455 C143.614,331.455 136.32,338.748 136.32,347.745 C136.32,354.942 140.987,361.047 147.46,363.201 C148.275,363.351 148.572,362.848 148.572,362.416 C148.572,362.029 148.558,361.005 148.55,359.646 C144.019,360.63 143.063,357.462 143.063,357.462 C142.322,355.58 141.254,355.079 141.254,355.079 C139.775,354.069 141.366,354.089 141.366,354.089 C143.001,354.204 143.861,355.768 143.861,355.768 C145.314,358.257 147.674,357.538 148.602,357.121 C148.75,356.069 149.171,355.351 149.636,354.944 C146.019,354.533 142.216,353.135 142.216,346.893 C142.216,345.115 142.851,343.66 143.893,342.522 C143.725,342.11 143.166,340.453 144.053,338.211 C144.053,338.211 145.42,337.773 148.532,339.881 C149.831,339.519 151.225,339.339 152.61,339.332 C153.994,339.339 155.387,339.519 156.688,339.881 C159.798,337.773 161.163,338.211 161.163,338.211 C162.052,340.453 161.493,342.11 161.326,342.522 C162.37,343.66 163,345.115 163,346.893 C163,353.151 159.191,354.528 155.563,354.931 C156.147,355.434 156.668,356.428 156.668,357.947 C156.668,360.125 156.648,361.882 156.648,362.416 C156.648,362.852 156.942,363.359 157.768,363.2 C164.236,361.041 168.899,354.94 168.899,347.745 C168.899,338.748 161.605,331.455 152.608,331.455"></path></g></g></svg></a></div><div></div><div class="e7070742 pv3-ns ph1-ns bg-white"><div class="ef7c6e62 center mw9 border-box ph4-ns ph3 flex"><span class="_0edb515f pr3 dn dib-ns link lh-title dim br b--white-30">❤</span><span class="_99e3854f f6 fw4 link dn dib-ns tl dim mr4 nowrap">Ninety Percent Muffin</span><nav class="_4a5f2a79 db w-100 w-auto-ns tr truncate"><ul class="list pl0"><li class="dib"><a class="c6c55db4 link f6-ns f7 fw5 npme-hidden pr2 pl2" id="nav-products-link" href="/products"><span class="dim">Products</span></a><ul class="_3f98ab29 mt2 pa0 bg-white br2 shadow-1 tl"><li><a id="nav-pro-link" class="b8f9b0bd link f6-ns f7 fw5 db ph3 pv2 nowrap dim" tabindex="0" href="/products/pro">Pro</a></li><li><a id="nav-teams-link" class="b8f9b0bd link f6-ns f7 fw5 db ph3 pv2 nowrap dim" tabindex="0" href="/products/teams">Teams</a></li><li><a id="nav-enterprise-link" class="b8f9b0bd link f6-ns f7 fw5 db ph3 pv2 nowrap dim" tabindex="0" href="/products/enterprise">Enterprise</a></li></ul></li><li class="dib"><a class="c6c55db4 link f6-ns f7 fw5 dim npme-hidden pr2 pl2" id="nav-pricing-link" href="/products">Pricing</a></li><li class="dib"><a class="c6c55db4 link f6-ns f7 fw5 dim pr2 pl2" id="nav-docs-link" href="https://docs.npmjs.com">Documentation</a></li><li class="dib"><a class="c6c55db4 link f6-ns f7 fw5 dim npme-hidden pr2 pl2" id="nav-resources-link" href="https://npm.community">Community</a></li></ul></nav></div></div><div class="_4ea0e50d bt b--black-10"><div class="c5b9953b center mw9 flex flex-wrap ph4-ns border-box"><h1 class="_657f443d">npm</h1><div class="af43375d mt3 db mr4-ns pb3 pb0-ns flex-auto 2-ns ph3 ph0-ns"><a href="/"><svg viewBox="0 0 780 250"><path fill="#231F20" d="M240,250h100v-50h100V0H240V250z M340,50h50v100h-50V50z M480,0v200h100V50h50v150h50V50h50v150h50V0H480z M0,200h100V50h50v150h50V0H0V200z"></path></svg></a></div><div class="_581ebd89 relative flex-auto w-100 w-50-ns pv2-ns order-1-ns order-2"><form id="search" method="GET" action="/search" class="_13c93d41 relative flex bg-transparent ph3 ph2 pv2 ph0-ns pv0-ns bt b--black-10 bn-ns"><div class="e82b10fd relative flex-grow-1"><div class="_2f299eeb nowrap flex"><span class="_705cdf4f db fl pl3 pr1"><svg width="15px" height="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" aria-hidden="true"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Artboard-1" stroke="#777777" stroke-width="1.3"><g id="Group"><path d="M13.4044,7.0274 C13.4044,10.5494 10.5494,13.4044 7.0274,13.4044 C3.5054,13.4044 0.6504,10.5494 0.6504,7.0274 C0.6504,3.5054 3.5054,0.6504 7.0274,0.6504 C10.5494,0.6504 13.4044,3.5054 13.4044,7.0274 Z" id="Stroke-3"></path><path d="M11.4913,11.4913 L17.8683,17.8683" id="Stroke-7"></path></g></g></g></svg></span><input type="search" name="q" hotkeys="[object Object]" placeholder="Search packages" autoComplete="off" aria-label="Search packages" inputref="[object Object]" class="_390acbc5 f5 fw3 black relative" value="" element="input"/></div></div><button type="submit" class="_0da775bb bn pv2 ph4 f6 white pointer">Search</button><input type="hidden" name="csrftoken" value="DJ4mqdttzNyRVkgVdd5NqFdSLt1KA3K_r8ukxppiN7O"/></form></div><div class="_6f31c82b ml3 mt2 mt0-ns pv2-ns flex-auto tr nowrap relative pointer fw6 order-1 order-2-ns"><div class="_1066d9e7 flex items-center self-center pl3"><a href="/signup" class="_9752c8b3 pa2 lh-copy br2 f6 no-underline fw5 black dim ph3 mr3">Sign Up</a><a class="_352269a0 pa1 lh-copy br2 f6 no-underline fw5 black dim" href="/login">Sign In</a></div></div></div></div></header><main><div data-promotion-id="npm Pro ongoing promo" data-promotion-spot="below-header"><div><div class="_98714ae6"><span rel="npm:upsellbox:text" class="d321523e">Get unlimited public &amp; private packages + package-based permissions with npm Pro.</span><span class="c7d083b3"><a href="https://www.npmjs.com/products/pro?utm_source=house&amp;utm_medium=upsellbox&amp;utm_campaign=Proongoingpromo">Get started<!-- --> »</a></span></div></div></div><div class="_36ae70e9 flex flex-row flex-wrap pb5 ph3-l mw-100 mt4-ns mt1 center-ns mh1" id="top"><div class="w-100 ph0-l ph3 ph4-m"><h2 class="cd6ce1fd flex flex-column w-100 fw6 mt3 black dib ma0 tracked-tight no-underline hover-black f3-ns"><span class="_50685029 truncate flex-auto" title="body-parser">body-parser</span></h2><span class="_76473bea f6 dib ph0 pv2 mb2-ns black-80 nowrap f5 fw4 lh-copy">1.19.0<!-- --> • </span><span class="_813b53b2 _76473bea f6 dib ph0 pv2 mb2-ns black-80 nowrap f5 fw4 lh-copy green">Public</span><span class="_76473bea f6 dib ph0 pv2 mb2-ns black-80 nowrap f5 fw4 lh-copy"> • Published <time dateTime="2019-04-26T03:31:23.981Z" title="2019-4-26 03:31:23">a year ago</time></span></div><ul class="cfb2a888 flex flex-column flex-row-l w-100 ma0 pa0 mr2 mr0-l list"><li class="_8055e658 f5 fw5 tc pointer d9f99065 ac5f7ef8 f4 fw6 black-50"><a class="_38ce9a85 link db ph4 fw6" href="?activeTab=readme"><span><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="file-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"></path></svg> Readme</span></a></li><li class="_8055e658 f5 fw5 tc pointer undefined"><a class="_38ce9a85 link db ph4 fw6" href="?activeTab=explore"><span><span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-archive" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zM128.4 336c-17.9 0-32.4 12.1-32.4 27 0 15 14.6 27 32.5 27s32.4-12.1 32.4-27-14.6-27-32.5-27zM224 136V0h-63.6v32h-32V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zM95.9 32h32v32h-32zm32.3 384c-33.2 0-58-30.4-51.4-62.9L96.4 256v-32h32v-32h-32v-32h32v-32h-32V96h32V64h32v32h-32v32h32v32h-32v32h32v32h-32v32h22.1c5.7 0 10.7 4.1 11.8 9.7l17.3 87.7c6.4 32.4-18.4 62.6-51.4 62.6z"></path></svg> Explore</span><span class="_22665c13">BETA</span></span></a></li><li class="_8055e658 f5 fw5 tc pointer c1f85151"><a class="_38ce9a85 link db ph4 fw6" href="?activeTab=dependencies"><span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M239.1 6.3l-208 78c-18.7 7-31.1 25-31.1 45v225.1c0 18.2 10.3 34.8 26.5 42.9l208 104c13.5 6.8 29.4 6.8 42.9 0l208-104c16.3-8.1 26.5-24.8 26.5-42.9V129.3c0-20-12.4-37.9-31.1-44.9l-208-78C262 2.2 250 2.2 239.1 6.3zM256 68.4l192 72v1.1l-192 78-192-78v-1.1l192-72zm32 356V275.5l160-65v133.9l-160 80z"></path></svg><span class="c3fc8940">10</span>Dependencies</span></a></li><li class="_8055e658 f5 fw5 tc pointer _7cec0316"><a class="_38ce9a85 link db ph4 fw6" href="?activeTab=dependents"><span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cubes" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M488.6 250.2L392 214V105.5c0-15-9.3-28.4-23.4-33.7l-100-37.5c-8.1-3.1-17.1-3.1-25.3 0l-100 37.5c-14.1 5.3-23.4 18.7-23.4 33.7V214l-96.6 36.2C9.3 255.5 0 268.9 0 283.9V394c0 13.6 7.7 26.1 19.9 32.2l100 50c10.1 5.1 22.1 5.1 32.2 0l103.9-52 103.9 52c10.1 5.1 22.1 5.1 32.2 0l100-50c12.2-6.1 19.9-18.6 19.9-32.2V283.9c0-15-9.3-28.4-23.4-33.7zM358 214.8l-85 31.9v-68.2l85-37v73.3zM154 104.1l102-38.2 102 38.2v.6l-102 41.4-102-41.4v-.6zm84 291.1l-85 42.5v-79.1l85-38.8v75.4zm0-112l-102 41.4-102-41.4v-.6l102-38.2 102 38.2v.6zm240 112l-85 42.5v-79.1l85-38.8v75.4zm0-112l-102 41.4-102-41.4v-.6l102-38.2 102 38.2v.6z"></path></svg><span class="c3fc8940">17,041</span>Dependents</span></a></li><li class="_8055e658 f5 fw5 tc pointer b4fcfd19"><a class="_38ce9a85 link db ph4 fw6" href="?activeTab=versions"><span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tags" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"></path></svg><span class="c3fc8940">65</span>Versions</span></a></li></ul><div class="_6620a4fd mw8-l mw-100 w-100 w-two-thirds-l ph3-m pt2 pl0-ns pl2 order-1-m order-0-ns order-1 order-2-m"><section class="e22ba268 ph2 ph0-ns ml0-ns mr3-ns black-80"><div class=""><article> <div class="_6d9832ac pr4-ns pl0-ns ph1-m pr3-m pr2  markdown" id="readme"><h1 class="package-name-redundant"><a id="user-content-body-parser" class="deep-link" href="#body-parser" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>body-parser</h1>
+<p><a href="https://npmjs.org/package/body-parser" rel="nofollow"><img src="https://img.shields.io/npm/v/body-parser.svg" alt="NPM Version" /></a>
+<a href="https://npmjs.org/package/body-parser" rel="nofollow"><img src="https://img.shields.io/npm/dm/body-parser.svg" alt="NPM Downloads" /></a>
+<a href="https://travis-ci.org/expressjs/body-parser" rel="nofollow"><img src="https://img.shields.io/travis/expressjs/body-parser/master.svg" alt="Build Status" /></a>
+<a href="https://coveralls.io/r/expressjs/body-parser?branch=master" rel="nofollow"><img src="https://img.shields.io/coveralls/expressjs/body-parser/master.svg" alt="Test Coverage" /></a></p>
+<p class="package-description-redundant">Node.js body parsing middleware.</p>
+<p>Parse incoming request bodies in a middleware before your handlers, available
+under the <code>req.body</code> property.</p>
+<p><strong>Note</strong> As <code>req.body</code>'s shape is based on user-controlled input, all
+properties and values in this object are untrusted and should be validated
+before trusting. For example, <code>req.body.foo.toString()</code> may fail in multiple
+ways, for example the <code>foo</code> property may not be there or may not be a string,
+and <code>toString</code> may not be a function and instead a string or other user input.</p>
+<p><a href="https://nodejs.org/en/docs/guides/anatomy-of-an-http-transaction/" rel="nofollow">Learn about the anatomy of an HTTP transaction in Node.js</a>.</p>
+<p><em>This does not handle multipart bodies</em>, due to their complex and typically
+large nature. For multipart bodies, you may be interested in the following
+modules:</p>
 <ul>
-<li>
-<a href="https://coveralls.io/"><i class="fa fa-home"></i>
-<span>Home</span>
-</a></li>
-<li>
-<a href="/features"><i class="fa fa-asterisk"></i>
-<span>Features</span>
-</a></li>
-<li class=''>
-<a href="/pricing"><i class="fa fa-star"></i>
-<span>Pricing</span>
-</a></li>
-<li>
-<a href="http://docs.coveralls.io"><i class="fa fa-question-circle"></i>
-<span>Docs</span>
-</a></li>
-<li>
-<a data-no-turbolink="true" href="/sign-in"><i class="fa fa-sign-in"></i>
-<span>Sign In</span>
-</a></li>
+<li><a href="https://www.npmjs.org/package/busboy#readme" rel="nofollow">busboy</a> and
+<a href="https://www.npmjs.org/package/connect-busboy#readme" rel="nofollow">connect-busboy</a></li>
+<li><a href="https://www.npmjs.org/package/multiparty#readme" rel="nofollow">multiparty</a> and
+<a href="https://www.npmjs.org/package/connect-multiparty#readme" rel="nofollow">connect-multiparty</a></li>
+<li><a href="https://www.npmjs.org/package/formidable#readme" rel="nofollow">formidable</a></li>
+<li><a href="https://www.npmjs.org/package/multer#readme" rel="nofollow">multer</a></li>
 </ul>
-</nav>
-</div>
-
-<div class='appWrapper'>
-<div class='show-page'>
-<h1>
-<i class="fa fa-github"></i>
-<a class="user" href="/github/expressjs">expressjs</a>
-<b>/</b>
-<a class="repo" href="https://coveralls.io/github/expressjs/body-parser">body-parser</a>
-
-<div class='coverage-high coverageText repo-coverage-outline' id='repoShowPercentage'>
-100%
-<div class='coverage-high coverageText repo-default-percent'>
-master: 100%
-</div>
-</div>
-</h1>
-<div class='show-trend repoOverview'><div class='coverage-high trend trend-default'>
-<em>
-DEFAULT BRANCH:
-<span>master</span>
-</em>
-<div class='repo-sparkline sparkline-no-circles' data-branch='master' data-graph-data='[[0,100.0,808668],[1,100.0,808761],[2,100.0,808778],[3,100.0,821946],[4,100.0,821961],[5,100.0,821962],[6,100.0,822225],[7,100.0,822229],[8,100.0,831361],[9,100.0,859369],[10,100.0,859372],[11,100.0,859374],[12,100.0,859375],[13,100.0,859376],[14,100.0,878668],[15,100.0,878672],[16,100.0,878723],[17,100.0,881281],[18,100.0,881622],[19,100.0,881715],[20,100.0,884798],[21,100.0,884832],[22,100.0,884934],[23,100.0,885115],[24,100.0,885131],[25,100.0,885196],[26,100.0,885259],[27,100.0,885358],[28,100.0,885363],[29,100.0,885370],[30,100.0,885415],[31,100.0,885534],[32,100.0,885589],[33,100.0,885805],[34,100.0,885838],[35,100.0,885957],[36,100.0,886380],[37,100.0,886382],[38,100.0,886473],[39,100.0,886476],[40,100.0,886477],[41,100.0,887807],[42,100.0,900809],[43,100.0,940005],[44,100.0,987052],[45,100.0,987057],[46,100.0,987061],[47,100.0,987179],[48,100.0,987183],[49,100.0,987967],[50,100.0,987994],[51,100.0,1010619],[52,100.0,1010625],[53,100.0,1012491],[54,100.0,1012492],[55,100.0,1048556],[56,100.0,1048561],[57,100.0,1048563],[58,100.0,1051518],[59,100.0,1052739],[60,100.0,1052740],[61,100.0,1055541],[62,100.0,1055545],[63,100.0,1066652],[64,100.0,1066654],[65,100.0,1066655],[66,100.0,1086699],[67,100.0,1086756],[68,100.0,1091763],[69,100.0,1093973],[70,100.0,1093997],[71,100.0,1128306],[72,100.0,1128307],[73,100.0,1128541],[74,100.0,1136816],[75,100.0,1136848],[76,100.0,1138513],[77,100.0,1142984],[78,100.0,1147539],[79,100.0,1148041],[80,100.0,1156411],[81,100.0,1156432],[82,100.0,1156443],[83,100.0,1175573],[84,100.0,1175603],[85,100.0,1176461],[86,100.0,1176464],[87,100.0,1176501],[88,100.0,1181408],[89,100.0,1181412],[90,100.0,1181416],[91,100.0,1214228],[92,100.0,1214238],[93,100.0,1214420],[94,100.0,1214422],[95,100.0,1219265],[96,100.0,1219267],[97,100.0,1234361],[98,100.0,1234374],[99,100.0,1249016],[100,100.0,1249091],[101,100.0,1249114],[102,100.0,1249119],[103,100.0,1249130],[104,100.0,1251979],[105,100.0,1263248],[106,100.0,1263253],[107,100.0,1282915],[108,100.0,1282951],[109,100.0,1287972],[110,100.0,1321009],[111,100.0,1372556],[112,100.0,1372557],[113,100.0,1372560],[114,100.0,1372561],[115,100.0,1372566],[116,100.0,1391984],[117,100.0,1392101],[118,100.0,1402982],[119,100.0,1403038],[120,100.0,1511944],[121,100.0,1511948],[122,100.0,1511949],[123,100.0,1511951],[124,100.0,1511960],[125,100.0,1511965],[126,100.0,1511969],[127,100.0,1511989],[128,100.0,1512123],[129,100.0,1555373],[130,100.0,1558554],[131,100.0,1561199],[132,100.0,1594937],[133,100.0,1594938],[134,100.0,1681646],[135,100.0,1681648],[136,100.0,1681657],[137,100.0,1681660],[138,100.0,1681725],[139,100.0,1778349],[140,100.0,1778352],[141,100.0,1778357],[142,100.0,1838538],[143,100.0,1838566],[144,100.0,1838588],[145,100.0,1919570],[146,100.0,1919574],[147,100.0,1919577],[148,0,1919580],[149,100.0,1919582],[150,100.0,1919602],[151,100.0,1919644],[152,100.0,1919660],[153,100.0,1926350],[154,100.0,1926891],[155,100.0,1927012],[156,100.0,1927013],[157,99.3630573248408,1927047],[158,99.3630573248408,1927048],[159,99.3630573248408,2120102],[160,100.0,2120157],[161,100.0,2120164],[162,100.0,2120169],[163,100.0,2120173],[164,100.0,2120185],[165,100.0,2120192],[166,100.0,2120384],[167,100.0,2128673],[168,100.0,2128683],[169,100.0,2219423],[170,100.0,2219427],[171,100.0,2349379],[172,100.0,2349383],[173,100.0,2349395],[174,100.0,2349472],[175,100.0,2349475],[176,100.0,2349479],[177,100.0,2349542],[178,100.0,2349545],[179,100.0,2531819],[180,100.0,2531822],[181,100.0,2531880],[182,100.0,2532052],[183,100.0,2532065],[184,100.0,2532067],[185,100.0,2532069],[186,100.0,2532094],[187,100.0,2532405],[188,100.0,2532419],[189,100.0,2532449],[190,100.0,2593607],[191,100.0,2593612],[192,100.0,2593622],[193,100.0,2815347],[194,100.0,2815352],[195,100.0,2815394],[196,100.0,2815399],[197,100.0,2815444],[198,100.0,2815473],[199,100.0,2815477],[200,100.0,2815512],[201,100.0,2815517],[202,100.0,2815520],[203,100.0,2815591],[204,100.0,2815644],[205,100.0,2815791],[206,100.0,2815875],[207,100.0,2815891],[208,100.0,2831825],[209,100.0,2831897],[210,100.0,2981665],[211,100.0,2981673],[212,100.0,2981679],[213,100.0,2981683],[214,100.0,2981696],[215,100.0,2981718],[216,100.0,2981729],[217,100.0,3082282],[218,100.0,3082285],[219,100.0,3193667],[220,100.0,3193671],[221,100.0,3193686],[222,100.0,3485610],[223,100.0,3485637],[224,100.0,3485667],[225,100.0,3485704],[226,100.0,3485805],[227,100.0,3485860],[228,100.0,3500203],[229,100.0,3500229],[230,100.0,3500234],[231,100.0,3507344],[232,100.0,3507395],[233,100.0,3564532],[234,100.0,3564695],[235,100.0,3564920],[236,100.0,3576749],[237,100.0,3589580],[238,100.0,3684613],[239,100.0,3684616],[240,100.0,3684653],[241,100.0,3684656],[242,100.0,3684659],[243,100.0,3684691],[244,100.0,3684734],[245,100.0,3684743],[246,100.0,3684751],[247,100.0,4484246],[248,100.0,4484271],[249,100.0,4484335],[250,100.0,4484345],[251,100.0,4484356],[252,100.0,4484374],[253,100.0,4484408],[254,100.0,4484427],[255,100.0,4484547],[256,100.0,4484566],[257,100.0,4485028],[258,100.0,4485039],[259,100.0,4485051],[260,100.0,4485064],[261,100.0,4910267],[262,100.0,4910268],[263,100.0,4910273],[264,100.0,4910333],[265,100.0,5042437],[266,100.0,5042461],[267,100.0,5042674],[268,100.0,5042682],[269,100.0,5042693],[270,100.0,5042732],[271,100.0,5042743],[272,100.0,5042764],[273,100.0,5043088],[274,100.0,5880675],[275,100.0,5880718],[276,100.0,6070879],[277,100.0,6070895],[278,100.0,6070904],[279,100.0,6070914],[280,100.0,6071139],[281,100.0,6071338],[282,100.0,6071349],[283,100.0,6071397],[284,100.0,6071422],[285,100.0,6071750],[286,100.0,6071758],[287,100.0,6071801],[288,100.0,6659789],[289,100.0,6659821],[290,100.0,6659837],[291,100.0,6659850],[292,100.0,6659869],[293,100.0,6659946],[294,100.0,6659952],[295,100.0,6660697],[296,100.0,6661326],[297,100.0,6662071],[298,100.0,6662099],[299,100.0,6662333],[300,100.0,6662421],[301,100.0,6662466],[302,100.0,6662550],[303,100.0,6662874],[304,100.0,6810698],[305,100.0,6810718],[306,100.0,6810798],[307,100.0,8900539],[308,100.0,8900562],[309,100.0,9682933],[310,100.0,9682946],[311,100.0,9682950],[312,100.0,9682958],[313,100.0,9682964],[314,100.0,9682972],[315,100.0,9682982],[316,100.0,9683188],[317,100.0,9683202],[318,100.0,9683207],[319,100.0,9683397],[320,100.0,9683410],[321,100.0,9683420],[322,100.0,9683436],[323,100.0,9719172],[324,100.0,9719227],[325,100.0,9719258],[326,100.0,10104056],[327,100.0,10104091],[328,100.0,10104106],[329,100.0,10104117],[330,100.0,10104133],[331,100.0,10288102],[332,100.0,10288120],[333,100.0,10288172],[334,100.0,10288189],[335,100.0,10288213],[336,100.0,10288228],[337,100.0,10288242],[338,100.0,10387143],[339,100.0,10387179],[340,99.2714025500911,10450085],[341,99.2714025500911,10450123],[342,99.2714025500911,10450150],[343,99.4505494505494,10450451],[344,99.8154981549816,10450529],[345,99.8154981549816,10450558],[346,99.8154981549816,10465294],[347,99.8154981549816,10465303],[348,100.0,11576780],[349,99.8154981549816,11576795],[350,99.8154981549816,11576821],[351,99.8154981549816,11576838],[352,99.8154981549816,11577506],[353,99.8154981549816,11577542],[354,99.8154981549816,11577557],[355,99.8154981549816,11577584],[356,99.8154981549816,11577603],[357,99.8154981549816,11577630],[358,99.8154981549816,11577654],[359,99.8154981549816,12703949],[360,99.8154981549816,12703972],[361,99.8154981549816,12703997],[362,99.8154981549816,12704021],[363,99.8154981549816,12704042],[364,99.8154981549816,12704064],[365,99.8154981549816,12704113],[366,99.8154981549816,12704128],[367,99.8154981549816,12704150],[368,99.8154981549816,12704171],[369,99.8154981549816,12704986],[370,99.8154981549816,12704996],[371,99.8154981549816,12705064],[372,99.8154981549816,12705075],[373,99.8175182481752,12705091],[374,99.8175182481752,13179253],[375,99.8175182481752,13179280],[376,99.8175182481752,13179295],[377,99.8175182481752,13179314],[378,99.8175182481752,13179334],[379,99.8175182481752,13179354],[380,99.8175182481752,13179597],[381,99.8198198198198,13179671],[382,99.8198198198198,13179687],[383,99.8161764705882,13179769],[384,99.8161764705882,13185716],[385,99.8161764705882,13187620],[386,99.8161764705882,13189660],[387,99.8161764705882,13189863],[388,99.8161764705882,13189913],[389,100.0,13189983],[390,100.0,13191220],[391,100.0,13192654],[392,100.0,13195121],[393,99.8175182481752,13195207],[394,99.8175182481752,13195228],[395,99.8175182481752,13195239],[396,99.8175182481752,13195249],[397,99.8175182481752,13195262],[398,99.8175182481752,13195272],[399,99.8175182481752,13195288],[400,99.8198198198198,13195311],[401,99.8198198198198,13195324],[402,99.8161764705882,13195340],[403,99.8161764705882,13195352],[404,99.8161764705882,13195364],[405,99.8161764705882,13195390],[406,99.8161764705882,13195418],[407,99.8161764705882,13195432],[408,100.0,13195446],[409,100.0,13195456],[410,100.0,13196007],[411,100.0,13205415],[412,100.0,13205445],[413,100.0,13205463],[414,100.0,13209333],[415,100.0,13235992],[416,100.0,13236054],[417,100.0,13236120],[418,100.0,13392308],[419,100.0,13392432],[420,100.0,13392459],[421,100.0,13446853],[422,100.0,14972360],[423,100.0,14972427],[424,100.0,14972458],[425,100.0,14972783],[426,100.0,14972854],[427,100.0,14972909],[428,100.0,14972949],[429,100.0,14973014],[430,100.0,16368058],[431,100.0,16519348],[432,100.0,16519366],[433,100.0,16519385],[434,100.0,16519402],[435,100.0,16519415],[436,100.0,16519435],[437,100.0,16519448],[438,100.0,16519471],[439,100.0,16519490],[440,100.0,16850007],[441,100.0,16850028],[442,100.0,16886463],[443,100.0,16886533],[444,100.0,16886621],[445,100.0,16887287],[446,100.0,16887330],[447,100.0,16888465],[448,100.0,16888526],[449,100.0,16889032],[450,100.0,16889084],[451,100.0,16890453],[452,100.0,16890743],[453,100.0,16890813],[454,100.0,16973946],[455,100.0,18406942],[456,100.0,18407067],[457,100.0,18407176],[458,100.0,18407257],[459,100.0,18407539],[460,100.0,18407831],[461,100.0,22875864],[462,100.0,22875980],[463,100.0,22876075],[464,100.0,22876162],[465,100.0,22876260],[466,100.0,22876376],[467,100.0,22876577],[468,100.0,22882311],[469,100.0,22882360],[470,100.0,22883484],[471,100.0,22883525],[472,100.0,22883565],[473,100.0,22883600],[474,100.0,22883623],[475,100.0,22883645],[476,100.0,22883697],[477,100.0,22883727],[478,100.0,22883764],[479,100.0,22883788],[480,100.0,22883824],[481,100.0,22883845],[482,100.0,22883897],[483,100.0,22883929],[484,100.0,22884032],[485,100.0,22884064],[486,100.0,22884104],[487,100.0,22884145],[488,100.0,22885152],[489,100.0,22885185],[490,100.0,22885244],[491,100.0,22885284],[492,100.0,22885316],[493,100.0,22885347],[494,100.0,22885377],[495,100.0,22885413],[496,100.0,22924673],[497,100.0,22924685],[498,100.0,22924708],[499,100.0,22985664],[500,100.0,23036299],[501,100.0,23036331],[502,100.0,24209401],[503,100.0,24209448],[504,100.0,24209485],[505,100.0,24209533],[506,100.0,24209570],[507,100.0,24209855],[508,100.0,24209885],[509,100.0,24209926],[510,100.0,24209967],[511,100.0,24210008],[512,100.0,24210035],[513,100.0,28754781],[514,100.0,28754818],[515,100.0,28754837]]'></div>
-<a class='infobox' href='/builds/' onmouseout='$(&#39;.infobox&#39;).hide();' style='display:none;'>
-<span>
-Build:
-<i class='fa fa-arrow-circle-right'></i>
-</span>
-</a>
-</div>
-<div class='coverage-high trend trend-line'>
-<em>
-LAST BUILD BRANCH:
-<span>feature/iso-8859-1/take2</span>
-</em>
-<div class='repo-sparkline repo-default-line' data-branch='check-charset' data-graph-data='[[0,100.0,869526]]'></div>
-</div>
-</div>
-<div class='repo-details'>
-<table>
-<tr>
-<td>
-<div class='show-detail-item'>
-<span>Repo Added</span>
-27 May 2014 06:40PM UTC
-</div>
-</td>
-<td>
-<div class='show-detail-item'>
-<span>Total Files</span>
-1
-</div>
-</td>
-<td>
-<div class='show-detail-item'>
-<span># Builds</span>
-729
-<a class="btn btn-nano" href="/builds/28754837">Last
-<i class="fa fa-arrow-circle-right"></i>
-</a></div>
-</td>
-<td>
-<div class='show-detail-item'>
-<span>Badge</span>
-<div class='repoBadgeBtn'>
-<img src="https://coveralls.io/repos/github/expressjs/body-parser/badge.svg?branch=check-charset" alt="Badge" />
-<a class="btn btn-micro j_popoverButton btn-nano" href="javascript://">Embed ▾</a>
-<div class='popover j_shieldLinks_wr'>
-<h5>
-README BADGES
-<div class='j_popoverClose'>x</div>
-</h5>
-<p>If you need to use a raster PNG badge, change the '.svg' to '.png' in the link</p>
-<div class='j_shieldLinks'>
-<div class='markdown'>
-<h4>Markdown</h4>
-<textarea onclick='this.focus();this.select()' readonly='readonly'>[![Coverage Status](https://coveralls.io/repos/github/expressjs/body-parser/badge.svg?branch=check-charset)](https://coveralls.io/github/expressjs/body-parser?branch=check-charset)</textarea>
-</div>
-<div class='textile'>
-<h4>Textile</h4>
-<textarea onclick='this.focus();this.select()' readonly='readonly'>https://coveralls.io/repos/github/expressjs/body-parser/badge.svg?branch=check-charset(Coverage Status)!:https://coveralls.io/github/expressjs/body-parser?branch=check-charset</textarea>
-</div>
-<div class='rdoc'>
-<h4>RDoc</h4>
-<textarea onclick='this.focus();this.select()' readonly='readonly'>{&lt;img src=&quot;https://coveralls.io/repos/github/expressjs/body-parser/badge.svg?branch=check-charset&quot; alt=&quot;Coverage Status&quot; /&gt;}[https://coveralls.io/github/expressjs/body-parser?branch=check-charset]
-</textarea>
-</div>
-<div class='html'>
-<h4>HTML</h4>
-<textarea onclick='this.focus();this.select()' readonly='readonly'>&lt;a href=&#39;https://coveralls.io/github/expressjs/body-parser?branch=check-charset&#39;&gt;&lt;img src=&#39;https://coveralls.io/repos/github/expressjs/body-parser/badge.svg?branch=check-charset&#39; alt=&#39;Coverage Status&#39; /&gt;&lt;/a&gt;
-</textarea>
-</div>
-<div class='rst'>
-<h4>Rst</h4>
-<textarea onclick='this.focus();this.select()' readonly='readonly'>.. image:: https://coveralls.io/repos/github/expressjs/body-parser/badge.svg?branch=check-charset
-:target: https://coveralls.io/github/expressjs/body-parser?branch=check-charset
-</textarea>
-</div>
-</div>
-</div>
-</div>
-
-</div>
-</td>
-</tr>
-</table>
-</div>
-
-<div class='show-item repo-build-details'>
-<h3>
-LAST BUILD ON BRANCH
-check-charset
-<div class='repo-build-branch pull-right pop-wr'>
-<a class="btn popover-btn j_popoverButton" href="javascript://"><i class="fa fa-code-fork"></i>
-branch: check-charset
-</a><div class='popover popover-branches'>
-<h5>
-CHANGE BRANCH
-<div class='j_popoverClose'>x</div>
-</h5>
-<div class='branch-search'>
-<input id='branchSearch' placeholder='Search branches' type='text'>
-</div>
-<div class='branch-reset'>
-<div>
-<a href="/github/expressjs/body-parser"><i class="fa fa-check-circle"></i>
-Reset
-</a></div>
-</div>
-<ul class='popover-link-list' id='branchSearch-results'>
-<li>
-<div class='popover-link-list-current'>
-<i class="fa fa-check-circle-o"></i>
-check-charset
-</div>
-</li>
-<li class='opt' data-name='master'>
-<a href="/github/expressjs/body-parser?branch=master"><i class="fa fa-circle-o"></i>
-master
-</a></li>
-<li class='opt' data-name='1.3.0'>
-<a href="/github/expressjs/body-parser?branch=1.3.0"><i class="fa fa-circle-o"></i>
-1.3.0
-</a></li>
-<li class='opt' data-name='1.3.1'>
-<a href="/github/expressjs/body-parser?branch=1.3.1"><i class="fa fa-circle-o"></i>
-1.3.1
-</a></li>
-<li class='opt' data-name='1.4.0'>
-<a href="/github/expressjs/body-parser?branch=1.4.0"><i class="fa fa-circle-o"></i>
-1.4.0
-</a></li>
-<li class='opt' data-name='1.4.1'>
-<a href="/github/expressjs/body-parser?branch=1.4.1"><i class="fa fa-circle-o"></i>
-1.4.1
-</a></li>
-<li class='opt' data-name='1.4.2'>
-<a href="/github/expressjs/body-parser?branch=1.4.2"><i class="fa fa-circle-o"></i>
-1.4.2
-</a></li>
-<li class='opt' data-name='1.4.3'>
-<a href="/github/expressjs/body-parser?branch=1.4.3"><i class="fa fa-circle-o"></i>
-1.4.3
-</a></li>
-<li class='opt' data-name='1.5.0'>
-<a href="/github/expressjs/body-parser?branch=1.5.0"><i class="fa fa-circle-o"></i>
-1.5.0
-</a></li>
-<li class='opt' data-name='1.5.1'>
-<a href="/github/expressjs/body-parser?branch=1.5.1"><i class="fa fa-circle-o"></i>
-1.5.1
-</a></li>
-<li class='opt' data-name='1.5.2'>
-<a href="/github/expressjs/body-parser?branch=1.5.2"><i class="fa fa-circle-o"></i>
-1.5.2
-</a></li>
-<li class='opt' data-name='1.6.0'>
-<a href="/github/expressjs/body-parser?branch=1.6.0"><i class="fa fa-circle-o"></i>
-1.6.0
-</a></li>
-<li class='opt' data-name='1.6.1'>
-<a href="/github/expressjs/body-parser?branch=1.6.1"><i class="fa fa-circle-o"></i>
-1.6.1
-</a></li>
-<li class='opt' data-name='1.6.2'>
-<a href="/github/expressjs/body-parser?branch=1.6.2"><i class="fa fa-circle-o"></i>
-1.6.2
-</a></li>
-<li class='opt' data-name='1.6.3'>
-<a href="/github/expressjs/body-parser?branch=1.6.3"><i class="fa fa-circle-o"></i>
-1.6.3
-</a></li>
-<li class='opt' data-name='1.6.4'>
-<a href="/github/expressjs/body-parser?branch=1.6.4"><i class="fa fa-circle-o"></i>
-1.6.4
-</a></li>
-<li class='opt' data-name='1.6.5'>
-<a href="/github/expressjs/body-parser?branch=1.6.5"><i class="fa fa-circle-o"></i>
-1.6.5
-</a></li>
-<li class='opt' data-name='1.6.6'>
-<a href="/github/expressjs/body-parser?branch=1.6.6"><i class="fa fa-circle-o"></i>
-1.6.6
-</a></li>
-<li class='opt' data-name='1.6.7'>
-<a href="/github/expressjs/body-parser?branch=1.6.7"><i class="fa fa-circle-o"></i>
-1.6.7
-</a></li>
-<li class='opt' data-name='1.7.0'>
-<a href="/github/expressjs/body-parser?branch=1.7.0"><i class="fa fa-circle-o"></i>
-1.7.0
-</a></li>
-<li class='opt' data-name='1.8.0'>
-<a href="/github/expressjs/body-parser?branch=1.8.0"><i class="fa fa-circle-o"></i>
-1.8.0
-</a></li>
-<li class='opt' data-name='1.8.1'>
-<a href="/github/expressjs/body-parser?branch=1.8.1"><i class="fa fa-circle-o"></i>
-1.8.1
-</a></li>
-<li class='opt' data-name='1.8.2'>
-<a href="/github/expressjs/body-parser?branch=1.8.2"><i class="fa fa-circle-o"></i>
-1.8.2
-</a></li>
-<li class='opt' data-name='2.x'>
-<a href="/github/expressjs/body-parser?branch=2.x"><i class="fa fa-circle-o"></i>
-2.x
-</a></li>
-<li class='opt' data-name='1.8.3'>
-<a href="/github/expressjs/body-parser?branch=1.8.3"><i class="fa fa-circle-o"></i>
-1.8.3
-</a></li>
-<li class='opt' data-name='1.8.4'>
-<a href="/github/expressjs/body-parser?branch=1.8.4"><i class="fa fa-circle-o"></i>
-1.8.4
-</a></li>
-<li class='opt' data-name='1.9.0'>
-<a href="/github/expressjs/body-parser?branch=1.9.0"><i class="fa fa-circle-o"></i>
-1.9.0
-</a></li>
-<li class='opt' data-name='1.9.1'>
-<a href="/github/expressjs/body-parser?branch=1.9.1"><i class="fa fa-circle-o"></i>
-1.9.1
-</a></li>
-<li class='opt' data-name='1.9.2'>
-<a href="/github/expressjs/body-parser?branch=1.9.2"><i class="fa fa-circle-o"></i>
-1.9.2
-</a></li>
-<li class='opt' data-name='1.9.3'>
-<a href="/github/expressjs/body-parser?branch=1.9.3"><i class="fa fa-circle-o"></i>
-1.9.3
-</a></li>
-<li class='opt' data-name='1.10.0'>
-<a href="/github/expressjs/body-parser?branch=1.10.0"><i class="fa fa-circle-o"></i>
-1.10.0
-</a></li>
-<li class='opt' data-name='1.10.1'>
-<a href="/github/expressjs/body-parser?branch=1.10.1"><i class="fa fa-circle-o"></i>
-1.10.1
-</a></li>
-<li class='opt' data-name='1.10.2'>
-<a href="/github/expressjs/body-parser?branch=1.10.2"><i class="fa fa-circle-o"></i>
-1.10.2
-</a></li>
-<li class='opt' data-name='1.11.0'>
-<a href="/github/expressjs/body-parser?branch=1.11.0"><i class="fa fa-circle-o"></i>
-1.11.0
-</a></li>
-<li class='opt' data-name='1.12.0'>
-<a href="/github/expressjs/body-parser?branch=1.12.0"><i class="fa fa-circle-o"></i>
-1.12.0
-</a></li>
-<li class='opt' data-name='1.12.1'>
-<a href="/github/expressjs/body-parser?branch=1.12.1"><i class="fa fa-circle-o"></i>
-1.12.1
-</a></li>
-<li class='opt' data-name='1.12.2'>
-<a href="/github/expressjs/body-parser?branch=1.12.2"><i class="fa fa-circle-o"></i>
-1.12.2
-</a></li>
-<li class='opt' data-name='1.12.3'>
-<a href="/github/expressjs/body-parser?branch=1.12.3"><i class="fa fa-circle-o"></i>
-1.12.3
-</a></li>
-<li class='opt' data-name='1.12.4'>
-<a href="/github/expressjs/body-parser?branch=1.12.4"><i class="fa fa-circle-o"></i>
-1.12.4
-</a></li>
-<li class='opt' data-name='1.13.0'>
-<a href="/github/expressjs/body-parser?branch=1.13.0"><i class="fa fa-circle-o"></i>
-1.13.0
-</a></li>
-<li class='opt' data-name='1.13.1'>
-<a href="/github/expressjs/body-parser?branch=1.13.1"><i class="fa fa-circle-o"></i>
-1.13.1
-</a></li>
-<li class='opt' data-name='1.13.2'>
-<a href="/github/expressjs/body-parser?branch=1.13.2"><i class="fa fa-circle-o"></i>
-1.13.2
-</a></li>
-<li class='opt' data-name='1.13.3'>
-<a href="/github/expressjs/body-parser?branch=1.13.3"><i class="fa fa-circle-o"></i>
-1.13.3
-</a></li>
-<li class='opt' data-name='mocha_test'>
-<a href="/github/expressjs/body-parser?branch=mocha_test"><i class="fa fa-circle-o"></i>
-mocha_test
-</a></li>
-<li class='opt' data-name='1.14.0'>
-<a href="/github/expressjs/body-parser?branch=1.14.0"><i class="fa fa-circle-o"></i>
-1.14.0
-</a></li>
-<li class='opt' data-name='1.14.1'>
-<a href="/github/expressjs/body-parser?branch=1.14.1"><i class="fa fa-circle-o"></i>
-1.14.1
-</a></li>
-<li class='opt' data-name='1.14.2'>
-<a href="/github/expressjs/body-parser?branch=1.14.2"><i class="fa fa-circle-o"></i>
-1.14.2
-</a></li>
-<li class='opt' data-name='2.x-refactor'>
-<a href="/github/expressjs/body-parser?branch=2.x-refactor"><i class="fa fa-circle-o"></i>
-2.x-refactor
-</a></li>
-<li class='opt' data-name='1.15.0'>
-<a href="/github/expressjs/body-parser?branch=1.15.0"><i class="fa fa-circle-o"></i>
-1.15.0
-</a></li>
-<li class='opt' data-name='1.15.1'>
-<a href="/github/expressjs/body-parser?branch=1.15.1"><i class="fa fa-circle-o"></i>
-1.15.1
-</a></li>
-<li class='opt' data-name='1.15.2'>
-<a href="/github/expressjs/body-parser?branch=1.15.2"><i class="fa fa-circle-o"></i>
-1.15.2
-</a></li>
-<li class='opt' data-name='1.16.0'>
-<a href="/github/expressjs/body-parser?branch=1.16.0"><i class="fa fa-circle-o"></i>
-1.16.0
-</a></li>
-<li class='opt' data-name='1.16.1'>
-<a href="/github/expressjs/body-parser?branch=1.16.1"><i class="fa fa-circle-o"></i>
-1.16.1
-</a></li>
-<li class='opt' data-name=''>
-<a href="/github/expressjs/body-parser?branch="><i class="fa fa-circle-o"></i>
-
-</a></li>
-<li class='opt' data-name='1.17.1'>
-<a href="/github/expressjs/body-parser?branch=1.17.1"><i class="fa fa-circle-o"></i>
-1.17.1
-</a></li>
-<li class='opt' data-name='1.17.2'>
-<a href="/github/expressjs/body-parser?branch=1.17.2"><i class="fa fa-circle-o"></i>
-1.17.2
-</a></li>
-<li class='opt' data-name='type'>
-<a href="/github/expressjs/body-parser?branch=type"><i class="fa fa-circle-o"></i>
-type
-</a></li>
-<li class='opt' data-name='1.18.0'>
-<a href="/github/expressjs/body-parser?branch=1.18.0"><i class="fa fa-circle-o"></i>
-1.18.0
-</a></li>
-<li class='opt' data-name='1.18.1'>
-<a href="/github/expressjs/body-parser?branch=1.18.1"><i class="fa fa-circle-o"></i>
-1.18.1
-</a></li>
-<li class='opt' data-name='1.18.2'>
-<a href="/github/expressjs/body-parser?branch=1.18.2"><i class="fa fa-circle-o"></i>
-1.18.2
-</a></li>
-<li class='opt' data-name='1.18.3'>
-<a href="/github/expressjs/body-parser?branch=1.18.3"><i class="fa fa-circle-o"></i>
-1.18.3
-</a></li>
-<li class='opt' data-name='1.19.0'>
-<a href="/github/expressjs/body-parser?branch=1.19.0"><i class="fa fa-circle-o"></i>
-1.19.0
-</a></li>
-<li class='opt' data-name='urlencoded-qs-simple'>
-<a href="/github/expressjs/body-parser?branch=urlencoded-qs-simple"><i class="fa fa-circle-o"></i>
-urlencoded-qs-simple
-</a></li>
-</ul>
-</div>
-</div>
-</h3>
-<div class='coverage-unknown' id='runInfo'>
-<label>Committed</label>
-15 Jun 2014 - 17:09
-<span class="">First build on check-charset at 100.0%</span>
-</div>
-<div class='coverage-unknown table' id='runCommit'>
-<div class='tr'>
-<div class='td runCommit-build-number'>
-<label>Build #</label>
-<a class="btn btn-micro" href="/builds/869526">102
-</a></div>
-<div class='td'>
-<label>Build Type</label>
-<p>push</p>
-<p>travis-ci</p>
-</div>
-<div class='td'>
-<label>Committed by</label>
-<a class="committer" href="https://github.com/dougwilson"><img src="https://secure.gravatar.com/avatar/c4b64c6e47d970bb0d07a2b9d559be9b?size=18&amp;default=identicon" alt="C4b64c6e47d970bb0d07a2b9d559be9b?size=18&amp;default=identicon" />dougwilson</a>
-</div>
-<div class='td'>
-<label>Commit Message</label>
-<pre><a href="https://github.com/expressjs/body-parser/commit/ce8d6b3a9b8cdaafc00de0879e80d71630f13574">WIP: check charset in content-type</a></pre>
-</div>
-<div class='td'>
-<label>Run Details</label>
-<p>
-<strong>123</strong>
-of
-<strong>123</strong>
-relevant lines covered
-<strong>(100.0%)</strong>
-</p>
-<p>
-<strong>59.59</strong>
-hits per line
-</p>
-</div>
-</div>
-</div>
-
-</div>
-<div class='show-item show-last-build-detail'>
-<h5>Relevant lines Covered</h5>
-<div class='show-trend repoOverview'><div class='trend relevant-total'>
-<div class='relevant-trend-count'>
-<em class='count-relevant'>
-<span>123</span>
-RELEVANT LINES
-</em>
-<em class='count-covered'>
-<span>123</span>
-COVERED LINES
-</em>
-</div>
-<div class='repo-sparkline sparkline-relevent sparkline-no-circles' data-branch='check-charset' data-graph-data='[[0,123,123]]'></div>
-<a class='infobox' href='/builds/' onmouseout='$(&#39;.infobox&#39;).hide();' style='display:none;'>
-<span>
-Build:
-<i class='fa fa-arrow-circle-right'></i>
-</span>
-</a>
-</div>
-<div class='trend relevant-covered'>
-<em>
-<span>59.59</span>
-HITS PER LINE
-</em>
-<div class='repo-sparkline sparkline-relevent' data-branch='check-charset' data-graph-data='[[0,59.59,869526]]'></div>
-</div>
-</div>
-</div>
-<div class='show-item show-last-build-detail'>
-<h5>
-Source Files on
-check-charset
-</h5>
-<div class='groupable'>
-<ul class='nav nav-tabs groupable-controls'>
-<li>
-<a data-sort-class="all" name="filesAll" class="sortableTh sortAll active" href="/github/expressjs/body-parser">List
-<strong>1</strong>
-</a></li>
-<li>
-<a data-sort-class="changed" class="sortableTh sortChanged" href="/github/expressjs/body-parser">Changed
-<strong>0</strong>
-</a></li>
-<li>
-<a data-sort-class="source-changed" class="sortableTh sortSourceChanged" href="/github/expressjs/body-parser">Source Changed
-<strong>0</strong>
-</a></li>
-<li>
-<a data-sort-class="coverage-changed" class="sortableTh sortCovChanged" href="/github/expressjs/body-parser">Coverage Changed
-<strong>0</strong>
-</a></li>
-</ul>
-<div id='source-files-datatable' style='display:'>
-<table class='datatable groupable-table' data-ajax-source-filter='filter=all' data-ajax-source='/builds/869526/source_files.js'>
-<thead>
-<tr>
-<th>Coverage</th>
-<th>∆</th>
-<th>File</th>
-<th>Lines</th>
-<th>Relevant</th>
-<th>Covered</th>
-<th>Missed</th>
-<th>Hits/Line</th>
-</tr>
-</thead>
-<tbody></tbody>
-</table>
-</div>
-<div class='clear'></div>
-</div>
-
-</div>
-<div class='show-item'>
-<h3>Recent Builds</h3>
-<table>
-<thead>
-<tr>
-<th>Builds</th>
-<th>Branch</th>
-<th>Coverage</th>
-<th>Commit</th>
-<th>Committer</th>
-<th>Type</th>
-<th>Time</th>
-<th>Via</th>
-</tr>
-</thead>
-<tr>
-<td>
-<a class="btn btn-micro" href="/builds/869526">102
-</a></td>
-<td>
-<strong><a href="https://github.com/expressjs/body-parser/tree/check-charset">check-charset</a></strong>
-</td>
-<td>
-<div class='changeBadge'><i class="fa fa-plus-circle"></i><div class='changed coverage-high'>
-100.0</div></div>
-
-</td>
-<td class='break-column'><span><a href="/builds/869526">WIP: check charset in content-type</a></span></td>
-<td><a class="committer" href="https://github.com/dougwilson"><img src="https://secure.gravatar.com/avatar/c4b64c6e47d970bb0d07a2b9d559be9b?size=18&amp;default=identicon" alt="C4b64c6e47d970bb0d07a2b9d559be9b?size=18&amp;default=identicon" />dougwilson</a></td>
-<td>
-push
-</td>
-<td>15 Jun 2014 05:11PM UTC</td>
-<td>travis-ci</td>
-</tr>
-</table>
-<div class='repo-show-all-builds'>
-<a class="btn" href="/repos/23191/builds">See All Builds (729)
-</a></div>
-</div>
-
-
-</div>
-
-<div class='clear'></div>
-</div>
-<div class='sidebar'>
-<div class='sidebar-item'>
+<p>This module provides the following parsers:</p>
 <ul>
-<li>
-<a target="_blank" href="https://github.com/expressjs/body-parser/tree/check-charset"><i class="fa fa-external-link-square"></i>
-Repo on GitHub
-</a></li>
+<li><a href="#bodyparserjsonoptions" rel="nofollow">JSON body parser</a></li>
+<li><a href="#bodyparserrawoptions" rel="nofollow">Raw body parser</a></li>
+<li><a href="#bodyparsertextoptions" rel="nofollow">Text body parser</a></li>
+<li><a href="#bodyparserurlencodedoptions" rel="nofollow">URL-encoded form body parser</a></li>
 </ul>
-</div>
+<p>Other body parsers you might be interested in:</p>
+<ul>
+<li><a href="https://www.npmjs.org/package/body#readme" rel="nofollow">body</a></li>
+<li><a href="https://www.npmjs.org/package/co-body#readme" rel="nofollow">co-body</a></li>
+</ul>
+<h2><a id="user-content-installation" class="deep-link" href="#installation" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Installation</h2>
+<div class="highlight sh"><pre class="editor editor-colors"><div class="line"><span class="source shell"><span>$ npm install body-parser</span></span></div></pre></div>
+<h2><a id="user-content-api" class="deep-link" href="#api" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>API</h2>
 
-</div>
-
-</div>
-</div>
-<footer class='' id='footer'>
-<div class='wrapper'>
-<a href="http://docs.coveralls.io/troubleshooting">Troubleshooting</a>
-&middot;
-<a href="https://github.com/lemurheavy/coveralls-public/issues">Open an Issue</a>
-&middot;
-<a rel="nofollow" href="mailto:sales@coveralls.io">Sales</a>
-&middot;
-<a rel="nofollow" href="mailto:support@coveralls.io">Support</a>
-&middot;
-<a href="https://enterprise.coveralls.io">ENTERPRISE</a>
-&middot;
-<a href="/careers">CAREERS</a>
-&middot;
-<a target="_blank" href="http://status.coveralls.io">STATUS</a>
-<br>
-<span>
-<a target="_blank" href="http://blog.coveralls.io/">BLOG</a>
-&middot;
-<a target="_blank" href="https://twitter.com/CoverallsApp">TWITTER</a>
-&middot;
-<a href="/legal">Legal &amp; Privacy</a>
-&middot;
-<a href="/supported-continuous-integration">Supported CI Services</a>
-&middot;
-<a href="/continuous-integration">What&#39;s a CI service?</a>
-&middot;
-<a href="/code-coverage">Automated Testing</a>
-</span>
-<p>
-&copy; 2020 Coveralls, LLC
-</p>
-</div>
-</footer>
-
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  
-  ga('create', 'UA-36781555-1', 'auto');
-  ga('send', 'pageview');
-  
-  ga('require', 'ecommerce');
-</script>
-<script type="text/javascript">
-setTimeout(function(){var a=document.createElement("script");
-var b=document.getElementsByTagName("script")[0];
-a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0062/3179.js?"+Math.floor(new Date().getTime()/3600000);
-a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
-</script>
-
-</body>
+<div class="highlight js"><pre class="editor editor-colors"><div class="line"><span class="source js"><span class="storage type js"><span>var</span></span><span> bodyParser </span><span class="keyword operator assignment js"><span>=</span></span><span> </span><span class="meta function-call js"><span class="support function js"><span>require</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>body-parser</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></div></pre></div>
+<p>The <code>bodyParser</code> object exposes various factories to create middlewares. All
+middlewares will populate the <code>req.body</code> property with the parsed body when
+the <code>Content-Type</code> request header matches the <code>type</code> option, or an empty
+object (<code>{}</code>) if there was no body to parse, the <code>Content-Type</code> was not matched,
+or an error occurred.</p>
+<p>The various errors returned by this module are described in the
+<a href="#errors" rel="nofollow">errors section</a>.</p>
+<h3><a id="user-content-bodyparserjsonoptions" class="deep-link" href="#bodyparserjsonoptions" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>bodyParser.json([options])</h3>
+<p>Returns middleware that only parses <code>json</code> and only looks at requests where
+the <code>Content-Type</code> header matches the <code>type</code> option. This parser accepts any
+Unicode encoding of the body and supports automatic inflation of <code>gzip</code> and
+<code>deflate</code> encodings.</p>
+<p>A new <code>body</code> object containing the parsed data is populated on the <code>request</code>
+object after the middleware (i.e. <code>req.body</code>).</p>
+<h4><a id="user-content-options" class="deep-link" href="#options" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Options</h4>
+<p>The <code>json</code> function takes an optional <code>options</code> object that may contain any of
+the following keys:</p>
+<h5><a id="user-content-inflate" class="deep-link" href="#inflate" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>inflate</h5>
+<p>When set to <code>true</code>, then deflated (compressed) bodies will be inflated; when
+<code>false</code>, deflated bodies are rejected. Defaults to <code>true</code>.</p>
+<h5><a id="user-content-limit" class="deep-link" href="#limit" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>limit</h5>
+<p>Controls the maximum request body size. If this is a number, then the value
+specifies the number of bytes; if it is a string, the value is passed to the
+<a href="https://www.npmjs.com/package/bytes" rel="nofollow">bytes</a> library for parsing. Defaults
+to <code>'100kb'</code>.</p>
+<h5><a id="user-content-reviver" class="deep-link" href="#reviver" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>reviver</h5>
+<p>The <code>reviver</code> option is passed directly to <code>JSON.parse</code> as the second
+argument. You can find more information on this argument
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse#Example.3A_Using_the_reviver_parameter" rel="nofollow">in the MDN documentation about JSON.parse</a>.</p>
+<h5><a id="user-content-strict" class="deep-link" href="#strict" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>strict</h5>
+<p>When set to <code>true</code>, will only accept arrays and objects; when <code>false</code> will
+accept anything <code>JSON.parse</code> accepts. Defaults to <code>true</code>.</p>
+<h5><a id="user-content-type" class="deep-link" href="#type" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>type</h5>
+<p>The <code>type</code> option is used to determine what media type the middleware will
+parse. This option can be a string, array of strings, or a function. If not a
+function, <code>type</code> option is passed directly to the
+<a href="https://www.npmjs.org/package/type-is#readme" rel="nofollow">type-is</a> library and this can
+be an extension name (like <code>json</code>), a mime type (like <code>application/json</code>), or
+a mime type with a wildcard (like <code>*/*</code> or <code>*/json</code>). If a function, the <code>type</code>
+option is called as <code>fn(req)</code> and the request is parsed if it returns a truthy
+value. Defaults to <code>application/json</code>.</p>
+<h5><a id="user-content-verify" class="deep-link" href="#verify" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>verify</h5>
+<p>The <code>verify</code> option, if supplied, is called as <code>verify(req, res, buf, encoding)</code>,
+where <code>buf</code> is a <code>Buffer</code> of the raw request body and <code>encoding</code> is the
+encoding of the request. The parsing can be aborted by throwing an error.</p>
+<h3><a id="user-content-bodyparserrawoptions" class="deep-link" href="#bodyparserrawoptions" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>bodyParser.raw([options])</h3>
+<p>Returns middleware that parses all bodies as a <code>Buffer</code> and only looks at
+requests where the <code>Content-Type</code> header matches the <code>type</code> option. This
+parser supports automatic inflation of <code>gzip</code> and <code>deflate</code> encodings.</p>
+<p>A new <code>body</code> object containing the parsed data is populated on the <code>request</code>
+object after the middleware (i.e. <code>req.body</code>). This will be a <code>Buffer</code> object
+of the body.</p>
+<h4><a id="user-content-options-1" class="deep-link" href="#options-1" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Options</h4>
+<p>The <code>raw</code> function takes an optional <code>options</code> object that may contain any of
+the following keys:</p>
+<h5><a id="user-content-inflate-1" class="deep-link" href="#inflate-1" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>inflate</h5>
+<p>When set to <code>true</code>, then deflated (compressed) bodies will be inflated; when
+<code>false</code>, deflated bodies are rejected. Defaults to <code>true</code>.</p>
+<h5><a id="user-content-limit-1" class="deep-link" href="#limit-1" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>limit</h5>
+<p>Controls the maximum request body size. If this is a number, then the value
+specifies the number of bytes; if it is a string, the value is passed to the
+<a href="https://www.npmjs.com/package/bytes" rel="nofollow">bytes</a> library for parsing. Defaults
+to <code>'100kb'</code>.</p>
+<h5><a id="user-content-type-1" class="deep-link" href="#type-1" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>type</h5>
+<p>The <code>type</code> option is used to determine what media type the middleware will
+parse. This option can be a string, array of strings, or a function.
+If not a function, <code>type</code> option is passed directly to the
+<a href="https://www.npmjs.org/package/type-is#readme" rel="nofollow">type-is</a> library and this
+can be an extension name (like <code>bin</code>), a mime type (like
+<code>application/octet-stream</code>), or a mime type with a wildcard (like <code>*/*</code> or
+<code>application/*</code>). If a function, the <code>type</code> option is called as <code>fn(req)</code>
+and the request is parsed if it returns a truthy value. Defaults to
+<code>application/octet-stream</code>.</p>
+<h5><a id="user-content-verify-1" class="deep-link" href="#verify-1" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>verify</h5>
+<p>The <code>verify</code> option, if supplied, is called as <code>verify(req, res, buf, encoding)</code>,
+where <code>buf</code> is a <code>Buffer</code> of the raw request body and <code>encoding</code> is the
+encoding of the request. The parsing can be aborted by throwing an error.</p>
+<h3><a id="user-content-bodyparsertextoptions" class="deep-link" href="#bodyparsertextoptions" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>bodyParser.text([options])</h3>
+<p>Returns middleware that parses all bodies as a string and only looks at
+requests where the <code>Content-Type</code> header matches the <code>type</code> option. This
+parser supports automatic inflation of <code>gzip</code> and <code>deflate</code> encodings.</p>
+<p>A new <code>body</code> string containing the parsed data is populated on the <code>request</code>
+object after the middleware (i.e. <code>req.body</code>). This will be a string of the
+body.</p>
+<h4><a id="user-content-options-2" class="deep-link" href="#options-2" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Options</h4>
+<p>The <code>text</code> function takes an optional <code>options</code> object that may contain any of
+the following keys:</p>
+<h5><a id="user-content-defaultcharset" class="deep-link" href="#defaultcharset" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>defaultCharset</h5>
+<p>Specify the default character set for the text content if the charset is not
+specified in the <code>Content-Type</code> header of the request. Defaults to <code>utf-8</code>.</p>
+<h5><a id="user-content-inflate-2" class="deep-link" href="#inflate-2" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>inflate</h5>
+<p>When set to <code>true</code>, then deflated (compressed) bodies will be inflated; when
+<code>false</code>, deflated bodies are rejected. Defaults to <code>true</code>.</p>
+<h5><a id="user-content-limit-2" class="deep-link" href="#limit-2" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>limit</h5>
+<p>Controls the maximum request body size. If this is a number, then the value
+specifies the number of bytes; if it is a string, the value is passed to the
+<a href="https://www.npmjs.com/package/bytes" rel="nofollow">bytes</a> library for parsing. Defaults
+to <code>'100kb'</code>.</p>
+<h5><a id="user-content-type-2" class="deep-link" href="#type-2" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>type</h5>
+<p>The <code>type</code> option is used to determine what media type the middleware will
+parse. This option can be a string, array of strings, or a function. If not
+a function, <code>type</code> option is passed directly to the
+<a href="https://www.npmjs.org/package/type-is#readme" rel="nofollow">type-is</a> library and this can
+be an extension name (like <code>txt</code>), a mime type (like <code>text/plain</code>), or a mime
+type with a wildcard (like <code>*/*</code> or <code>text/*</code>). If a function, the <code>type</code>
+option is called as <code>fn(req)</code> and the request is parsed if it returns a
+truthy value. Defaults to <code>text/plain</code>.</p>
+<h5><a id="user-content-verify-2" class="deep-link" href="#verify-2" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>verify</h5>
+<p>The <code>verify</code> option, if supplied, is called as <code>verify(req, res, buf, encoding)</code>,
+where <code>buf</code> is a <code>Buffer</code> of the raw request body and <code>encoding</code> is the
+encoding of the request. The parsing can be aborted by throwing an error.</p>
+<h3><a id="user-content-bodyparserurlencodedoptions" class="deep-link" href="#bodyparserurlencodedoptions" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>bodyParser.urlencoded([options])</h3>
+<p>Returns middleware that only parses <code>urlencoded</code> bodies and only looks at
+requests where the <code>Content-Type</code> header matches the <code>type</code> option. This
+parser accepts only UTF-8 encoding of the body and supports automatic
+inflation of <code>gzip</code> and <code>deflate</code> encodings.</p>
+<p>A new <code>body</code> object containing the parsed data is populated on the <code>request</code>
+object after the middleware (i.e. <code>req.body</code>). This object will contain
+key-value pairs, where the value can be a string or array (when <code>extended</code> is
+<code>false</code>), or any type (when <code>extended</code> is <code>true</code>).</p>
+<h4><a id="user-content-options-3" class="deep-link" href="#options-3" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Options</h4>
+<p>The <code>urlencoded</code> function takes an optional <code>options</code> object that may contain
+any of the following keys:</p>
+<h5><a id="user-content-extended" class="deep-link" href="#extended" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>extended</h5>
+<p>The <code>extended</code> option allows to choose between parsing the URL-encoded data
+with the <code>querystring</code> library (when <code>false</code>) or the <code>qs</code> library (when
+<code>true</code>). The &quot;extended&quot; syntax allows for rich objects and arrays to be
+encoded into the URL-encoded format, allowing for a JSON-like experience
+with URL-encoded. For more information, please
+<a href="https://www.npmjs.org/package/qs#readme" rel="nofollow">see the qs library</a>.</p>
+<p>Defaults to <code>true</code>, but using the default has been deprecated. Please
+research into the difference between <code>qs</code> and <code>querystring</code> and choose the
+appropriate setting.</p>
+<h5><a id="user-content-inflate-3" class="deep-link" href="#inflate-3" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>inflate</h5>
+<p>When set to <code>true</code>, then deflated (compressed) bodies will be inflated; when
+<code>false</code>, deflated bodies are rejected. Defaults to <code>true</code>.</p>
+<h5><a id="user-content-limit-3" class="deep-link" href="#limit-3" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>limit</h5>
+<p>Controls the maximum request body size. If this is a number, then the value
+specifies the number of bytes; if it is a string, the value is passed to the
+<a href="https://www.npmjs.com/package/bytes" rel="nofollow">bytes</a> library for parsing. Defaults
+to <code>'100kb'</code>.</p>
+<h5><a id="user-content-parameterlimit" class="deep-link" href="#parameterlimit" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>parameterLimit</h5>
+<p>The <code>parameterLimit</code> option controls the maximum number of parameters that
+are allowed in the URL-encoded data. If a request contains more parameters
+than this value, a 413 will be returned to the client. Defaults to <code>1000</code>.</p>
+<h5><a id="user-content-type-3" class="deep-link" href="#type-3" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>type</h5>
+<p>The <code>type</code> option is used to determine what media type the middleware will
+parse. This option can be a string, array of strings, or a function. If not
+a function, <code>type</code> option is passed directly to the
+<a href="https://www.npmjs.org/package/type-is#readme" rel="nofollow">type-is</a> library and this can
+be an extension name (like <code>urlencoded</code>), a mime type (like
+<code>application/x-www-form-urlencoded</code>), or a mime type with a wildcard (like
+<code>*/x-www-form-urlencoded</code>). If a function, the <code>type</code> option is called as
+<code>fn(req)</code> and the request is parsed if it returns a truthy value. Defaults
+to <code>application/x-www-form-urlencoded</code>.</p>
+<h5><a id="user-content-verify-3" class="deep-link" href="#verify-3" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>verify</h5>
+<p>The <code>verify</code> option, if supplied, is called as <code>verify(req, res, buf, encoding)</code>,
+where <code>buf</code> is a <code>Buffer</code> of the raw request body and <code>encoding</code> is the
+encoding of the request. The parsing can be aborted by throwing an error.</p>
+<h2><a id="user-content-errors" class="deep-link" href="#errors" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Errors</h2>
+<p>The middlewares provided by this module create errors depending on the error
+condition during parsing. The errors will typically have a <code>status</code>/<code>statusCode</code>
+property that contains the suggested HTTP response code, an <code>expose</code> property
+to determine if the <code>message</code> property should be displayed to the client, a
+<code>type</code> property to determine the type of error without matching against the
+<code>message</code>, and a <code>body</code> property containing the read body, if available.</p>
+<p>The following are the common errors emitted, though any error can come through
+for various reasons.</p>
+<h3><a id="user-content-content-encoding-unsupported" class="deep-link" href="#content-encoding-unsupported" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>content encoding unsupported</h3>
+<p>This error will occur when the request had a <code>Content-Encoding</code> header that
+contained an encoding but the &quot;inflation&quot; option was set to <code>false</code>. The
+<code>status</code> property is set to <code>415</code>, the <code>type</code> property is set to
+<code>'encoding.unsupported'</code>, and the <code>charset</code> property will be set to the
+encoding that is unsupported.</p>
+<h3><a id="user-content-request-aborted" class="deep-link" href="#request-aborted" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>request aborted</h3>
+<p>This error will occur when the request is aborted by the client before reading
+the body has finished. The <code>received</code> property will be set to the number of
+bytes received before the request was aborted and the <code>expected</code> property is
+set to the number of expected bytes. The <code>status</code> property is set to <code>400</code>
+and <code>type</code> property is set to <code>'request.aborted'</code>.</p>
+<h3><a id="user-content-request-entity-too-large" class="deep-link" href="#request-entity-too-large" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>request entity too large</h3>
+<p>This error will occur when the request body's size is larger than the &quot;limit&quot;
+option. The <code>limit</code> property will be set to the byte limit and the <code>length</code>
+property will be set to the request body's length. The <code>status</code> property is
+set to <code>413</code> and the <code>type</code> property is set to <code>'entity.too.large'</code>.</p>
+<h3><a id="user-content-request-size-did-not-match-content-length" class="deep-link" href="#request-size-did-not-match-content-length" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>request size did not match content length</h3>
+<p>This error will occur when the request's length did not match the length from
+the <code>Content-Length</code> header. This typically occurs when the request is malformed,
+typically when the <code>Content-Length</code> header was calculated based on characters
+instead of bytes. The <code>status</code> property is set to <code>400</code> and the <code>type</code> property
+is set to <code>'request.size.invalid'</code>.</p>
+<h3><a id="user-content-stream-encoding-should-not-be-set" class="deep-link" href="#stream-encoding-should-not-be-set" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>stream encoding should not be set</h3>
+<p>This error will occur when something called the <code>req.setEncoding</code> method prior
+to this middleware. This module operates directly on bytes only and you cannot
+call <code>req.setEncoding</code> when using this module. The <code>status</code> property is set to
+<code>500</code> and the <code>type</code> property is set to <code>'stream.encoding.set'</code>.</p>
+<h3><a id="user-content-too-many-parameters" class="deep-link" href="#too-many-parameters" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>too many parameters</h3>
+<p>This error will occur when the content of the request exceeds the configured
+<code>parameterLimit</code> for the <code>urlencoded</code> parser. The <code>status</code> property is set to
+<code>413</code> and the <code>type</code> property is set to <code>'parameters.too.many'</code>.</p>
+<h3><a id="user-content-unsupported-charset-bogus" class="deep-link" href="#unsupported-charset-bogus" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>unsupported charset &quot;BOGUS&quot;</h3>
+<p>This error will occur when the request had a charset parameter in the
+<code>Content-Type</code> header, but the <code>iconv-lite</code> module does not support it OR the
+parser does not support it. The charset is contained in the message as well
+as in the <code>charset</code> property. The <code>status</code> property is set to <code>415</code>, the
+<code>type</code> property is set to <code>'charset.unsupported'</code>, and the <code>charset</code> property
+is set to the charset that is unsupported.</p>
+<h3><a id="user-content-unsupported-content-encoding-bogus" class="deep-link" href="#unsupported-content-encoding-bogus" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>unsupported content encoding &quot;bogus&quot;</h3>
+<p>This error will occur when the request had a <code>Content-Encoding</code> header that
+contained an unsupported encoding. The encoding is contained in the message
+as well as in the <code>encoding</code> property. The <code>status</code> property is set to <code>415</code>,
+the <code>type</code> property is set to <code>'encoding.unsupported'</code>, and the <code>encoding</code>
+property is set to the encoding that is unsupported.</p>
+<h2><a id="user-content-examples" class="deep-link" href="#examples" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Examples</h2>
+<h3><a id="user-content-expressconnect-top-level-generic" class="deep-link" href="#expressconnect-top-level-generic" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Express/Connect top-level generic</h3>
+<p>This example demonstrates adding a generic JSON and URL-encoded parser as a
+top-level middleware, which will parse the bodies of all incoming requests.
+This is the simplest setup.</p>
+<div class="highlight js"><pre class="editor editor-colors"><div class="line"><span class="source js"><span class="storage type js"><span>var</span></span><span> express </span><span class="keyword operator assignment js"><span>=</span></span><span> </span><span class="meta function-call js"><span class="support function js"><span>require</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>express</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></div><div class="line"><span class="source js"><span class="storage type js"><span>var</span></span><span> bodyParser </span><span class="keyword operator assignment js"><span>=</span></span><span> </span><span class="meta function-call js"><span class="support function js"><span>require</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>body-parser</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></div><div class="line"><span class="source js"><span> </span></span></div><div class="line"><span class="source js"><span class="storage type js"><span>var</span></span><span> app </span><span class="keyword operator assignment js"><span>=</span></span><span> </span><span class="meta function-call js"><span class="entity name function js"><span>express</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></div><div class="line"><span class="source js"><span> </span></span></div><div class="line"><span class="source js"><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span> parse application/x-www-form-urlencoded</span></span></span></div><div class="line"><span class="source js"><span class="variable other object js"><span>app</span></span><span class="meta js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>use</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="variable other object js"><span>bodyParser</span></span><span class="meta js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>urlencoded</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="meta brace curly js"><span>{</span></span><span> extended</span><span class="keyword operator assignment js"><span>:</span></span><span> </span><span class="constant language boolean false js"><span>false</span></span><span> </span><span class="meta brace curly js"><span>}</span></span><span class="punctuation definition end round js"><span>)</span></span></span></span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></div><div class="line"><span class="source js"><span> </span></span></div><div class="line"><span class="source js"><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span> parse application/json</span></span></span></div><div class="line"><span class="source js"><span class="variable other object js"><span>app</span></span><span class="meta js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>use</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="variable other object js"><span>bodyParser</span></span><span class="meta js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>json</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="punctuation definition end round js"><span>)</span></span></span></span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></div><div class="line"><span class="source js"><span> </span></span></div><div class="line"><span class="source js"><span class="variable other object js"><span>app</span></span><span class="meta js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>use</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="meta function js"><span class="storage type function js"><span>function</span></span><span> </span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="variable function js"><span>req</span></span><span class="meta delimiter object comma js"><span>,</span></span><span> </span><span class="variable function js"><span>res</span></span><span class="punctuation definition end round js"><span>)</span></span></span></span><span> </span><span class="punctuation definition function begin curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta js"><span class="meta js"><span>  </span><span class="variable other object js"><span>res</span></span><span class="meta js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>setHeader</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>Content-Type</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span> </span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>text/plain</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta js"><span class="meta js"><span>  </span><span class="variable other object js"><span>res</span></span><span class="meta js"><span class="meta delimiter method period js"><span>.</span></span><span class="support function dom js"><span>write</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>you posted:</span><span class="constant character js"><span>\n</span></span><span class="punctuation definition string end js"><span>'</span></span></span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta js"><span class="meta js"><span>  </span><span class="variable other object js"><span>res</span></span><span class="meta js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>end</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="support class js"><span>JSON</span></span><span class="meta js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>stringify</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="variable other object js"><span>req</span></span><span class="meta delimiter period js"><span>.</span></span><span class="support variable dom js"><span>body</span></span><span class="meta delimiter object comma js"><span>,</span></span><span> </span><span class="constant language null js"><span>null</span></span><span class="meta delimiter object comma js"><span>,</span></span><span> </span><span class="constant numeric decimal js"><span>2</span></span><span class="punctuation definition end round js"><span>)</span></span></span></span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta js"><span class="meta js"><span class="punctuation definition function end curly js"><span>}</span></span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></div></pre></div>
+<h3><a id="user-content-express-route-specific" class="deep-link" href="#express-route-specific" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Express route-specific</h3>
+<p>This example demonstrates adding body parsers specifically to the routes that
+need them. In general, this is the most recommended way to use body-parser with
+Express.</p>
+<div class="highlight js"><pre class="editor editor-colors"><div class="line"><span class="source js"><span class="storage type js"><span>var</span></span><span> express </span><span class="keyword operator assignment js"><span>=</span></span><span> </span><span class="meta function-call js"><span class="support function js"><span>require</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>express</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></div><div class="line"><span class="source js"><span class="storage type js"><span>var</span></span><span> bodyParser </span><span class="keyword operator assignment js"><span>=</span></span><span> </span><span class="meta function-call js"><span class="support function js"><span>require</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>body-parser</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></div><div class="line"><span class="source js"><span> </span></span></div><div class="line"><span class="source js"><span class="storage type js"><span>var</span></span><span> app </span><span class="keyword operator assignment js"><span>=</span></span><span> </span><span class="meta function-call js"><span class="entity name function js"><span>express</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></div><div class="line"><span class="source js"><span> </span></span></div><div class="line"><span class="source js"><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span> create application/json parser</span></span></span></div><div class="line"><span class="source js"><span class="storage type js"><span>var</span></span><span> jsonParser </span><span class="keyword operator assignment js"><span>=</span></span><span> </span><span class="variable other object js"><span>bodyParser</span></span><span class="meta js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>json</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></div><div class="line"><span class="source js"><span> </span></span></div><div class="line"><span class="source js"><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span> create application/x-www-form-urlencoded parser</span></span></span></div><div class="line"><span class="source js"><span class="storage type js"><span>var</span></span><span> urlencodedParser </span><span class="keyword operator assignment js"><span>=</span></span><span> </span><span class="variable other object js"><span>bodyParser</span></span><span class="meta js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>urlencoded</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="meta brace curly js"><span>{</span></span><span> extended</span><span class="keyword operator assignment js"><span>:</span></span><span> </span><span class="constant language boolean false js"><span>false</span></span><span> </span><span class="meta brace curly js"><span>}</span></span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></div><div class="line"><span class="source js"><span> </span></span></div><div class="line"><span class="source js"><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span> POST /login gets urlencoded bodies</span></span></span></div><div class="line"><span class="source js"><span class="variable other object js"><span>app</span></span><span class="meta js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>post</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>/login</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span> urlencodedParser</span><span class="meta delimiter object comma js"><span>,</span></span><span> </span><span class="meta function js"><span class="storage type function js"><span>function</span></span><span> </span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="variable function js"><span>req</span></span><span class="meta delimiter object comma js"><span>,</span></span><span> </span><span class="variable function js"><span>res</span></span><span class="punctuation definition end round js"><span>)</span></span></span></span><span> </span><span class="punctuation definition function begin curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta js"><span class="meta js"><span>  </span><span class="variable other object js"><span>res</span></span><span class="meta js"><span class="meta delimiter method period js"><span>.</span></span><span class="support function js"><span>send</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>welcome, </span><span class="punctuation definition string end js"><span>'</span></span></span><span> </span><span class="keyword operator js"><span>+</span></span><span> </span><span class="variable other object js"><span>req</span></span><span class="meta delimiter period js"><span>.</span></span><span class="support variable dom js"><span>body</span></span><span class="meta delimiter period js"><span>.</span></span><span class="variable other js"><span>username</span></span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta js"><span class="meta js"><span class="punctuation definition function end curly js"><span>}</span></span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></div><div class="line"><span class="source js"><span> </span></span></div><div class="line"><span class="source js"><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span> POST /api/users gets JSON bodies</span></span></span></div><div class="line"><span class="source js"><span class="variable other object js"><span>app</span></span><span class="meta js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>post</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>/api/users</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span> jsonParser</span><span class="meta delimiter object comma js"><span>,</span></span><span> </span><span class="meta function js"><span class="storage type function js"><span>function</span></span><span> </span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="variable function js"><span>req</span></span><span class="meta delimiter object comma js"><span>,</span></span><span> </span><span class="variable function js"><span>res</span></span><span class="punctuation definition end round js"><span>)</span></span></span></span><span> </span><span class="punctuation definition function begin curly js"><span>{</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta js"><span class="meta js"><span>  </span><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span> create user in req.body</span></span></span></span></span></div><div class="line"><span class="source js"><span class="meta js"><span class="meta js"><span class="punctuation definition function end curly js"><span>}</span></span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></div></pre></div>
+<h3><a id="user-content-change-accepted-type-for-parsers" class="deep-link" href="#change-accepted-type-for-parsers" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Change accepted type for parsers</h3>
+<p>All the parsers accept a <code>type</code> option which allows you to change the
+<code>Content-Type</code> that the middleware will parse.</p>
+<div class="highlight js"><pre class="editor editor-colors"><div class="line"><span class="source js"><span class="storage type js"><span>var</span></span><span> express </span><span class="keyword operator assignment js"><span>=</span></span><span> </span><span class="meta function-call js"><span class="support function js"><span>require</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>express</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></div><div class="line"><span class="source js"><span class="storage type js"><span>var</span></span><span> bodyParser </span><span class="keyword operator assignment js"><span>=</span></span><span> </span><span class="meta function-call js"><span class="support function js"><span>require</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>body-parser</span><span class="punctuation definition string end js"><span>'</span></span></span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></div><div class="line"><span class="source js"><span> </span></span></div><div class="line"><span class="source js"><span class="storage type js"><span>var</span></span><span> app </span><span class="keyword operator assignment js"><span>=</span></span><span> </span><span class="meta function-call js"><span class="entity name function js"><span>express</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></div><div class="line"><span class="source js"><span> </span></span></div><div class="line"><span class="source js"><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span> parse various different custom JSON types as JSON</span></span></span></div><div class="line"><span class="source js"><span class="variable other object js"><span>app</span></span><span class="meta js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>use</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="variable other object js"><span>bodyParser</span></span><span class="meta js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>json</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="meta brace curly js"><span>{</span></span><span> type</span><span class="keyword operator assignment js"><span>:</span></span><span> </span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>application/*+json</span><span class="punctuation definition string end js"><span>'</span></span></span><span> </span><span class="meta brace curly js"><span>}</span></span><span class="punctuation definition end round js"><span>)</span></span></span></span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></div><div class="line"><span class="source js"><span> </span></span></div><div class="line"><span class="source js"><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span> parse some custom thing into a Buffer</span></span></span></div><div class="line"><span class="source js"><span class="variable other object js"><span>app</span></span><span class="meta js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>use</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="variable other object js"><span>bodyParser</span></span><span class="meta js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>raw</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="meta brace curly js"><span>{</span></span><span> type</span><span class="keyword operator assignment js"><span>:</span></span><span> </span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>application/vnd.custom-type</span><span class="punctuation definition string end js"><span>'</span></span></span><span> </span><span class="meta brace curly js"><span>}</span></span><span class="punctuation definition end round js"><span>)</span></span></span></span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></div><div class="line"><span class="source js"><span> </span></span></div><div class="line"><span class="source js"><span class="comment line double-slash js"><span class="punctuation definition comment js"><span>//</span></span><span> parse an HTML body into a string</span></span></span></div><div class="line"><span class="source js"><span class="variable other object js"><span>app</span></span><span class="meta js"><span class="meta delimiter method period js"><span>.</span></span><span class="entity name function js"><span>use</span></span><span class="meta js"><span class="punctuation definition begin round js"><span>(</span></span><span class="variable other object js"><span>bodyParser</span></span><span class="meta delimiter period js"><span>.</span></span><span class="support variable dom js"><span>text</span></span><span class="meta brace round js"><span>(</span></span><span class="meta brace curly js"><span>{</span></span><span> type</span><span class="keyword operator assignment js"><span>:</span></span><span> </span><span class="string quoted single js"><span class="punctuation definition string begin js"><span>'</span></span><span>text/html</span><span class="punctuation definition string end js"><span>'</span></span></span><span> </span><span class="meta brace curly js"><span>}</span></span><span class="meta brace round js"><span>)</span></span><span class="punctuation definition end round js"><span>)</span></span></span></span></span></div></pre></div>
+<h2><a id="user-content-license" class="deep-link" href="#license" aria-hidden="true" rel="nofollow"><svg aria-hidden="true" class="deep-link-icon" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>License</h2>
+<p><a href="https://github.com/expressjs/body-parser/blob/HEAD/LICENSE" rel="nofollow">MIT</a></p>
+</div></article></div><div class="pv4"><h2 id="user-content-keywords" class="a0dff0b1 mt2 pt2 mb3 pb3 f4 fw6 b--black-10">Keywords</h2>none</div></section></div><div class="fdbf4038 w-third-l mt3 w-100 ph3 ph4-m pv3 pv0-l order-1-ns order-0"><h3 class="c84e15be f5 mt2 pt2 mb0 black-50">Install</h3><p class="d767adf4 lh-copy truncate ph0 mb3 black-80 b5be2af6 f6 flex flex-row"><svg viewBox="0 0 12.32 9.33"><g><line class="st1" x1="7.6" y1="8.9" x2="7.6" y2="6.9"></line><rect width="1.9" height="1.9"></rect><rect x="1.9" y="1.9" width="1.9" height="1.9"></rect><rect x="3.7" y="3.7" width="1.9" height="1.9"></rect><rect x="1.9" y="5.6" width="1.9" height="1.9"></rect><rect y="7.5" width="1.9" height="1.9"></rect></g></svg><code class="flex-auto truncate db" title="Copy Command to Clipboard"><span>npm i <!-- -->body-parser</span></code><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="copy" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"></path></svg></p><div><div><h3 class="c84e15be f5 mt2 pt2 mb0 black-50 _5cfc0900"><svg viewBox="0 0 7.22 11.76"><title>Downloads</title><g><polygon points="4.59 4.94 4.59 0 2.62 0 2.62 4.94 0 4.94 3.28 9.53 7.22 4.94 4.59 4.94"></polygon><rect x="0.11" y="10.76" width="7" height="1"></rect></g></svg>Weekly Downloads</h3><div class="_000ae427 flex flex-row-reverse items-end"><svg class="_418c4939 flex-none" width="200" height="40" stroke-width="3" stroke="#8956FF" fill="rgba(137, 86, 255, .2)"></svg><p class="_9ba9a726 f4 tl flex-auto fw6 black-80 ma0 pr2 pb1">12,386,699</p></div></div></div><div class="_702d723c dib w-50 bb b--black-10 pr2"><h3 class="c84e15be f5 mt2 pt2 mb0 black-50">Version</h3><p class="f2874b88 fw6 mb3 mt2 truncate black-80 f4">1.19.0</p></div><div class="_702d723c dib w-50 bb b--black-10 pr2"><h3 class="c84e15be f5 mt2 pt2 mb0 black-50">License</h3><p class="f2874b88 fw6 mb3 mt2 truncate black-80 f4">MIT</p></div><div class="_702d723c dib w-50 bb b--black-10 pr2"><h3 class="c84e15be f5 mt2 pt2 mb0 black-50">Unpacked Size</h3><p class="f2874b88 fw6 mb3 mt2 truncate black-80 f4">56.4 kB</p></div><div class="_702d723c dib w-50 bb b--black-10 pr2"><h3 class="c84e15be f5 mt2 pt2 mb0 black-50">Total Files</h3><p class="f2874b88 fw6 mb3 mt2 truncate black-80 f4">10</p></div><div class="_702d723c dib w-50 bb b--black-10 pr2 w-100"><h3 class="c84e15be f5 mt2 pt2 mb0 black-50">Homepage</h3><p class="_40aff104 fw6 mb3 mt2 truncate black-80 f5"><a class="b2812e30 f2874b88 fw6 mb3 mt2 truncate black-80 f4 link" rel="noopener noreferrer nofollow" href="https://github.com/expressjs/body-parser#readme"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"></path></svg>github.com/expressjs/body-parser#readme</a></p></div><div class="_702d723c dib w-50 bb b--black-10 pr2 w-100"><h3 class="c84e15be f5 mt2 pt2 mb0 black-50">Repository</h3><p class="_40aff104 fw6 mb3 mt2 truncate black-80 f5"><a class="b2812e30 f2874b88 fw6 mb3 mt2 truncate black-80 f4 link" rel="noopener noreferrer nofollow" href="https://github.com/expressjs/body-parser"><span class="_9e13d83d dib v-mid"><svg viewBox="0 0 92 92" version="1.1" xmlns="http://www.w3.org/2000/svg"><title>Git</title><g stroke="none" fill="#0a0b09"><path d="M90.155,41.965 L50.036,1.847 C47.726,-0.464 43.979,-0.464 41.667,1.847 L33.336,10.179 L43.904,20.747 C46.36,19.917 49.176,20.474 51.133,22.431 C53.102,24.401 53.654,27.241 52.803,29.706 L62.989,39.891 C65.454,39.041 68.295,39.59 70.264,41.562 C73.014,44.311 73.014,48.768 70.264,51.519 C67.512,54.271 63.056,54.271 60.303,51.519 C58.235,49.449 57.723,46.409 58.772,43.861 L49.272,34.362 L49.272,59.358 C49.942,59.69 50.575,60.133 51.133,60.69 C53.883,63.44 53.883,67.896 51.133,70.65 C48.383,73.399 43.924,73.399 41.176,70.65 C38.426,67.896 38.426,63.44 41.176,60.69 C41.856,60.011 42.643,59.497 43.483,59.153 L43.483,33.925 C42.643,33.582 41.858,33.072 41.176,32.389 C39.093,30.307 38.592,27.249 39.661,24.691 L29.243,14.271 L1.733,41.779 C-0.578,44.092 -0.578,47.839 1.733,50.15 L41.854,90.268 C44.164,92.578 47.91,92.578 50.223,90.268 L90.155,50.336 C92.466,48.025 92.466,44.275 90.155,41.965"></path></g></svg></span><span>github.com/expressjs/body-parser</span></a></p></div><div class="_702d723c dib w-50 bb b--black-10 pr2 w-100"><h3 class="c84e15be f5 mt2 pt2 mb0 black-50">Last publish</h3><p class="f2874b88 fw6 mb3 mt2 truncate black-80 f4"><time dateTime="2019-04-26T03:31:23.981Z" title="2019-4-26 03:31:23">a year ago</time></p></div><div class="w-100"><h3 class="c84e15be f5 mt2 pt2 mb0 black-50">Collaborators</h3><ul class="list pl0 cf"><li class="_426b8533 fl dib mr2 mb2"><div><a href="/~dougwilson"><img src="https://s.gravatar.com/avatar/c4b64c6e47d970bb0d07a2b9d559be9b?size=100&amp;default=retro" style="width:42px;height:42px;min-width:42px;border-radius:4%" alt="avatar" title="dougwilson"/></a></div></li></ul></div><div class="w-100"><a class="c37751f6 _24a1e9c7 dab9924c br2 pv2 ph3 fw5 f5 tc button button-reset pointer ma2 truncate ml0 no-underline mt2 dib w-100" rel="noopener noreferrer nofollow" href="https://runkit.com/npm/body-parser"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="terminal" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M257.981 272.971L63.638 467.314c-9.373 9.373-24.569 9.373-33.941 0L7.029 444.647c-9.357-9.357-9.375-24.522-.04-33.901L161.011 256 6.99 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L257.981 239.03c9.373 9.372 9.373 24.568 0 33.941zM640 456v-32c0-13.255-10.745-24-24-24H312c-13.255 0-24 10.745-24 24v32c0 13.255 10.745 24 24 24h304c13.255 0 24-10.745 24-24z"></path></svg><strong>Try</strong> on RunKit</a></div><div class="_33c89934 flex flex-column-l items-start-l"><a class="_4a3f8f21 _24a1e9c7 dab9924c br2 pv2 ph3 fw5 f5 tc button button-reset pointer ma2 truncate ml0 no-underline mt2 dib w-100" href="/advisories/report?package=body-parser"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="flag" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M349.565 98.783C295.978 98.783 251.721 64 184.348 64c-24.955 0-47.309 4.384-68.045 12.013a55.947 55.947 0 0 0 3.586-23.562C118.117 24.015 94.806 1.206 66.338.048 34.345-1.254 8 24.296 8 56c0 19.026 9.497 35.825 24 45.945V488c0 13.255 10.745 24 24 24h16c13.255 0 24-10.745 24-24v-94.4c28.311-12.064 63.582-22.122 114.435-22.122 53.588 0 97.844 34.783 165.217 34.783 48.169 0 86.667-16.294 122.505-40.858C506.84 359.452 512 349.571 512 339.045v-243.1c0-23.393-24.269-38.87-45.485-29.016-34.338 15.948-76.454 31.854-116.95 31.854z"></path></svg><strong>Report</strong> a vulnerability</a></div></div></div></main><footer class="cd2827bb bt b--black-10 mt4"><div class="center mw9 pa3 flex flex-column flex-wrap-m flex-row-ns"><div class="flex-auto pa4-ns pa3 w-100 w-10-l"><div class="_802b5507 pt3"><svg viewBox="0 0 27.23 27.23"><rect fill="#333333" width="27.23" height="27.23" rx="2"></rect><polygon fill="#fff" points="5.8 21.75 13.66 21.75 13.67 9.98 17.59 9.98 17.58 21.76 21.51 21.76 21.52 6.06 5.82 6.04 5.8 21.75"></polygon></svg></div></div><div class="flex-auto pa4-ns pa3 w-30-ns w-50-m"><h3 class="_1b8c0a9f">Help</h3><ul class="list pl0"><li class="pv1"><a class="link" href="https://docs.npmjs.com">Documentation</a></li><li class="pv1"><a class="link" href="https://npm.community">Community</a></li><li class="pv1"><a class="link" href="/resources/">Resources</a></li><li class="pv1"><a class="link" href="https://www.npmjs.com/advisories">Advisories</a></li><li class="pv1 npme-hidden"><a class="link" href="http://status.npmjs.org/">Status</a></li><li class="pv1"><a class="link" href="/support">Contact</a></li></ul></div><div class="flex-auto pa4-ns pa3 w-30-ns w-50-m"><h3 class="_1b8c0a9f">About</h3><ul class="list pl0"><li class="pv1"><a class="link" href="/about">Company</a></li><li class="pv1"><a class="link" href="https://blog.npmjs.org/">Blog</a></li><li class="pv1 npme-hidden"><a class="link" href="/jobs">Careers</a></li><li class="pv1"><a class="link" href="/events">Webinars</a></li><li class="pv1"><a class="link" href="/press">Press</a></li><li class="pv1"><a class="link" href="/npm-weekly">Newsletter</a></li></ul></div><div class="flex-auto pa4-ns pa3 w-30-ns w-50-m"><h3 class="_1b8c0a9f">Terms &amp; Policies</h3><ul class="list pl0"><li class="pv1"><a class="link" href="/policies/">Policies</a></li><li class="pv1"><a class="link" href="/policies/terms">Terms of Use</a></li><li class="pv1 npme-hidden"><a class="link" href="/policies/conduct">Code of Conduct</a></li><li class="pv1 npme-hidden"><a class="link" href="/policies/privacy">Privacy</a></li></ul></div></div></footer></div><div class="_8a62ca63 fixed top-0 left-0 z-999" style="opacity:0;transform:scaleX(1);-webkit-transform:scaleX(1);-moz-transform:scaleX(1)"></div></div></div><script integrity="sha512-X+v5STZdEhrBaL6i3HP4rbSAVVYIu9ScXVk3KxG2mZkVLV/H8Oop0CWMd650ZF05j6kKYujZMn5Q0Avm3ZGA+g==">window.__context__ = {"context":{"isNpme":false,"npmExpansions":["Nine Percent Milk","Nerds Produce Money","Nerdy Poly Millionaires","Nefarious Punk Monk","Neutral, Plus or Minus","Nearly Past Midnight","Nettle Pie Market","Northern Pie Muncher","Now, Push Me","Ninety Percent Muffin"],"notifications":[],"csrftoken":"DJ4mqdttzNyRVkgVdd5NqFdSLt1KA3K_r8ukxppiN7O","user":null,"documentContext":{"readme.data":"readme"},"undefined":true,"readme":{"ref":"readme","data":null},"upsell":{"_id":"ck3zfywzw0012st74o6tbhggf","published":true,"trash":false,"type":"upsell-box","title":"npm Pro ongoing promo","upsellText":"Get unlimited public \u0026 private packages + package-based permissions with npm Pro.","linkText":"Get started","linkURL":"https://www.npmjs.com/products/pro?utm_source=house\u0026utm_medium=upsellbox\u0026utm_campaign=Proongoingpromo","slug":"npm-pro-ongoing-promo","tags":[],"workflowLocale":"default","workflowGuid":"ck3zfywyj000zst74233flwk4","createdAt":"2019-12-10T05:46:08.396Z","updatedAt":"2020-02-26T21:25:44.124Z","titleSortified":"npm pro ongoing promo","highSearchText":"npm pro ongoing promo npm pro ongoing promo npm pro ongoing promo get unlimited public private packages package based permissions with npm pro get started https www npmjs com products pro utm source house utm medium upsellbox utm campaign proongoingpromo npm pro ongoing promo","highSearchWords":["npm","pro","ongoing","promo","get","unlimited","public","private","packages","package","based","permissions","with","started","https","www","npmjs","com","products","utm","source","house","medium","upsellbox","campaign","proongoingpromo"],"lowSearchText":"npm pro ongoing promo npm pro ongoing promo npm pro ongoing promo get unlimited public private packages package based permissions with npm pro get started https www npmjs com products pro utm source house utm medium upsellbox utm campaign proongoingpromo npm pro ongoing promo","searchSummary":"","docPermissions":[],"loginRequired":null,"viewUsersIds":[],"viewGroupsIds":[],"editUsersIds":[],"editGroupsIds":[],"viewUsersRelationships":{},"viewGroupsRelationships":{},"editUsersRelationships":{},"editGroupsRelationships":{},"_edit":true,"_publish":true,"_originalWidgets":{}},"starAction":"/package/body-parser/star","packageUrl":"/package/body-parser","canEditPackage":false,"dependents":{"dependentsCount":17041,"dependentsTruncated":["covid19-api","express4x-bootstrap-domain-token","vremoting","gcloud-node-todos","launchcode-auth","rest-stub","bovine","node-gsapi","hometree","shoal","gathering","zerojs","node-bucket","gryd-project","nqframework","atest","konsserto","nfl-rest","dimvc","cyclon.p2p-rtc-server","emberbase","phant-manager-http","jsonserver","ripple-gateway","supermocker","seminarjs-contest","node12","harvestd","reso-api-oauth2-server","telerivet-webhook","rest_base","nodejs-demo","nodetest1","mailgun-listen","fission-server-js","fission-server","feeds","porcupine","mystalia","werx","fine-uploader-server","gear-js","mib","cherry-hook","httptool","ydm-api","catapult-mock","aot-rpi","crop-rotate-resize-in-browser","omnibus"]},"downloads":[{"downloads":8225752,"label":"2019-03-19 to 2019-03-25"},{"downloads":8226322,"label":"2019-03-26 to 2019-04-01"},{"downloads":8159181,"label":"2019-04-02 to 2019-04-08"},{"downloads":8172779,"label":"2019-04-09 to 2019-04-15"},{"downloads":7221958,"label":"2019-04-16 to 2019-04-22"},{"downloads":8839801,"label":"2019-04-23 to 2019-04-29"},{"downloads":8821378,"label":"2019-04-30 to 2019-05-06"},{"downloads":10099339,"label":"2019-05-07 to 2019-05-13"},{"downloads":10138698,"label":"2019-05-14 to 2019-05-20"},{"downloads":9539114,"label":"2019-05-21 to 2019-05-27"},{"downloads":9517468,"label":"2019-05-28 to 2019-06-03"},{"downloads":9595678,"label":"2019-06-04 to 2019-06-10"},{"downloads":9856152,"label":"2019-06-11 to 2019-06-17"},{"downloads":9873617,"label":"2019-06-18 to 2019-06-24"},{"downloads":9888118,"label":"2019-06-25 to 2019-07-01"},{"downloads":9400318,"label":"2019-07-02 to 2019-07-08"},{"downloads":10320033,"label":"2019-07-09 to 2019-07-15"},{"downloads":10082961,"label":"2019-07-16 to 2019-07-22"},{"downloads":9896138,"label":"2019-07-23 to 2019-07-29"},{"downloads":9870368,"label":"2019-07-30 to 2019-08-05"},{"downloads":10065658,"label":"2019-08-06 to 2019-08-12"},{"downloads":9806135,"label":"2019-08-13 to 2019-08-19"},{"downloads":10260754,"label":"2019-08-20 to 2019-08-26"},{"downloads":10294533,"label":"2019-08-27 to 2019-09-02"},{"downloads":10506002,"label":"2019-09-03 to 2019-09-09"},{"downloads":10596934,"label":"2019-09-10 to 2019-09-16"},{"downloads":10607854,"label":"2019-09-17 to 2019-09-23"},{"downloads":10877692,"label":"2019-09-24 to 2019-09-30"},{"downloads":10499873,"label":"2019-10-01 to 2019-10-07"},{"downloads":10712513,"label":"2019-10-08 to 2019-10-14"},{"downloads":10875020,"label":"2019-10-15 to 2019-10-21"},{"downloads":11188694,"label":"2019-10-22 to 2019-10-28"},{"downloads":10922526,"label":"2019-10-29 to 2019-11-04"},{"downloads":11373701,"label":"2019-11-05 to 2019-11-11"},{"downloads":11410144,"label":"2019-11-12 to 2019-11-18"},{"downloads":11635453,"label":"2019-11-19 to 2019-11-25"},{"downloads":10303817,"label":"2019-11-26 to 2019-12-02"},{"downloads":11338093,"label":"2019-12-03 to 2019-12-09"},{"downloads":11341274,"label":"2019-12-10 to 2019-12-16"},{"downloads":10401340,"label":"2019-12-17 to 2019-12-23"},{"downloads":5945646,"label":"2019-12-24 to 2019-12-30"},{"downloads":7042348,"label":"2019-12-31 to 2020-01-06"},{"downloads":11225406,"label":"2020-01-07 to 2020-01-13"},{"downloads":11387768,"label":"2020-01-14 to 2020-01-20"},{"downloads":11307445,"label":"2020-01-21 to 2020-01-27"},{"downloads":11658441,"label":"2020-01-28 to 2020-02-03"},{"downloads":11965964,"label":"2020-02-04 to 2020-02-10"},{"downloads":11987151,"label":"2020-02-11 to 2020-02-17"},{"downloads":12292713,"label":"2020-02-18 to 2020-02-24"},{"downloads":12336324,"label":"2020-02-25 to 2020-03-02"},{"downloads":12418596,"label":"2020-03-03 to 2020-03-09"},{"downloads":12386699,"label":"2020-03-10 to 2020-03-16"}],"packument":{"description":"Node.js body parsing middleware","homepage":"https://github.com/expressjs/body-parser#readme","repository":"https://github.com/expressjs/body-parser","distTags":{"latest":"1.19.0"},"maintainers":[{"name":"dougwilson","avatars":{"small":"https://s.gravatar.com/avatar/c4b64c6e47d970bb0d07a2b9d559be9b?size=50\u0026default=retro","medium":"https://s.gravatar.com/avatar/c4b64c6e47d970bb0d07a2b9d559be9b?size=100\u0026default=retro","large":"https://s.gravatar.com/avatar/c4b64c6e47d970bb0d07a2b9d559be9b?size=496\u0026default=retro"},"created":{"ts":null,"rel":"Invalid date"},"email":"doug@somethingdoug.com"}],"name":"body-parser","license":"MIT","version":"1.19.0","versions":[{"version":"1.19.0","date":{"ts":1556249483981,"rel":"a year ago"},"dist":{"integrity":"sha512-dhEPs72UPbDnAQJ9ZKMNTP6ptJaionhP5cBb541nXPlW60Jepo9RV/a4fX4XWW9CuFNK22krhrj1+rgzifNCsw==","shasum":"96b2709e57c9c4e09a6fd66a8fd979844f69f08a","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.19.0.tgz","fileCount":10,"unpackedSize":56375,"npm-signature":"-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcwnuMCRA9TVsSAnZWagAA2zMP/3i2Q8pQBJx4azFOeuub\n/s3F445wJrDoAKA+6zSOLFMYYasZ0iF60NoE4taDupDF1hzpC4gCYgy9ZezQ\n75kKKBC48jCQP6Urx1tj6VUPzWqG6xdQMjhZpXrkK+EF5XYtAspb8+YSxaw4\nzf4atEm+7Q3N1qwvyfi8T/KQaK7WV6wC513pXTZv8SCtetX/4jBJwA4uUqLh\nXbuO5GcsjNEDmfX91YFKbb2+TvL2kuJkxVVdjeVv+UDLAs8AL+6afVJTe2vB\nmY+9CmSN2egWYDEXgpIowRTXzvasLJ8kQQH0dhseRrnF/k8cxX61VsT0MYEB\nd7mVyXFJE2WrN/HgiVCa9XSzLNn2bp/tyoz3W8TTSCqWOaY2cgbpFBUcBqWY\nmZSkqGqBj0lAJ3qMJw9tfIKiGtLEqsBwRoHTt6yQRsPTTD0wY3WzQTzedpS7\nPKEPDqrqMhDJpjv7vHZyP0E85lSYoDAMYPQ33fYvNbiuIMU4eDxoNJWUImXJ\nTN3uRKDn9QeE8mLTeglLVIu5+4FrDQNNjK6HHcetM89H8F4FGxGl090/H07x\nqc9A2Fe2yCeM6BICsO3BIRt0eClHS6jD15tMDbx9hx4Z4Qt+IgTn0NS4Ebj7\nW1V7qu/d6ajepEVd2kCXQkvJvslxzIGDxXo6OvTN757kROAWoYZNyGefqnou\nHXEH\r\n=IvFh\r\n-----END PGP SIGNATURE-----\r\n"}},{"version":"1.18.3","date":{"ts":1526318192445,"rel":"2 years ago"},"dist":{"shasum":"5b292198ffdd553b3a0f20ded0592b956955c8b4","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.18.3.tgz","fileCount":10,"unpackedSize":55897,"npm-signature":"-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJa+cRxCRA9TVsSAnZWagAAr+wP/jRF3kZaSUPcjTUOxoqN\nlSEgHs4ISF5j2kqTPeArKhG5cgmvygc9gRtNdjtfLGHbQAjyZtA8tzBdsXZG\n3KuehVC9hf/eUIeQbVTjaxrgX0jevrF4igcmM4tRI17JzFvq1+oCz9aAk99e\n3SljKbwvFPopbM5F5BraVbOpIYCO140dVVBrV9gHOBb+65hme0PzfBdru/Bg\nZ1UnDi9l/lEGhCy+HFlSGw+T9ev0KcgzcslA/9vJBAFyYMXVfFFI+jY2+O4P\nJ35s40gbQ1V/idGM4IfmCg5IhwmvpJ902bpXJEokVgGKcw/mMv3TQpBKov2I\nOxAIIRLr2w/1Kl2d8+jMLcbkIoSD7wutdV5i+rsUR5XJURbsDuitYJbcRvJw\n5MS0bQ5aVI83TOr/35z8671ciWqpM+Ru+7eiMjQzgUOWt2qKuOB0Bi/xhr8J\nXGWbqLwl1PWxJXgGJqAJ7rvXNOmAexqJmyk1mPHDJnpjaFRKnCpDrUbuX4Cm\nw52bjMIW+wYC/zKnUMCJ+5n4gBw0jWzFUsoTCses91YZHMDVNb1tOo2Sjbwp\nxLKIWDuNDQC3lxfuCSxC7Qe3PayQGnOCwoP3o6GM89YFAhFOWgPvgBpvjfWm\niJlgG/dUsGIAY3Gz0i7abBGyeJJAuA+CwFpfERMcEE4HwcJhzOrG7g0prSD9\n3nNl\r\n=47oB\r\n-----END PGP SIGNATURE-----\r\n"}},{"version":"1.18.2","date":{"ts":1506099010944,"rel":"2 years ago"},"dist":{"shasum":"87678a19d84b47d859b83199bd59bce222b10454","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.18.2.tgz"}},{"version":"1.18.1","date":{"ts":1505230251470,"rel":"3 years ago"},"dist":{"integrity":"sha512-KL2pZpGvy6xuZHgYUznB1Zfw4AoGMApfRanT5NafeLvglbaSM+4CCtmlyYOv66oYXqvKL1xpaFb94V/AZVUnYg==","shasum":"9c1629370bcfd42917f30641a2dcbe2ec50d4c26","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.18.1.tgz"}},{"version":"1.18.0","date":{"ts":1504930646738,"rel":"3 years ago"},"dist":{"shasum":"d3b224d467fa2ce8d43589c0245043267c093634","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.18.0.tgz"}},{"version":"1.17.2","date":{"ts":1495083465982,"rel":"3 years ago"},"dist":{"shasum":"f8892abc8f9e627d42aedafbca66bf5ab99104ee","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.17.2.tgz"}},{"version":"1.17.1","date":{"ts":1488807089554,"rel":"3 years ago"},"dist":{"shasum":"75b3bc98ddd6e7e0d8ffe750dfaca5c66993fa47","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.17.1.tgz"}},{"version":"1.17.0","date":{"ts":1488406217219,"rel":"3 years ago"},"dist":{"shasum":"d956ae2d756ae10bb784187725ea5a249430febd","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.17.0.tgz"}},{"version":"1.16.1","date":{"ts":1486777002896,"rel":"3 years ago"},"dist":{"shasum":"51540d045adfa7a0c6995a014bb6b1ed9b802329","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.16.1.tgz"}},{"version":"1.16.0","date":{"ts":1484710893243,"rel":"3 years ago"},"dist":{"shasum":"924a5e472c6229fb9d69b85a20d5f2532dec788b","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.16.0.tgz"}},{"version":"1.15.2","date":{"ts":1466393696363,"rel":"4 years ago"},"dist":{"shasum":"d7578cf4f1d11d5f6ea804cef35dc7a7ff6dae67","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.15.2.tgz"}},{"version":"1.15.1","date":{"ts":1462512909934,"rel":"4 years ago"},"dist":{"shasum":"9bceef0669b8f8b943f0ad8ce5d95716bd740fd2","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.15.1.tgz"}},{"version":"1.15.0","date":{"ts":1455156411428,"rel":"4 years ago"},"dist":{"shasum":"8168abaeaf9e77e300f7b3aef4df4b46e9b21b35","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.15.0.tgz"}},{"version":"1.14.2","date":{"ts":1450309428529,"rel":"4 years ago"},"dist":{"shasum":"1015cb1fe2c443858259581db53332f8d0cf50f9","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.14.2.tgz"}},{"version":"1.14.1","date":{"ts":1443415796763,"rel":"4 years ago"},"dist":{"shasum":"ffe921eba3ce8f191e2a8a8803844bd025f3c6dc","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.14.1.tgz"}},{"version":"1.14.0","date":{"ts":1442421654186,"rel":"5 years ago"},"dist":{"shasum":"a7a10138547a75bfcacc20472404630c2fa6b0ff","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.14.0.tgz"}},{"version":"1.13.3","date":{"ts":1438369484557,"rel":"5 years ago"},"dist":{"shasum":"c08cf330c3358e151016a05746f13f029c97fa97","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.13.3.tgz"}},{"version":"1.13.2","date":{"ts":1436152758019,"rel":"5 years ago"},"dist":{"shasum":"229262a4fd2e402dfb88d99bc27d8be31307e7e9","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.13.2.tgz"}},{"version":"1.13.1","date":{"ts":1434481256953,"rel":"5 years ago"},"dist":{"shasum":"f07218bc2c4b5e36ca261557c9465481b29ecdcd","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.13.1.tgz"}},{"version":"1.13.0","date":{"ts":1434329387887,"rel":"5 years ago"},"dist":{"shasum":"b6dca73da8c4a9f68b0e64d29acac39dd3ad9a9e","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.13.0.tgz"}},{"version":"1.12.4","date":{"ts":1431324337622,"rel":"5 years ago"},"dist":{"shasum":"090700c4ba28862a8520ef378395fdee5f61c229","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.12.4.tgz"}},{"version":"1.12.3","date":{"ts":1429156571396,"rel":"5 years ago"},"dist":{"shasum":"5f40bf17e7823be6895d4d35582752e36cf97f71","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.12.3.tgz"}},{"version":"1.12.2","date":{"ts":1426563417043,"rel":"5 years ago"},"dist":{"shasum":"698368fb4dfc57a05bff1ddb1bebeba3bd2c0e87","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.12.2.tgz"}},{"version":"1.12.1","date":{"ts":1426484517037,"rel":"5 years ago"},"dist":{"shasum":"4b9b4c67e8eb5ccac7c9eef3fbd6694e721ae002","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.12.1.tgz"}},{"version":"1.12.0","date":{"ts":1423889490494,"rel":"5 years ago"},"dist":{"shasum":"9750fc3cc1080b34a13d18c79840cd559979fce5","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.12.0.tgz"}},{"version":"1.11.0","date":{"ts":1422682576137,"rel":"5 years ago"},"dist":{"shasum":"29f876cb608efa54e9b2185fe8105efc9219a7f3","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.11.0.tgz"}},{"version":"1.10.2","date":{"ts":1421822272188,"rel":"5 years ago"},"dist":{"shasum":"405d465fcd3ccf0ea8a35adbf1055f6e98316bd1","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.10.2.tgz"}},{"version":"1.10.1","date":{"ts":1420166646199,"rel":"5 years ago"},"dist":{"shasum":"af0c7156b128d946f3c43f5fe0364da00cfa7391","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.10.1.tgz"}},{"version":"1.10.0","date":{"ts":1417585168947,"rel":"5 years ago"},"dist":{"shasum":"f884d11839af09e3c61e5011059e29cbfe452085","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.10.0.tgz"}},{"version":"1.9.3","date":{"ts":1416630278976,"rel":"5 years ago"},"dist":{"shasum":"edfacd4fcfad87dfe74f861a5cc712900aef2623","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.9.3.tgz"}},{"version":"1.9.2","date":{"ts":1414469147581,"rel":"5 years ago"},"dist":{"shasum":"07f52cf104939118bedcba689002017271ef3c0e","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.9.2.tgz"}},{"version":"1.9.1","date":{"ts":1414036295787,"rel":"5 years ago"},"dist":{"shasum":"650a3047591fa9bb3cec191cb53933a468aa57aa","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.9.1.tgz"}},{"version":"1.9.0","date":{"ts":1411580107468,"rel":"5 years ago"},"dist":{"shasum":"95d72943b1a4f67f56bbac9e0dcc837b68703605","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.9.0.tgz"}},{"version":"1.8.4","date":{"ts":1411535763920,"rel":"5 years ago"},"dist":{"shasum":"d497e04bc13b3f9a8bd8c70bb0cdc16f2e028898","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.8.4.tgz"}},{"version":"1.8.3","date":{"ts":1411191050329,"rel":"5 years ago"},"dist":{"shasum":"922b82e6448d654f2f5197574ceacefc04a6a8af","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.8.3.tgz"}},{"version":"1.8.2","date":{"ts":1410848584092,"rel":"6 years ago"},"dist":{"shasum":"cb55519e748f2ac89bd3c8e34cb759d391c4d67d","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.8.2.tgz"}},{"version":"1.8.1","date":{"ts":1410158497882,"rel":"6 years ago"},"dist":{"shasum":"f9f96d221c435c95d18aeaad2bcdea1371902aad","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.8.1.tgz"}},{"version":"1.8.0","date":{"ts":1409970835121,"rel":"6 years ago"},"dist":{"shasum":"20b3a3d3553a6835d7373456dd9da8720759b306","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.8.0.tgz"}},{"version":"1.7.0","date":{"ts":1409625785238,"rel":"6 years ago"},"dist":{"shasum":"6a245ea5b32d8e1e0d43bec8344b264ba4b36541","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.7.0.tgz"}},{"version":"1.6.7","date":{"ts":1409374739287,"rel":"6 years ago"},"dist":{"shasum":"82306becadf44543e826b3907eae93f0237c4e5c","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.6.7.tgz"}},{"version":"1.6.6","date":{"ts":1409163493747,"rel":"6 years ago"},"dist":{"shasum":"abfead725f1983631ce94b8e3e9a297d1ab703fb","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.6.6.tgz"}},{"version":"1.6.5","date":{"ts":1408247053585,"rel":"6 years ago"},"dist":{"shasum":"536f01e08ee2b6df6a941d6c8c9647ee99ee4de7","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.6.5.tgz"}},{"version":"1.6.4","date":{"ts":1408071510772,"rel":"6 years ago"},"dist":{"shasum":"befd799cc361a46d34e181f5f881f421a1f3b4c1","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.6.4.tgz"}},{"version":"1.6.3","date":{"ts":1407720438704,"rel":"6 years ago"},"dist":{"shasum":"db3b270bd3ebce5da4d2d2021653454b24861a79","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.6.3.tgz"}},{"version":"1.6.2","date":{"ts":1407422010042,"rel":"6 years ago"},"dist":{"shasum":"38952b4fd534395ab3034e9bb40bbdf3dd99c4ce","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.6.2.tgz"}},{"version":"1.6.1","date":{"ts":1407362236941,"rel":"6 years ago"},"dist":{"shasum":"3894580ab743e2c2611fec695bae60a883ea6f3b","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.6.1.tgz"}},{"version":"1.6.0","date":{"ts":1407295948565,"rel":"6 years ago"},"dist":{"shasum":"d02a9d373c7349c281a8b76b41d6bbf60ef2d3f6","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.6.0.tgz"}},{"version":"1.5.2","date":{"ts":1406488854802,"rel":"6 years ago"},"dist":{"shasum":"beebacac741b83f62c9137d5685196e1a44304ab","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.5.2.tgz"}},{"version":"1.5.1","date":{"ts":1406407345306,"rel":"6 years ago"},"dist":{"shasum":"8d2eb95e987d274ef02fcf56567b3f3a31749c51","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.5.1.tgz"}},{"version":"1.5.0","date":{"ts":1405908077715,"rel":"6 years ago"},"dist":{"shasum":"c6fce2483c9eeb49ab349ff25a92d336d91055b9","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.5.0.tgz"}},{"version":"1.4.3","date":{"ts":1403234012310,"rel":"6 years ago"},"dist":{"shasum":"4727952cff4af0773eefa4b226c2f4122f5e234d","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.4.3.tgz"}},{"version":"1.4.2","date":{"ts":1403230250530,"rel":"6 years ago"},"dist":{"shasum":"e748603c5f79eb06bd75434e219258986328aae7","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.4.2.tgz"}},{"version":"1.4.1","date":{"ts":1403217308600,"rel":"6 years ago"},"dist":{"shasum":"29146acc104a353e8cb07b7b3666d2d829bed6b0","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.4.1.tgz"}},{"version":"1.4.0","date":{"ts":1403214725878,"rel":"6 years ago"},"dist":{"shasum":"31274668441c2b00bab6ca50a173442d8bac1382","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.4.0.tgz"}},{"version":"1.3.1","date":{"ts":1402542532518,"rel":"6 years ago"},"dist":{"shasum":"1a74513fc7897d70db56589e0d03f0a13f1bfa94","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.3.1.tgz"}},{"version":"1.3.0","date":{"ts":1401576996899,"rel":"6 years ago"},"dist":{"shasum":"1a651cb9993a01a65531ae38395ceb0199dd7e3c","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.3.0.tgz"}},{"version":"1.2.2","date":{"ts":1401207938834,"rel":"6 years ago"},"dist":{"shasum":"6106373cc1d34d559ebcfdb582e4e37d4312acfb","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.2.2.tgz"}},{"version":"1.2.1","date":{"ts":1401163661457,"rel":"6 years ago"},"dist":{"shasum":"917beee35a88e9f6893728bf1a542111d7d1eb28","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.2.1.tgz"}},{"version":"1.2.0","date":{"ts":1399866896041,"rel":"6 years ago"},"dist":{"shasum":"f6247cc88d4c673c30a926d74fe36c177b9846e0","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.2.0.tgz"}},{"version":"1.1.2","date":{"ts":1399830344773,"rel":"6 years ago"},"dist":{"shasum":"c943b64c4cd3c44dc96a4681b02cd54ff29e8cd7","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.1.2.tgz"}},{"version":"1.1.1","date":{"ts":1399782244602,"rel":"6 years ago"},"dist":{"shasum":"cf3cc10d885e91fc0ffa35a47ecad858238fb880","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.1.1.tgz"}},{"version":"1.1.0","date":{"ts":1399772764793,"rel":"6 years ago"},"dist":{"shasum":"e6a3c46063b329dab0eb7a31bdc1dca3b3185ab9","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.1.0.tgz"}},{"version":"1.0.2","date":{"ts":1397517990844,"rel":"6 years ago"},"dist":{"shasum":"3461479a3278fe00fcaebec3314bb54fc4f7b47c","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.0.2.tgz"}},{"version":"1.0.1","date":{"ts":1395354327731,"rel":"6 years ago"},"dist":{"shasum":"08a2d025ea286f982d5107ea8a2ba953708620e3","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.0.1.tgz"}},{"version":"1.0.0","date":{"ts":1388996715060,"rel":"6 years ago"},"dist":{"shasum":"95c8a2861cd150dc195d50840ea4614149455e80","tarball":"https://registry.npmjs.org/body-parser/-/body-parser-1.0.0.tgz"}}],"deprecations":[]},"package":"body-parser","isStarred":false,"packageVersion":{"description":"Node.js body parsing middleware","homepage":"https://github.com/expressjs/body-parser#readme","repository":"https://github.com/expressjs/body-parser","dependencies":{"bytes":"3.1.0","content-type":"~1.0.4","debug":"2.6.9","depd":"~1.1.2","http-errors":"1.7.2","iconv-lite":"0.4.24","on-finished":"~2.3.0","qs":"6.7.0","raw-body":"2.4.0","type-is":"~1.6.17"},"devDependencies":{"eslint":"5.16.0","eslint-config-standard":"12.0.0","eslint-plugin-import":"2.17.2","eslint-plugin-markdown":"1.0.0","eslint-plugin-node":"8.0.1","eslint-plugin-promise":"4.1.1","eslint-plugin-standard":"4.0.0","istanbul":"0.4.5","methods":"1.1.2","mocha":"6.1.4","safe-buffer":"5.1.2","supertest":"4.0.2"},"maintainers":[{"name":"dougwilson","avatars":{"small":"https://s.gravatar.com/avatar/c4b64c6e47d970bb0d07a2b9d559be9b?size=50\u0026default=retro","medium":"https://s.gravatar.com/avatar/c4b64c6e47d970bb0d07a2b9d559be9b?size=100\u0026default=retro","large":"https://s.gravatar.com/avatar/c4b64c6e47d970bb0d07a2b9d559be9b?size=496\u0026default=retro"},"created":{"ts":null,"rel":"Invalid date"},"email":"doug@somethingdoug.com"}],"name":"body-parser","license":"MIT","version":"1.19.0","versions":[],"deprecations":[]},"private":false,"ghapi":"https://api.github.com/repos/expressjs/body-parser","files":{"noContentCode":"NOORG"}},"chunks":{"commons":["commons.20d95f784a2a12bc1068.js","commons.20d95f784a2a12bc1068.js.map"],"styles":["styles.af85b3775a7c46e7c21d.css","minicssextractbug.7b912e56eff1700f745e.js","styles.af85b3775a7c46e7c21d.css.map","minicssextractbug.7b912e56eff1700f745e.js.map"],"advisories/detail":["advisories/detail.ae5175fc4c02b8963ac7.js","advisories/detail.ae5175fc4c02b8963ac7.js.map"],"advisories/list":["advisories/list.90a34222001b4591e88c.js","advisories/list.90a34222001b4591e88c.js.map"],"advisories/report":["advisories/report.1d08674cb6e7812e7a61.js","advisories/report.1d08674cb6e7812e7a61.js.map"],"advisories/versions":["advisories/versions.53cd65fbdc01f6d6a0d0.js","advisories/versions.53cd65fbdc01f6d6a0d0.js.map"],"auth/cli":["auth/cli.74d0243706bb9522298b.js","auth/cli.74d0243706bb9522298b.js.map"],"auth/common-passwords":["auth/common-passwords.a76fcbc8ba7237ecb418.js","auth/common-passwords.a76fcbc8ba7237ecb418.js.map"],"auth/escalate":["auth/escalate.6f3e87b03d735b1d1062.js","auth/escalate.6f3e87b03d735b1d1062.js.map"],"auth/forgot":["auth/forgot.dd67046f36029a393f4a.js","auth/forgot.dd67046f36029a393f4a.js.map"],"auth/forgot-sent":["auth/forgot-sent.f36a572cb5e28381e020.js","auth/forgot-sent.f36a572cb5e28381e020.js.map"],"auth/invite-signup":["auth/invite-signup.1c16e4facdb48fa331c7.js","auth/invite-signup.1c16e4facdb48fa331c7.js.map"],"auth/login":["auth/login.f70f74b99a91ceabc18b.js","auth/login.f70f74b99a91ceabc18b.js.map"],"auth/otp":["auth/otp.6f224c6867afdba739a1.js","auth/otp.6f224c6867afdba739a1.js.map"],"auth/reset-password":["auth/reset-password.c05fc56c1a9177245d1e.js","auth/reset-password.c05fc56c1a9177245d1e.js.map"],"auth/signup":["auth/signup.731a594ca3c7e0ea882a.js","auth/signup.731a594ca3c7e0ea882a.js.map"],"auth/sso-signup":["auth/sso-signup.950aff8b157ab6b47dfe.js","auth/sso-signup.950aff8b157ab6b47dfe.js.map"],"billing/detail":["billing/detail.0f623a931057a7df2e09.js","billing/detail.0f623a931057a7df2e09.js.map"],"billing/downgrade":["billing/downgrade.61902cc9e606dee42658.js","billing/downgrade.61902cc9e606dee42658.js.map"],"billing/upgrade":["billing/upgrade.11122c75ee857640751b.js","billing/upgrade.11122c75ee857640751b.js.map"],"contact/contact":["contact/contact.8e338e91b1c1612166f0.js","contact/contact.8e338e91b1c1612166f0.js.map"],"debug/badstatus":["debug/badstatus.ef9d2cc4459c98d54b9e.js","debug/badstatus.ef9d2cc4459c98d54b9e.js.map"],"debug/detail":["debug/detail.b336b73ba4e29c76c896.js","debug/detail.b336b73ba4e29c76c896.js.map"],"debug/failcomponent":["debug/failcomponent.1a74f5b19c0a11aa9259.js","debug/failcomponent.1a74f5b19c0a11aa9259.js.map"],"egg/egg":["egg/egg.090815972f590e7830a3.js","egg/egg.090815972f590e7830a3.js.map"],"enterprise/complete":["enterprise/complete.c03683f6ada625acab00.js","enterprise/complete.c03683f6ada625acab00.js.map"],"enterprise/license-paid":["enterprise/license-paid.b8cfd9f39539600c898e.js","enterprise/license-paid.b8cfd9f39539600c898e.js.map"],"enterprise/license-purchase":["enterprise/license-purchase.b27275db406ffa9a4c4a.js","enterprise/license-purchase.b27275db406ffa9a4c4a.js.map"],"enterprise/on-site-buy-now":["enterprise/on-site-buy-now.cd5483782ea24c3c5c3a.js","enterprise/on-site-buy-now.cd5483782ea24c3c5c3a.js.map"],"enterprise/on-site-contact-confirmation":["enterprise/on-site-contact-confirmation.9be124240155d6bcead0.js","enterprise/on-site-contact-confirmation.9be124240155d6bcead0.js.map"],"enterprise/on-site-trial":["enterprise/on-site-trial.c9621c11bffef83b0618.js","enterprise/on-site-trial.c9621c11bffef83b0618.js.map"],"enterprise/orgs-terms":["enterprise/orgs-terms.e8e228c9894f954bacf5.js","enterprise/orgs-terms.e8e228c9894f954bacf5.js.map"],"enterprise/signup-confirmation":["enterprise/signup-confirmation.c90740617902974009bd.js","enterprise/signup-confirmation.c90740617902974009bd.js.map"],"errors/not-found":["errors/not-found.5157eeb67f9032b20057.js","errors/not-found.5157eeb67f9032b20057.js.map"],"errors/server":["errors/server.d46ae36a61faec9ecee3.js","errors/server.d46ae36a61faec9ecee3.js.map"],"errors/template":["errors/template.909c201501ff1e463aeb.js","errors/template.909c201501ff1e463aeb.js.map"],"flatpage/flatpage":["flatpage/flatpage.33d0fa45209af89e555c.js","flatpage/flatpage.33d0fa45209af89e555c.js.map"],"homepage/homepage":["homepage/homepage.2ff8ff240635e0ace3bc.js","homepage/homepage.2ff8ff240635e0ace3bc.js.map"],"homepage/homepage-logged-in":["homepage/homepage-logged-in.639c33b00c1ec23a572f.js","homepage/homepage-logged-in.639c33b00c1ec23a572f.js.map"],"npme/invite":["npme/invite.ee51099438dd3c5e9382.js","npme/invite.ee51099438dd3c5e9382.js.map"],"npme/invites":["npme/invites.c549ed7f6870991b7405.js","npme/invites.c549ed7f6870991b7405.js.map"],"npme/login":["npme/login.2a9a1d8b5be0461def29.js","npme/login.2a9a1d8b5be0461def29.js.map"],"npme/overrides/components/tutorials/creating-org":["npme/overrides/components/tutorials/creating-org.25486c36df1968ed9dac.js","npme/overrides/components/tutorials/creating-org.25486c36df1968ed9dac.js.map"],"npme/overrides/components/tutorials/default-registry":["npme/overrides/components/tutorials/default-registry.e6393b4d6b7cb5b02626.js","npme/overrides/components/tutorials/default-registry.e6393b4d6b7cb5b02626.js.map"],"npme/overrides/components/tutorials/installing-package":["npme/overrides/components/tutorials/installing-package.37916d37819c6d1a8b32.js","npme/overrides/components/tutorials/installing-package.37916d37819c6d1a8b32.js.map"],"npme/overrides/components/tutorials/publishing-package":["npme/overrides/components/tutorials/publishing-package.1d16eb25b7feee62d721.js","npme/overrides/components/tutorials/publishing-package.1d16eb25b7feee62d721.js.map"],"npme/overrides/components/tutorials/tabs":["npme/overrides/components/tutorials/tabs.da1171642b707caff03a.js","npme/overrides/components/tutorials/tabs.da1171642b707caff03a.js.map"],"npme/overrides/homepage":["npme/overrides/homepage.ec73b17cc6530852abd1.js","npme/overrides/homepage.ec73b17cc6530852abd1.js.map"],"npme/overrides/orgs/create":["npme/overrides/orgs/create.8fc704a9594fbb5465ee.js","npme/overrides/orgs/create.8fc704a9594fbb5465ee.js.map"],"npme/settings":["npme/settings.28d00ea7426e556510f9.js","npme/settings.28d00ea7426e556510f9.js.map"],"npme/setup":["npme/setup.b92675d216bbc36510dc.js","npme/setup.b92675d216bbc36510dc.js.map"],"npme/sso-config":["npme/sso-config.4cc08b81d9bc845ea745.js","npme/sso-config.4cc08b81d9bc845ea745.js.map"],"npme/users":["npme/users.f9442e0bc182e795d046.js","npme/users.f9442e0bc182e795d046.js.map"],"orgs/create":["orgs/create.5ce3c0c0829961b0bb17.js","orgs/create.5ce3c0c0829961b0bb17.js.map"],"orgs/detail":["orgs/detail.6b8dccc701c508829893.js","orgs/detail.6b8dccc701c508829893.js.map"],"orgs/invite":["orgs/invite.52b725a430180d889548.js","orgs/invite.52b725a430180d889548.js.map"],"orgs/upgrade":["orgs/upgrade.2862322a617eee5e29a8.js","orgs/upgrade.2862322a617eee5e29a8.js.map"],"package-list/dependents-list":["package-list/dependents-list.82162bfbc0d3ed9032c5.js","package-list/dependents-list.82162bfbc0d3ed9032c5.js.map"],"package-list/most-depended":["package-list/most-depended.643abbb28a8de0ec9467.js","package-list/most-depended.643abbb28a8de0ec9467.js.map"],"package-list/recently-updated":["package-list/recently-updated.47c5f72c66a72cab7c0f.js","package-list/recently-updated.47c5f72c66a72cab7c0f.js.map"],"package/package":["package/package.051e39717a6ad960bfe4.js","package/package.051e39717a6ad960bfe4.js.map"],"profile/profile":["profile/profile.132de268c9469f29561c.js","profile/profile.132de268c9469f29561c.js.map"],"search/search":["search/search.72eea978de4eaa65f4b2.js","search/search.72eea978de4eaa65f4b2.js.map"],"settings/change-password":["settings/change-password.5e0f76fc91a836feb5da.js","settings/change-password.5e0f76fc91a836feb5da.js.map"],"settings/email":["settings/email.921759a6fdab96ec61e0.js","settings/email.921759a6fdab96ec61e0.js.map"],"settings/memberships":["settings/memberships.a9ea4cb6f1a6d5aedf9a.js","settings/memberships.a9ea4cb6f1a6d5aedf9a.js.map"],"settings/packages":["settings/packages.e8ccba9a70f519bd5c0f.js","settings/packages.e8ccba9a70f519bd5c0f.js.map"],"settings/profile":["settings/profile.6a568a6883ee346b6b56.js","settings/profile.6a568a6883ee346b6b56.js.map"],"teams/create":["teams/create.c0682a621fab60f2c3c0.js","teams/create.c0682a621fab60f2c3c0.js.map"],"teams/detail":["teams/detail.dc50aa7fdbf8269a8d8f.js","teams/detail.dc50aa7fdbf8269a8d8f.js.map"],"teams/list":["teams/list.0cdfa46ea0124f2d27d2.js","teams/list.0cdfa46ea0124f2d27d2.js.map"],"teams/packages":["teams/packages.6683fb71b77724304e92.js","teams/packages.6683fb71b77724304e92.js.map"],"teams/users":["teams/users.65883a4ba1d03f2e2ef9.js","teams/users.65883a4ba1d03f2e2ef9.js.map"],"tfa/enable":["tfa/enable.3598f0b32c220a949970.js","tfa/enable.3598f0b32c220a949970.js.map"],"tfa/showTFAQRCode":["tfa/showTFAQRCode.7bf488c8a8e7ba9fac47.js","tfa/showTFAQRCode.7bf488c8a8e7ba9fac47.js.map"],"tfa/showTFASuccess":["tfa/showTFASuccess.dfa4b059d022091a040b.js","tfa/showTFASuccess.dfa4b059d022091a040b.js.map"],"tfa/tfa-mode-selection":["tfa/tfa-mode-selection.de7351689d2a10dfb723.js","tfa/tfa-mode-selection.de7351689d2a10dfb723.js.map"],"tfa/tfa-password-entry":["tfa/tfa-password-entry.775f482b52a8cb205160.js","tfa/tfa-password-entry.775f482b52a8cb205160.js.map"],"tokens/create":["tokens/create.e56ef6efd1ea3d5924cb.js","tokens/create.e56ef6efd1ea3d5924cb.js.map"],"tokens/list":["tokens/list.64a4e524d40c0ad8571e.js","tokens/list.64a4e524d40c0ad8571e.js.map"],"vouchers/view":["vouchers/view.6ab8141f146224ee0691.js","vouchers/view.6ab8141f146224ee0691.js.map"]},"hash":"20d95f784a2a12bc1068","name":"package/package","containerId":"app","headerName":"x-spiferack","publicPath":"https://static.npmjs.com/"}</script><script crossorigin="anonymous" src="https://static.npmjs.com/commons.20d95f784a2a12bc1068.js"></script>
+<script crossorigin="anonymous" src="https://static.npmjs.com/minicssextractbug.7b912e56eff1700f745e.js"></script>
+<script crossorigin="anonymous" src="https://static.npmjs.com/package/package.051e39717a6ad960bfe4.js"></script>
+  </body>
 </html>
