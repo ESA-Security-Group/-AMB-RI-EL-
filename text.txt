@@ -1,1 +1,12 @@
-$ npm install body-parser
+
+import 'Lazyload' from 'r-lazyload';
+
+<Lazyload
+  threshhold={0}
+  cls="lazyload-placeholder"
+/>
+  <img src="image link" />
+</Lazyload>
+
+<Lazyload scrollerIsWindow={true}>
+  <Your Component />
