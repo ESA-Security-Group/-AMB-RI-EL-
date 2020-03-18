@@ -1,0 +1,32 @@
+[
+  {
+    "id": "/subscriptions/2afdaa5e-852c-4455-9e97-ceb6662ff52b/resourceGroups/E.S.A-Security/providers/Microsoft.Resources/deployments/Microsoft.AzureActiveDirectory/operations/55ED6A6D2D9D279C",
+    "operationId": "55ED6A6D2D9D279C",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2019-10-28T21:31:50.0182591Z",
+      "duration": "PT13.0176535S",
+      "trackingId": "16497dcd-f65e-401f-b9c9-7bb6046b5e7b",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/2afdaa5e-852c-4455-9e97-ceb6662ff52b/resourceGroups/E.S.A-Security/providers/Microsoft.AzureActiveDirectory/b2cDirectories/fireesa.onmicrosoft.com",
+        "resourceType": "Microsoft.AzureActiveDirectory/b2cDirectories",
+        "resourceName": "fireesa.onmicrosoft.com"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/2afdaa5e-852c-4455-9e97-ceb6662ff52b/resourceGroups/E.S.A-Security/providers/Microsoft.Resources/deployments/Microsoft.AzureActiveDirectory/operations/08586293085966288181",
+    "operationId": "08586293085966288181",
+    "properties": {
+      "provisioningOperation": "EvaluateDeploymentOutput",
+      "provisioningState": "Succeeded",
+      "timestamp": "2019-10-28T21:31:50.1008374Z",
+      "duration": "PT0.0591707S",
+      "trackingId": "599e04a3-8e70-428d-90cf-b9d689f10601",
+      "statusCode": "OK",
+      "statusMessage": null
+    }
+  }
+]
