@@ -1,0 +1,17 @@
+# .gitignore
+.DS_Store
+.vscode
+*.log
+build
+cypress/screenshots
+cypress/snapshots/**/__diff_output__/**
+cypress/videos
+logs
+node_modules
+npm-debug.log*
+static
+yarn-debug.log*
+yarn-error.log*
+yarn.lock
+.envrc
+firebase/
