@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en">
+  <head>
+     <base href="https://www.bsi.bund.de/"/>
+     <meta charset="UTF-8"/>
+     <title>BSI  -  Downloads - BSI TR-03119 Requirements for Smart Card Readers Supporting eID and eSign Based on Extended Access Control, Version 1.41</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=1"/>
+     <meta name="generator" content="Government Site Builder"/>
+
+    <meta name="description" content="This technical guideline for contact and contactless smart card readers is intended primarily for equipment to be used with the identity card and in further smart card projects of the Federal Administration, where non-governmental applications can be involved. Since a card reader for personal identification by the Executive must have different characteristics from a smart card reader for an authentication or an electronic signature, these card readers are not in the scope of this Technical Guideline. This document describes individual modules for individual use cases as based on the special requirements pertaining to the use case. Combining mandatory and optional modules will result in a specification of practical variants of smart card readers, which are defined in this Technical Guideline and supplemented by certification requirements."/>
+    <meta name="keywords" content="BSI, TR-03119, BSI TR-03119, Chipkartenleser"/>
+     <!-- 
+        Realisiert mit dem Government Site Builder.
+        Die Content Management Lösung der Bundesverwaltung.
+        www.government-site-builder.de
+      -->
+     <link rel="canonical" href="https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03119/BSI-TR-03119_V1_pdf.html"/>
+     <link rel="copyright" href="EN/Service/Imprint/imprint_node.html" type="text/html" title="Imprint" />
+     <link rel="glossary" href="" type="text/html" title="Glossary" />
+     <link rel="start" href="EN/TheBSI/thebsi_node.html" type="text/html" title="Homepage" />
+     <link rel="contents" href="EN/Service/Sitemap/sitemap_node.html" type="text/html" title="Sitemap" />
+     <link rel="search" href="EN/Service/Search/search_node.html" type="text/html" title="Search" />
+
+     <link rel="shortcut icon" href="/SiteGlobals/Frontend/Images/favicon.ico?__blob=normal&amp;v=1" type="image/ico" />
+
+
+<link rel="stylesheet" href="SiteGlobals/Frontend/Styles/BSI/normalize.css?v=7" type="text/css" media="projection, screen, handheld"  />
+<link rel="stylesheet"  href="SiteGlobals/Frontend/Styles/_libs.css?v=3" type="text/css" />
+<link rel="stylesheet" href="SiteGlobals/Frontend/Styles/BSI/addon_foundation.css?v=3" type="text/css" media="projection, screen, handheld"  />
+<link rel="stylesheet" href="SiteGlobals/Frontend/Styles/BSI/small.css?v=22" type="text/css" media="projection, screen, handheld"  />
+<link rel="stylesheet" href="SiteGlobals/Frontend/Styles/BSI/medium.css?v=7" type="text/css" media="projection, screen, handheld"  />
+<link rel="stylesheet" href="SiteGlobals/Frontend/Styles/BSI/large.css?v=6" type="text/css" media="projection, screen, handheld"  />
+<!--[if IE 9]><link rel="stylesheet"  href="SiteGlobals/Frontend/Styles/BSI/addon_iefix_9.css?v=2" type="text/css" /><![endif]-->
+<!--[if lte IE 8]><link rel="stylesheet" href="SiteGlobals/Frontend/Styles/BSI/addon_iefix.css?v=2" type="text/css" /><![endif]-->
+<link rel="stylesheet" href="SiteGlobals/Frontend/Styles/BSI/addon_print.css?v=4" type="text/css" media="print" />
+
+<link rel="stylesheet" href="SiteGlobals/Frontend/Styles/BSI/addon_materna.css?v=62" type="text/css" media="projection, screen, handheld"  />
+<link rel="stylesheet" href="SiteGlobals/Frontend/Styles/BSI/addon_extension.css?v=21" type="text/css" media="projection, screen, handheld"  />
+<link rel="stylesheet" href="SiteGlobals/Frontend/Styles/BSI/addon_seiteteilen.css?v=4" type="text/css" media="projection, screen, handheld"  />
+
+
+
+  </head>
+  <body class="gsb startseite js-off lang-en">
+
+
+<!--  Modul mobile Navigation -->
+<input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+<label tabindex="0" for="nav-trigger">
+    <span class="navigationButton">
+        <svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink="http://www.w3.org/1999/xlink" version='1.1' x='0px' y='0px'
+             width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect
+                width='30' height='6'/>
+            <rect y='24' width='30' height='6'/>
+            <rect y='12' width='30' height='6'/>
+        </svg>
+        Menu
+    </span>
+    <span class="searchButton">
+        <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="283.385" height="285"
+             viewBox="0 0 283.385 285" overflow="visible" enable-background="new 0 0 283.385 285" xml:space="preserve">
+        <path fill="#373737" d="M194.017,0c-49.278,0-89.369,40.091-89.369,89.369c0,21.212,7.435,40.719,19.827,56.061l-15.63,15.632
+            c-7.119-1.896-15.021-0.072-20.604,5.511l-81.989,81.99c-8.336,8.336-8.336,21.851,0,30.187c8.335,8.335,21.85,8.335,30.185,0
+            l81.991-81.99c5.582-5.583,7.407-13.486,5.511-20.604l15.823-15.823c15.055,11.537,33.867,18.406,54.256,18.406
+            c49.277,0,89.368-40.091,89.368-89.369S243.294,0,194.017,0z M194.017,156.527c-17.939,0-34.804-6.986-47.488-19.671
+            c-12.684-12.684-19.67-29.55-19.67-47.488c0-37.032,30.127-67.159,67.158-67.159s67.158,30.126,67.158,67.159
+            C261.175,126.4,231.048,156.527,194.017,156.527z"/>
+        </svg>
+        Search
+    </span>
+</label>
+<div class="mobileMenuBg">
+    <!-- Leichteprache und Gebaerdensprache -->
+    <ul class="right mobileService">
+    </ul>
+    <!-- Leichteprache und Gebaerdensprache  ENDE-->
+</div>
+<div class="mobieNavigation">
+    <ul class="menufixed">
+        <li class="head blue">Menu</li>
+        <li class="search blue">
+            
+<form name="searchService" action="SiteGlobals/Forms/Suche/BSI/ServicesucheMobil_Formular.html" method="get" enctype="application/x-www-form-urlencoded">
+  
+  <input type="hidden" name="nn" value="6655422"/>
+  <input type="hidden" name="resourceId" value="6659132" />
+  <input type="hidden" name="input_" value="6615254" />
+  <input type="hidden" name="pageLocale" value="en" />
+  <fieldset>
+    <p>
+            
+<span class="formLabel aural">
+  <label for="f6659132d6659068">Search item </label></span>
+<span class="formField">
+  <input id="f6659132d6659068" name="templateQueryString" value="" title="Search item" type="text" placeholder="Suchbegriff" size="26" maxlength="100"/></span>
+            
+  <input class="image" type="image" src="/SiteGlobals/Forms/_components/Buttons/Servicesuche_Submit.png?__blob=image&amp;v=1" id="f6659132d6659074" name="submit" alt="Search" title="Search" />
+    </p>
+</fieldset>
+</form>
+        </li>
+    </ul>
+    <ul class="navList">
+        <li class="nav-item"><a href="EN/Home/home_node.html" title="Homepage">Home­page</a></li>
+  <li class="nav-item"><a href="EN/TheBSI/thebsi_node.html" title="The BSI" class="has-childs">The BSI</a><input type="checkbox" id="sub-nav-triggers_6651290_1" class="sub-nav-trigger"/><label for="sub-nav-triggers_6651290_1"></label>
+                
+    <ul class="lvl2">
+      <li class="nav-item"><a href="EN/Publications/BSIMagazine/BSI-Magazine_node.html" title="BSI Magazine" class="has-childs">BSI Mag­a­zine</a></li>
+      <li class="nav-item"><a href="EN/TheBSI/Functions/functions_node.html" title="Functions" class="has-childs">Func­tions</a></li>
+      <li class="nav-item"><a href="EN/TheBSI/BSIAct/bsiact_node.html" title="BSI Act - BSIG" class="has-childs">BSI Act - BSIG</a></li>
+      <li class="nav-item"><a href="EN/TheBSI/Costs/costs_node.html" title="Costs" class="has-childs">Costs</a></li>
+      <li class="nav-item"><a href="EN/TheBSI/Contact/contact_node.html" title="Contact" class="has-childs">Con­tact</a></li>
+      <li class="nav-item"><a href="EN/TheBSI/Howtofindus/howtofindus_node.html" title="How to find us" class="has-childs">How to find us</a></li>
+    </ul>
+  </li>
+  <li class="nav-item"><a href="EN/Topics/topics_node.html" class="has-childs">Top­ics</a><input type="checkbox" id="sub-nav-triggers_6655456_8" class="sub-nav-trigger"/><label for="sub-nav-triggers_6655456_8"></label>
+                
+    <ul class="lvl2">
+      <li class="nav-item"><a href="EN/Topics/Certification/certification_node.html" title="Certification" class="has-childs">Cer­ti­fi­ca­tion</a><input type="checkbox" id="sub-nav-triggers_6650938_9" class="sub-nav-trigger"/><label for="sub-nav-triggers_6650938_9"></label>
+                
+        <ul class="lvl3">
+          <li class="nav-item"><a href="EN/Topics/Certification/certified_products/certified_products_node.html" title="Certified Products" class="has-childs">Cer­ti­fied Prod­ucts</a>
+                </li>
+          <li class="nav-item"><a href="EN/Topics/Certification/SiteCertification/SiteCertification_node.html" title="Site Certification" class="has-childs">Site Cer­ti­fi­ca­tion</a></li>
+          <li class="nav-item"><a href="EN/Topics/Certification/TechnicalGuidelines/TechnicalGuidelines_node.html" title="Technical Guidelines" class="has-childs">Tech­ni­cal Guide­lines</a></li>
+          <li class="nav-item"><a href="EN/Topics/Certification/PolicyStatements/PolicyStatements_node.html" title="Certification Policy Statements" class="has-childs">Pol­i­cy State­ments</a></li>
+          <li class="nav-item"><a href="EN/Topics/Certification/product_certification/Accelerated_Security_Certification/Accelerated-Security-Certification_node.html" title="Accelerated Security Certification - Beschleunigte Sicherheitszertifizierung (BSZ)" class="has-childs"><span lang="en-GB" xml:lang="en-GB">Ac­cel­er­at­ed Se­cu­ri­ty Cer­ti­fi­ca­tion</span></a></li>
+          <li class="nav-item"><a href="DE/Themen/ZertifizierungundAnerkennung/Produktzertifizierung/ZertifizierungnachCC/zertifizierungnachcc_node.html" title="Zertifizierung nach CC" class="has-childs">Zer­ti­fizierung nach <abbr lang="en-GB" title="Com­mon Cri­te­ria" xml:lang="en-GB">CC</abbr></a>
+                </li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="EN/Topics/CloudComputing/CloudComputing_node.html" title="Cloud Computing" class="has-childs">Cloud Com­put­ing</a><input type="checkbox" id="sub-nav-triggers_8608750_16" class="sub-nav-trigger"/><label for="sub-nav-triggers_8608750_16"></label>
+                
+        <ul class="lvl3">
+          <li class="nav-item"><a href="EN/Topics/CloudComputing/Basics/Basics_node.html" title="Cloud Computing Basics" class="has-childs">Ba­sics</a></li>
+          <li class="nav-item"><a href="EN/Topics/CloudComputing/Compliance_Criteria_Catalogue/Compliance_Criteria_Catalogue_node.html" title="Criteria Catalogue C5" class="has-childs">Cri­te­ria Cat­a­logue C5</a>
+                </li>
+          <li class="nav-item"><a href="EN/Topics/CloudComputing/Secure_use_of_cloud_services/Secure_use_cloud_services_node.html" title="Secure use of cloud services" class="has-childs">Se­cure use of cloud ser­vices</a></li>
+          <li class="nav-item"><a href="EN/Topics/CloudComputing/CloudCertification/CloudCertification_node.html" title="Cloud Certification" class="has-childs">Cloud Cer­ti­fi­ca­tion</a></li>
+          <li class="nav-item"><a href="EN/Topics/CloudComputing/Contact/Contact_node.html" title="Cloud Computing Contact" class="has-childs">Con­tact</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="EN/Topics/CommonCriteria/commoncriteria_node.html" title="Common Criteria" class="has-childs">Com­mon Cri­te­ria</a></li>
+      <li class="nav-item"><a href="EN/Topics/Industry_CI/Industry_CI_node.html" title="Industry and Critical Infrastructures" class="has-childs">In­dus­try and Crit­i­cal In­fras­truc­tures</a><input type="checkbox" id="sub-nav-triggers_6620492_23" class="sub-nav-trigger"/><label for="sub-nav-triggers_6620492_23"></label>
+                
+        <ul class="lvl3">
+          <li class="nav-item"><a href="EN/Topics/Industry_CI/CI/Contact/contact_node.html" title="Contact details" class="has-childs">Con­tact de­tails</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="EN/Topics/ElectrIDDocuments/EID_node.html" title="Electronic ID documents" class="has-childs">Elec­tron­ic <abbr title="Iden­ti­ty">ID</abbr> doc­u­ments</a><input type="checkbox" id="sub-nav-triggers_6650400_25" class="sub-nav-trigger"/><label for="sub-nav-triggers_6650400_25"></label>
+                
+        <ul class="lvl3">
+          <li class="nav-item"><a href="EN/Topics/ElectrIDDocuments/eIDcard/eIDcard_node.html" title="Electronic ID card" class="has-childs">Elec­tron­ic ID card</a>
+                </li>
+          <li class="nav-item"><a href="EN/Topics/ElectrIDDocuments/EPassport/epassport_node.html" title="ePassport" class="has-childs">ePass­port</a></li>
+          <li class="nav-item"><a href="EN/Topics/ElectrIDDocuments/eRP/eRP_node.html" title="Electronic residence permit" class="has-childs">Elec­tron­ic res­i­dence per­mit</a></li>
+          <li class="nav-item"><a href="EN/Topics/ElectrIDDocuments/SecurityMechanisms/securitymechanisms_node.html" title="Security mechanisms" class="has-childs">Se­cu­ri­ty mech­a­nisms</a>
+                </li>
+          <li class="nav-item"><a href="EN/Topics/ElectrIDDocuments/German-eID/german-eID_node.html" title="German eID" class="has-childs">Ger­man eID</a>
+                </li>
+          <li class="nav-item"><a href="EN/Topics/ElectrIDDocuments/securPKI/pki_node.html" title="Public Key Infrastructures" class="has-childs"><abbr title="Pub­lic Key In­fras­truc­tures">PKIs</abbr></a>
+                </li>
+          <li class="nav-item"><a href="EN/Topics/ElectrIDDocuments/CVCAeID/CVCAeID_node.html" title="Country Verifying Certificate Authority - electronic Identity" class="has-childs"><abbr title="Coun­try Ver­i­fy­ing Cer­tifi­cate Au­thor­i­ty - elec­tron­ic Iden­ti­ty">CV­CA-eID</abbr></a></li>
+          <li class="nav-item"><a href="EN/Topics/ElectrIDDocuments/CVCAePass/CVCAePass_node.html" title="Country Verifying Certificate Authority - electronic passport" class="has-childs"><abbr title="Coun­try Ver­i­fy­ing Cer­tifi­cate Au­thor­i­ty - elec­tron­ic pass­port">CV­CA-ePass</abbr></a></li>
+          <li class="nav-item"><a href="EN/Topics/ElectrIDDocuments/TRandSecurProfiles/trandsecurprofiles_node.html" title="Technical Guidelines" class="has-childs">Tech­ni­cal Guide­lines</a></li>
+          <li class="nav-item"><a href="EN/Topics/ElectrIDDocuments/TRprotect/protect_node.html" title="Protection profiles" class="has-childs">Pro­tec­tion pro­files</a></li>
+          <li class="nav-item"><a href="EN/Topics/ElectrIDDocuments/Publications/publications_node.html" title="Publications" class="has-childs">Pub­li­ca­tions</a></li>
+          <li class="nav-item"><a href="EN/Topics/ElectrIDDocuments/Biometrics/biometrics_node.html" title="Biometrics" class="has-childs">Bio­met­rics</a>
+                </li>
+          <li class="nav-item"><a href="EN/Topics/ElectrIDDocuments/RadioFrequencyIdentification/radiofrequencyidentification_node.html" title="Radio Frequency Identification" class="has-childs"><abbr title="Ra­dio Fre­quen­cy Iden­ti­fi­ca­tion">RFID</abbr></a>
+                </li>
+          <li class="nav-item"><a href="EN/Topics/ElectrIDDocuments/Contact/contact_node.html" title="Contact us" class="has-childs">Con­tact us</a></li>
+          <li class="nav-item"><a href="EN/Topics/ElectrIDDocuments/Links/Links_node.html" title="Links about electronic ID documens" class="has-childs">Links</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="EN/Topics/IT-Crisis-Management/itcrisismanagement_node.html" title="IT Crisis Management" class="has-childs">IT Cri­sis Man­age­ment</a><input type="checkbox" id="sub-nav-triggers_6651040_41" class="sub-nav-trigger"/><label for="sub-nav-triggers_6651040_41"></label>
+                
+        <ul class="lvl3">
+          <li class="nav-item"><a href="EN/Topics/IT-Crisis-Management/CERT-Bund/cert-bund_node.html" title="CERT-Bund" class="has-childs">CERT-Bund</a>
+                </li>
+          <li class="nav-item"><a href="EN/Topics/IT-Crisis-Management/IT-Situation-Centre/itsituationcentre_node.html" title="IT Situation Centre" class="has-childs">IT Sit­u­a­tion Cen­tre</a></li>
+          <li class="nav-item"><a href="EN/Topics/IT-Crisis-Management/IT-Crisis-Reaction-Centre/itcrisisreactioncentre_node.html" title="IT Crisis Reaction Centre" class="has-childs">IT Cri­sis Re­ac­tion Cen­tre</a></li>
+          <li class="nav-item"><a href="EN/Topics/IT-Crisis-Management/Contact/contact_node.html" title="Contact" class="has-childs">Con­tact</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="EN/Topics/ITGrundschutz/itgrundschutz_node.html" title="IT-Grundschutz" class="has-childs">IT-Grund­schutz</a></li>
+      <li class="nav-item"><a href="EN/Topics/Minimum_Standards/Minimum_Standards_node.html" title="Minimum Standards" class="has-childs">Min­i­mum Stan­dards</a><input type="checkbox" id="sub-nav-triggers_11596434_47" class="sub-nav-trigger"/><label for="sub-nav-triggers_11596434_47"></label>
+                
+        <ul class="lvl3">
+          <li class="nav-item"><a href="EN/Topics/Minimum_Standards/FAQ_MST_EN/FAQ_MST_EN_node.html" title="Answers to Frequently Asked Questions about the Minimum Standards" class="has-childs">FAQ about the Min­i­mum Stan­dards</a></li>
+          <li class="nav-item"><a href="EN/Topics/Minimum_Standards/Contact/contact_node.html" title="Contact" class="has-childs">Con­tact</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="EN/Topics/Cyber-Security/Recommendations/Recommendations_node.html" title="Recommendations" class="has-childs">Rec­om­men­da­tions</a><input type="checkbox" id="sub-nav-triggers_13042478_50" class="sub-nav-trigger"/><label for="sub-nav-triggers_13042478_50"></label>
+                
+        <ul class="lvl3">
+          <li class="nav-item"><a href="EN/Topics/Cyber-Security/Recommendations/SiSyPHuS_Win10/SiSyPHuS_node.html" title="SiSyPHuS Win10" class="has-childs">SiSy­PHuS Win10</a>
+                </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li class="nav-item"><a href="EN/Press/press_node.html" title="Press" class="has-childs">Press Of­fice</a><input type="checkbox" id="sub-nav-triggers_6651352_52" class="sub-nav-trigger"/><label for="sub-nav-triggers_6651352_52"></label>
+                
+    <ul class="lvl2">
+      <li class="nav-item"><a href="EN/Press/Press_Office/pressoffice_node.html" title="Press Office" class="has-childs">Press Of­fice</a></li>
+      <li class="nav-item"><a href="EN/Press/press_releases/press_releases_node.html" title="Press releases" class="has-childs">Press re­leas­es</a></li>
+      <li class="nav-item"><a href="EN/Press/news/news_node.html" title="News" class="has-childs">News</a></li>
+    </ul>
+  </li>
+  <li class="nav-item"><a href="EN/Publications/publications_node.html" title="Publications" class="has-childs">Pub­li­ca­tions</a><input type="checkbox" id="sub-nav-triggers_6651146_56" class="sub-nav-trigger"/><label for="sub-nav-triggers_6651146_56"></label>
+                
+    <ul class="lvl2">
+      <li class="nav-item"><a href="EN/Publications/BSIMagazine/BSI-Magazine_node.html" title="BSI Magazine" class="has-childs">BSI Mag­a­zine</a></li>
+      <li class="nav-item"><a href="EN/Publications/SecuritySituation/SecuritySituation_node.html" title="IT-Security Situation" class="has-childs">IT-Se­cu­ri­ty Sit­u­a­tion</a></li>
+      <li class="nav-item"><a href="EN/Publications/DE_FR_SecuritySituation/SecuritySituation_node.html" title="Franco-German Reports" class="has-childs">Fran­co-Ger­man Re­ports</a></li>
+      <li class="nav-item"><a href="EN/Publications/TechnicalGuidelines/TechnicalGuidelines_node.html" title="Technical Guidelines" class="has-childs">Tech­ni­cal Guide­lines</a></li>
+      <li class="nav-item"><a href="EN/Publications/BSIStandards/BSIStandards_node.html" title="IT-Grundschutz-Standards" class="has-childs">IT-Grund­schutz-Stan­dards</a></li>
+      <li class="nav-item"><a href="EN/Service/Downloads/downloads_node.html" class="has-childs">Down­loads</a></li>
+    </ul>
+  </li>
+        <li class="nav-item Tree blue">
+            <a title="Zum deutschen Auftritt" class="languageLink lang_de" href="DE/Home/home_node.html" xml:lang="de" hreflang="de" lang="de">Deutsch</a>
+        </li>
+        <li class="nav-item Tree blue">
+            <a href="EN/Service/Contact/contact_node.html">Con­tact</a>
+        </li>
+        <li class="nav-item navPublikationen blue">
+            <a href="EN/Service/Downloads/downloads_node.html">Down­loads</a>
+        </li>
+    </ul>
+</div>
+<!--  Ende Modul mobile Navigation -->
+
+<div id="wrapperOuter" class="site-wrap">
+  <div id="wrapperInner">
+    <a id="Start"></a>
+    <h1 class="aural">Federal Office for Information Security (BSI)</h1>
+    <p class="navSkip">
+      <em>Go to:</em>
+    </p>
+    <ul class="navSkip">
+      <li><a href="SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03119/BSI-TR-03119_V1_pdf.html?nn=6655422#content">Content</a></li>
+      <li><a href="SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03119/BSI-TR-03119_V1_pdf.html?nn=6655422#navPrimary">Main Menu</a></li>
+      <li><a href="SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03119/BSI-TR-03119_V1_pdf.html?nn=6655422#search">Search</a></li>
+    </ul>    <div id="wrapperDivisions">
+      <div id="header">
+        <div class="wrapperBranding row ">
+          <div id="navServiceMeta" class="large-12">
+             <h2 class="aural">Servicemeu</h2>
+
+<ul><li ><a href="EN/Service/Contact/contact_node.html">Con­tact</a></li><li ><a title="Zum deutschen Auftritt" class="languageLink lang_de" href="DE/Home/home_node.html" xml:lang="de" hreflang="de" lang="de">Deutsch</a></li></ul>
+          </div>        </div>
+        <div class="row ">
+           <div class="medium-3 small-6 logo columns">
+             <p>
+
+
+               <a href="EN/TheBSI/thebsi_node.html" title="to homepage">
+                 <img src="/SiteGlobals/Frontend/Images/BSI/logo_en.png?__blob=normal&amp;v=5" alt="-"/>
+               </a>
+             </p>
+           </div>
+           <div id="search" class="large-3 columns">
+             <h2 class="aural">Search</h2>
+
+<form name="searchService" action="SiteGlobals/Forms/Suche/BSI/EN/Servicesuche_Formular.html" method="get" enctype="application/x-www-form-urlencoded">
+  
+  <input type="hidden" name="nn" value="6655422"/>
+  <input type="hidden" name="resourceId" value="6655488" />
+  <input type="hidden" name="input_" value="6615254" />
+  <input type="hidden" name="pageLocale" value="en" />
+  <fieldset>
+    <p>
+            
+<span class="formLabel aural">
+  <label for="f6655488d6659102">Search item </label></span>
+<span class="formField">
+  <input id="f6655488d6659102" name="templateQueryString" value="" title="Search item" type="text" placeholder="search item" size="26" maxlength="100"/></span>
+            
+  <input class="image" type="image" src="/SiteGlobals/Forms/_components/Buttons/Servicesuche_Submit.png?__blob=image&amp;v=1" id="f6655488d6659074" name="submit" alt="Search" title="Search" />
+    </p>
+</fieldset>
+</form>
+
+            </div>        </div>
+        <div id="navPrimary">
+          <h2 class="aural">Main Menu</h2>
+
+<ul>
+  <li >
+    <div class="" id="n-1">
+      <h3><a href="EN/TheBSI/thebsi_node.html" title="The BSI">The BSI</a></h3>
+      <h4 class="aural">Unternavigationspunkte</h4>
+      <div class="menu">
+        <div class="menu-box">
+          <ul class="large-block-grid-3">
+            <li>
+              <ul>
+                <li><a href="EN/Publications/BSIMagazine/BSI-Magazine_node.html" title="BSI Magazine" class="iconLink">BSI Mag­a­zine</a></li>
+                <li class="last"><a href="EN/TheBSI/Functions/functions_node.html" title="Functions" class="iconLink">Func­tions</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="EN/TheBSI/BSIAct/bsiact_node.html" title="BSI Act - BSIG" class="iconLink">BSI Act - BSIG</a></li>
+                <li class="last"><a href="EN/TheBSI/Costs/costs_node.html" title="Costs" class="iconLink">Costs</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="EN/TheBSI/Contact/contact_node.html" title="Contact" class="iconLink">Con­tact</a></li>
+                <li class="last"><a href="EN/TheBSI/Howtofindus/howtofindus_node.html" title="How to find us" class="iconLink">How to find us</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li >
+    <div class="" id="n-2">
+      <h3><a href="EN/Topics/topics_node.html">Top­ics</a></h3>
+      <h4 class="aural">Unternavigationspunkte</h4>
+      <div class="menu">
+        <div class="menu-box">
+          <ul class="large-block-grid-3">
+            <li>
+              <ul>
+                <li><a href="EN/Topics/Certification/certification_node.html" title="Certification" class="iconLink">Cer­ti­fi­ca­tion</a></li>
+                <li><a href="EN/Topics/CloudComputing/CloudComputing_node.html" title="Cloud Computing" class="iconLink">Cloud Com­put­ing</a></li>
+                <li class="last"><a href="EN/Topics/CommonCriteria/commoncriteria_node.html" title="Common Criteria" class="iconLink">Com­mon Cri­te­ria</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="EN/Topics/Industry_CI/Industry_CI_node.html" title="Industry and Critical Infrastructures" class="iconLink">In­dus­try and Crit­i­cal In­fras­truc­tures</a></li>
+                <li><a href="EN/Topics/ElectrIDDocuments/EID_node.html" title="Electronic ID documents" class="iconLink">Elec­tron­ic <abbr title="Iden­ti­ty">ID</abbr> doc­u­ments</a></li>
+                <li class="last"><a href="EN/Topics/IT-Crisis-Management/itcrisismanagement_node.html" title="IT Crisis Management" class="iconLink">IT Cri­sis Man­age­ment</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="EN/Topics/ITGrundschutz/itgrundschutz_node.html" title="IT-Grundschutz" class="iconLink">IT-Grund­schutz</a></li>
+                <li><a href="EN/Topics/Minimum_Standards/Minimum_Standards_node.html" title="Minimum Standards" class="iconLink">Min­i­mum Stan­dards</a></li>
+                <li class="last"><a href="EN/Topics/Cyber-Security/Recommendations/Recommendations_node.html" title="Recommendations" class="iconLink">Rec­om­men­da­tions</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li >
+    <div class="" id="n-3">
+      <h3><a href="EN/Press/press_node.html" title="Press">Press Of­fice</a></h3>
+      <h4 class="aural">Unternavigationspunkte</h4>
+      <div class="menu">
+        <div class="menu-box">
+          <ul class="large-block-grid-3">
+            <li>
+              <ul>
+                <li class="last"><a href="EN/Press/Press_Office/pressoffice_node.html" title="Press Office" class="iconLink">Press Of­fice</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li class="last"><a href="EN/Press/press_releases/press_releases_node.html" title="Press releases" class="iconLink">Press re­leas­es</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li class="last"><a href="EN/Press/news/news_node.html" title="News" class="iconLink">News</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li  class="topinpath">
+    <div class="mod" id="n-4">
+      <h3><em><a href="EN/Publications/publications_node.html" title="Publications">Pub­li­ca­tions</a></em></h3>
+      <h4 class="aural">Unternavigationspunkte</h4>
+      <div class="menu">
+        <div class="menu-box">
+          <ul class="large-block-grid-3">
+            <li>
+              <ul>
+                <li><a href="EN/Publications/BSIMagazine/BSI-Magazine_node.html" title="BSI Magazine" class="iconLink">BSI Mag­a­zine</a></li>
+                <li class="last"><a href="EN/Publications/SecuritySituation/SecuritySituation_node.html" title="IT-Security Situation" class="iconLink">IT-Se­cu­ri­ty Sit­u­a­tion</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="EN/Publications/DE_FR_SecuritySituation/SecuritySituation_node.html" title="Franco-German Reports" class="iconLink">Fran­co-Ger­man Re­ports</a></li>
+                <li class="last"><a href="EN/Publications/TechnicalGuidelines/TechnicalGuidelines_node.html" title="Technical Guidelines" class="iconLink">Tech­ni­cal Guide­lines</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="EN/Publications/BSIStandards/BSIStandards_node.html" title="IT-Grundschutz-Standards" class="iconLink">IT-Grund­schutz-Stan­dards</a></li>
+                <li class="last"><strong title="You are here: " class="iconLink">Down­loads</strong></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+        </div>      </div>
+  
+<div id="wrapperBreadcrumbs">
+  <div id="navBreadcrumbsVertical">
+    <ol>
+      <li class="level1  last"><span><a href="EN/Publications/publications_node.html" title="Publications">Publications</a></span></li>
+    </ol>
+  </div>
+</div>
+
+
+
+ <div id="main" class="row moduleGutter">
+  <div id="content" class="large-8 columns">
+   
+<h1 class="isFirstInSlot">BSI TR-03119 <span lang="en-GB" xml:lang="en-GB">Requirements for Smart Card Readers Supporting eID and eSign Based on Extended Access Control</span>, Version 1.41</h1>
+<div class="docData publication">
+  <span class="label">Date</span> <span class="value">2020.02.14</span>
+</div>
+    <div class="teaserText"><p lang="en-GB" xml:lang="en-GB">This technical guideline for contact and contactless smart card readers is intended primarily for equipment to be used with the identity card and in further smart card projects of the Federal Administration, where non-governmental applications can be involved. Since a card reader for personal identification by the Executive must have different characteristics from a smart card reader for an authentication or an electronic signature, these card readers are not in the scope of this Technical Guideline.<br/>
+This document describes individual modules for individual use cases as based on the special requirements pertaining to the use case. Combining mandatory and optional modules will result in a specification of practical variants of smart card readers, which are defined in this Technical Guideline and supplemented by certification requirements.</p>
+</div>
+<ul class="links">
+<li class="download"><a href="/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03119/BSI-TR-03119_V1_pdf.pdf?__blob=publicationFile&amp;v=3" title="Opens in new window" class="downloadLink" target="_blank">download <span class="aural">file &quot;BSI TR-03119 Requirements for Smart Card Readers Supporting eID and eSign Based on Extended Access Control, Version 1.41&quot;</span> <span class="filedata">(PDF, 666KB, File is accessible)</span></a></li>
+</ul>
+  </div>
+    <div id="supplement" class="large-4 columns">
+        <div id="navSecondary">
+      <h2>Contents</h2>
+<div class="navMain">
+    <ul>
+      <li class="first "><a href="EN/Publications/BSIMagazine/BSI-Magazine_node.html" title="BSI Magazine">BSI Mag­a­zine</a>
+
+</li>
+      <li class=" "><a href="EN/Publications/SecuritySituation/SecuritySituation_node.html" title="IT-Security Situation">IT-Se­cu­ri­ty Sit­u­a­tion</a>
+
+</li>
+      <li class=" "><a href="EN/Publications/DE_FR_SecuritySituation/SecuritySituation_node.html" title="Franco-German Reports">Fran­co-Ger­man Re­ports</a>
+
+</li>
+      <li class=" "><a href="EN/Publications/TechnicalGuidelines/TechnicalGuidelines_node.html" title="Technical Guidelines">Tech­ni­cal Guide­lines</a>
+
+</li>
+      <li class=" "><a href="EN/Publications/BSIStandards/BSIStandards_node.html" title="IT-Grundschutz-Standards">IT-Grund­schutz-Stan­dards</a>
+
+</li>
+      <li class="last " id="navPublikationen"><em><a href="EN/Service/Downloads/downloads_node.html">Down­loads</a></em><span class="aural">:</span>
+
+</li>
+    </ul></div>
+        </div>    </div> </div>
+
+
+<div id="wrapper-socials" class="secondary-color">
+              <div class="row">
+                  <div class="small-12">
+                     <span class="share"><p>share</p>
+</span>
+                      <ul class="socialmedia-bar">
+                        <li class="socialmedia soc_facebook">
+
+
+            <a href="http://www.facebook.com/sharer.php?u=https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03119/BSI-TR-03119_V1_pdf" target="_blank"  rel="noreferrer noopener">Facebook</a>
+                            
+                       </li>
+                        <li class="socialmedia soc_twitter">
+
+
+            <a href="http://twitter.com/home?status=https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03119/BSI-TR-03119_V1_pdf" target="_blank"  rel="noreferrer noopener">Twitter</a>
+                            
+                       </li>
+                        <li class="socialmedia soc_xing">
+
+
+            <a href="https://www.xing.com/social_plugins/share/new?h=1&url=https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03119/BSI-TR-03119_V1_pdf" target="_blank"  rel="noreferrer noopener">Xing</a>
+                            
+                       </li>
+                     </ul>
+                   </div>
+               </div>
+         </div>
+      <div id="navBreadcrumbs">
+        <p class="aural">You are here:</p>
+  <ol><li class="first"><a href="EN/Home/home_node.html" title="Homepage">Homepage</a></li><li><a href="EN/Publications/publications_node.html" title="Publications">Publications</a></li><li><a href="EN/Service/Downloads/downloads_node.html">Downloads</a></li><li><strong>BSI TR-03119 Requirements for Smart Card Readers Supporting eID and eSign Based on Extended Access Control, Version 1.41</strong></li></ol>
+      </div>
+      <div id="footer">
+  
+
+<div id="siteInfo" class="row show-for-large-up">
+
+    <ul class="large-block-grid-5">
+      <li>
+          <h3>Topics</h3>
+          <ul>
+            
+<li ><a href="EN/Topics/ElectrIDDocuments/EID_node.html" title="Electronic ID documents">Elec­tron­ic <abbr title="Iden­ti­ty">ID</abbr> doc­u­ments</a></li>
+            
+<li ><a href="EN/Topics/IT-Crisis-Management/itcrisismanagement_node.html" title="IT Crisis Management">IT Cri­sis Man­age­ment</a></li>
+            
+<li ><a href="EN/Topics/ITGrundschutz/itgrundschutz_node.html" title="IT-Grundschutz">IT-Grund­schutz</a></li>
+            
+<li ><a href="EN/Topics/CommonCriteria/commoncriteria_node.html" title="Common Criteria">Com­mon Cri­te­ria</a></li>
+            
+<li ><a href="EN/Topics/Industry_CI/Industry_CI_node.html" title="Industry and Critical Infrastructures">In­dus­try and Crit­i­cal In­fras­truc­tures</a></li>
+            
+<li ><a href="EN/Topics/Certification/certification_node.html" title="Certification">Cer­ti­fi­ca­tion</a></li>
+            
+<li ><a href="EN/Topics/OtherTopics/otherTopics_hidden_node.html" title="other topics">oth­er top­ics</a></li>
+          </ul>
+      </li>
+      <li>
+          <h3>The BSI</h3>
+          <ul>
+            
+<li ><a href="EN/Publications/BSIMagazine/BSI-Magazine_node.html" title="BSI Magazine">BSI Mag­a­zine</a></li>
+            
+<li ><a href="EN/TheBSI/Functions/functions_node.html" title="Functions">Func­tions</a></li>
+            
+<li ><a href="EN/TheBSI/BSIAct/bsiact_node.html" title="BSI Act - BSIG">BSI Act - BSIG</a></li>
+            
+<li ><a href="EN/TheBSI/Costs/costs_node.html" title="Costs">Costs</a></li>
+            
+<li ><a href="EN/TheBSI/Contact/contact_node.html" title="Contact">Con­tact</a></li>
+            
+<li ><a href="EN/TheBSI/Howtofindus/howtofindus_node.html" title="How to find us">How to find us</a></li>
+          </ul>
+      </li>
+      <li>
+          <h3>press</h3>
+          <ul>
+            
+<li ><a href="EN/Press/press_node.html" title="Press">Press Of­fice</a></li>
+          </ul>
+      </li>
+      <li>
+          <h3>Publications</h3>
+          <ul>
+            
+<li ><a href="EN/Publications/TechnicalGuidelines/TechnicalGuidelines_node.html" title="Technical Guidelines">Tech­ni­cal Guide­lines</a></li>
+            
+<li ><a href="EN/Publications/BSIStandards/BSIStandards_node.html" title="IT-Grundschutz-Standards">IT-Grund­schutz-Stan­dards</a></li>
+            
+<li ><a href="EN/Publications/SecuritySituation/SecuritySituation_node.html" title="IT-Security Situation">IT-Se­cu­ri­ty Sit­u­a­tion</a></li>
+            
+<li ><a href="EN/Publications/BSIMagazine/BSI-Magazine_node.html" title="BSI Magazine">BSI Mag­a­zine</a></li>
+            
+<li class="navPublikationen"><a href="EN/Service/Downloads/downloads_node.html">Down­loads</a></li>
+          </ul>
+      </li>
+      <li>
+          <h3>service</h3>
+          <ul>
+            
+<li ><a href="EN/Service/Contact/contact_node.html">Con­tact</a></li>
+            
+<li ><a href="EN/Service/Imprint/imprint_node.html">Im­print</a></li>
+          </ul>
+      </li>
+    </ul>
+</div>
+      </div>
+
+      <div class="row additionalFooter">
+  
+<div class="column large-8">
+      <ul>
+          
+<li ><a href="EN/Service/Imprint/DataProtectionStatement/DataProtectionStatement_node.html" title="Data protection statement">Da­ta pro­tec­tion state­ment</a></li>
+          
+<li ><a href="EN/Service/Imprint/imprint_node.html">Im­print</a></li>
+          
+<li ><a href="EN/Service/Imprint/ConditionOfUse/ConditionOfUse_node.html" title="Condition of Use">Con­di­tion of Use</a></li>
+          
+<li class="navServiceSitemap"><a href="EN/Service/Sitemap/sitemap_node.html"><span lang="en-GB" xml:lang="en-GB">Sitemap</span></a></li>
+      </ul>
+</div>
+        <div class="column large-4 copyright">
+  <p>&#169; Bundesamt für Sicherheit in der Informationstechnik</p>
+        </div>
+      </div>
+   
+
+    </div>  </div></div>
+    <!-- Seite generiert am: Wed Mar 18 21:43:32 CET 2020 -->
+    <script type="text/javascript" src="SiteGlobals/Frontend/JavaScript/BSI/global.js?v=10"></script>
+  </body>
+</html>
